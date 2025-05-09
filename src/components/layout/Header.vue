@@ -32,7 +32,7 @@
         <!-- Right side elements - Availability & Social Media -->
         <div class="hidden md:flex items-center space-x-6">
           <!-- Availability Status -->
-          <div class="flex items-center space-x-2">
+          <div class="hidden lg:flex items-center space-x-2">
             <span class="h-2.5 w-2.5 rounded-full bg-available"></span>
             <span class="text-text-primary text-sm">{{ $t('header.availability') }}</span>
           </div>

@@ -13,17 +13,28 @@
     "hero": {
       "title": "Jordan Garcia",
       "subtitle": "Web Developer",
-      "description": "I’m drawn to web development because it reveals how systems shape our everyday experience. For me, programming is more than code—it’s a tool to simplify life, improve connection, and explore the deeper logic of how things work."
+      "description": "I'm drawn to web development because it reveals how systems shape our everyday experience. For me, programming is more than code—it’s a tool to simplify life, improve connection, and explore the deeper logic of how things work."
     },
     "skillset": {
       "title": "My Skillset",
-      "graphic_design": "Graphic Design",
-      "interface_design": "Interface Design",
+      "graphic_design": "Web Design",
+      "interface_design": "User Interface",
       "user_experience": "User Experience",
       "skill_descriptions": {
         "graphic_design": "Creating visual content that communicates messages effectively",
         "interface_design": "Building intuitive interfaces for digital products",
         "user_experience": "Designing seamless and enjoyable user journeys"
+      },
+      "description": "A web developer with passion for solving complex problems through elegant interfaces",
+      "career_summary": {
+        "years_experience_number": "5+",
+        "years_experience_text": "Years of Experience",
+        "projects_completed_number": "50+",
+        "projects_completed_text": "Projects Completed",
+        "happy_clients_number": "20+",
+        "happy_clients_text": "Happy Clients",
+        "satisfaction_rate_number": "100%",
+        "satisfaction_rate_text": "Satisfaction"
       }
     },
     "process": {
