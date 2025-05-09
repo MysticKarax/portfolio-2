@@ -268,7 +268,7 @@
             <div class="flex items-center">
               <div class="w-12 h-12 rounded-full bg-accent-primary/10 overflow-hidden mr-4">
                 <img
-                  src="https://via.placeholder.com/100x100/121212/A450E1?text=CM"
+                  src="../../../public/claire-mitchell.jpg"
                   alt="Client"
                   class="w-full h-full object-cover"
                 />
@@ -286,42 +286,42 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
-import { onMounted } from 'vue'
+import { useI18n } from 'vue-i18n';
+import { onMounted } from 'vue';
 
 // Initialize i18n
-const { t } = useI18n()
+const { t } = useI18n();
 
 // Animation on scroll functionality
 onMounted(() => {
-  const animatedElements = document.querySelectorAll('.animate-on-scroll')
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const el = entry.target
-          const animation = el.dataset.animation || 'fade-up'
-          const delay = el.dataset.delay || 0
+          const el = entry.target;
+          const animation = el.dataset.animation || 'fade-up';
+          const delay = el.dataset.delay || 0;
 
           setTimeout(() => {
-            el.classList.add(`animate-${animation}`)
-            el.style.opacity = 1
-          }, delay)
+            el.classList.add(`animate-${animation}`);
+            el.style.opacity = 1;
+          }, delay);
 
           // Unobserve after animation
-          observer.unobserve(el)
+          observer.unobserve(el);
         }
-      })
+      });
     },
     { threshold: 0.1 },
-  )
+  );
 
   animatedElements.forEach((el) => {
-    el.style.opacity = 0
-    observer.observe(el)
-  })
-})
+    el.style.opacity = 0;
+    observer.observe(el);
+  });
+});
 </script>
 
 <style scoped>

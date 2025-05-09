@@ -39,7 +39,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400/121212/A450E1?text=Project+1"
+              src="https://picsum.photos/600/400?random=1"
               alt="E-Commerce App Redesign"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
             />
@@ -106,7 +106,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400/121212/A450E1?text=Project+2"
+              src="https://picsum.photos/600/400?random=2"
               alt="Finance Dashboard"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
             />
@@ -173,7 +173,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400/121212/A450E1?text=Project+3"
+              src="https://picsum.photos/600/400?random=3"
               alt="Health Tracking App"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
             />
@@ -240,7 +240,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400/121212/A450E1?text=Project+4"
+              src="https://picsum.photos/600/400?random=4"
               alt="Smart Home Interface"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
             />
@@ -307,7 +307,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400/121212/A450E1?text=Project+5"
+              src="https://picsum.photos/600/400?random=5"
               alt="AR Shopping Experience"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
             />
@@ -374,7 +374,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400/121212/A450E1?text=Project+6"
+              src="https://picsum.photos/600/400?random=6"
               alt="Travel Booking Platform"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
             />
@@ -430,35 +430,6 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- View More Projects button -->
-      <div
-        class="text-center mt-12 md:mt-16"
-        v-motion
-        :initial="{ opacity: 0, y: 20 }"
-        :enter="{ opacity: 1, y: 0, transition: { delay: 1400, duration: 600 } }"
-      >
-        <a
-          href="#"
-          class="inline-flex items-center gap-2 px-6 py-3 bg-accent-primary hover:bg-accent-secondary text-white rounded-full transition-colors duration-300 font-medium text-base shadow-lg shadow-accent-primary/20"
-        >
-          {{ $t('sections.projects.view_more') }}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M17 8l4 4m0 0l-4 4m4-4H3"
-            />
-          </svg>
-        </a>
       </div>
     </div>
   </section>
