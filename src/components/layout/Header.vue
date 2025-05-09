@@ -74,9 +74,10 @@
           <!-- Social Media Icons -->
           <div class="flex items-center space-x-4">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/jordidev-mx"
               class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
               aria-label="LinkedIn"
+              target="_blank"
             >
               <!-- LinkedIn Icon -->
               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -86,9 +87,10 @@
               </svg>
             </a>
             <a
-              href="#"
+              href="https://github.com/MysticKarax"
               class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
               aria-label="GitHub"
+              target="_blank"
             >
               <!-- GitHub Icon -->
               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -97,15 +99,17 @@
                 />
               </svg>
             </a>
+
             <a
-              href="#"
+              href="mailto:jordidev@proton.me"
               class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
-              aria-label="Twitter"
+              aria-label="Email"
+              target="_blank"
             >
-              <!-- Twitter/X Icon -->
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <!-- Email Icon -->
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
-                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  d="M2.25 6.75A2.25 2.25 0 0 1 4.5 4.5h15a2.25 2.25 0 0 1 2.25 2.25v10.5A2.25 2.25 0 0 1 19.5 19.5h-15A2.25 2.25 0 0 1 2.25 17.25V6.75zm1.5 0v.511l8.25 6.188 8.25-6.188V6.75a.75.75 0 0 0-.75-.75h-15a.75.75 0 0 0-.75.75zm16.5 1.822-7.72 5.792a1.5 1.5 0 0 1-1.81 0L3.75 8.572v8.678c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75V8.572z"
                 />
               </svg>
             </a>
