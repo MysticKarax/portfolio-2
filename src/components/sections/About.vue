@@ -57,7 +57,7 @@
             <!-- Profile image -->
             <div class="relative rounded-xl overflow-hidden border-2 border-accent-tertiary/10">
               <img
-                src="../../../public/test.png"
+                src="/test.png"
                 alt="Jordi - Product Designer"
                 class="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-105 about-img"
               />
@@ -267,11 +267,7 @@
             </p>
             <div class="flex items-center">
               <div class="w-12 h-12 rounded-full bg-accent-primary/10 overflow-hidden mr-4">
-                <img
-                  src="../../../public/claire-mitchell.jpg"
-                  alt="Client"
-                  class="w-full h-full object-cover"
-                />
+                <img src="/claire-mitchell.jpg" alt="Client" class="w-full h-full object-cover" />
               </div>
               <div>
                 <h4 class="text-text-primary font-medium">Claire Mitchell</h4>

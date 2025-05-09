@@ -90,7 +90,7 @@
 
             <!-- Hero image with shadow and rounded corners -->
             <img
-              src="../../../public/about-img.png"
+              src="/about-img.png"
               alt="Hero illustration"
               class="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-2xl shadow-xl hero-img"
             />
