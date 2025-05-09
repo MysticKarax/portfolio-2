@@ -3,16 +3,16 @@
     "nav": {
       "home": "Inicio",
       "experience": "Experiencia",
-      "about": "Sobre Mí",
-      "contact": "Contacto"
+      "projects": "Proyectos",
+      "about": "Sobre Mí"
     },
     "availability": "Disponible",
     "language": "Idioma"
   },
   "sections": {
     "hero": {
-      "title": "Jordan Dassaed Garciafigueroa Godoy",
-      "subtitle": "Diseñador de Productos",
+      "title": "Jordan Garcia",
+      "subtitle": "Desarrollador Web",
       "description": "Creando experiencias digitales centradas en el usuario a través de un diseño reflexivo"
     },
     "skillset": {

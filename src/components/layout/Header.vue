@@ -7,11 +7,7 @@
         <!-- Logo - Left side -->
         <div class="flex items-center">
           <a href="#" class="block">
-            <img
-              src="/JordiLogo.jpg"
-              alt="Jordi Logo"
-              class="h-10 w-auto rounded-full"
-            />
+            <img src="/JordiLogo.jpg" alt="Jordi Logo" class="h-10 w-auto rounded-full" />
           </a>
         </div>
 
@@ -48,7 +44,7 @@
               class="flex items-center space-x-1 text-accent-tertiary hover:text-text-primary transition-colors duration-200"
             >
               <span class="text-sm">{{ currentLanguage.name }}</span>
-              <ChevronDownIcon 
+              <ChevronDownIcon
                 class="h-4 w-4 transition-transform duration-200"
                 :class="{ 'rotate-180': isLanguageDropdownOpen }"
               />
@@ -122,22 +118,13 @@
           class="md:hidden text-accent-tertiary hover:text-text-primary"
           aria-label="Toggle menu"
         >
-          <Bars3Icon
-            class="h-6 w-6"
-            :class="{ 'hidden': isMobileMenuOpen }"
-          />
-          <XMarkIcon
-            class="h-6 w-6"
-            :class="{ 'hidden': !isMobileMenuOpen }"
-          />
+          <Bars3Icon class="h-6 w-6" :class="{ hidden: isMobileMenuOpen }" />
+          <XMarkIcon class="h-6 w-6" :class="{ hidden: !isMobileMenuOpen }" />
         </button>
       </nav>
 
       <!-- Mobile Menu (conditionally rendered) -->
-      <div
-        v-if="isMobileMenuOpen"
-        class="md:hidden mt-4 py-4 border-t border-accent-tertiary/20"
-      >
+      <div v-if="isMobileMenuOpen" class="md:hidden mt-4 py-4 border-t border-accent-tertiary/20">
         <div class="flex flex-col space-y-3">
           <a
             v-for="navItem in navItems"
@@ -149,7 +136,10 @@
                 ? 'bg-nav-active text-text-primary font-medium'
                 : 'text-accent-tertiary hover:text-text-primary'
             "
-            @click.prevent="setActiveLink(navItem.path); toggleMobileMenu()"
+            @click.prevent="
+              setActiveLink(navItem.path);
+              toggleMobileMenu();
+            "
           >
             {{ $t(`header.nav.${navItem.key}`) }}
           </a>
@@ -230,133 +220,154 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { useI18n } from 'vue-i18n'
-import { loadLanguageAsync, getAvailableLanguages } from '@/i18n'
-import { ChevronDownIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
-import { useDarkMode } from '@/composables/useDarkMode'
+import { ref, computed, onMounted, onUnmounted } from 'vue';
+import { useI18n } from 'vue-i18n';
+import { loadLanguageAsync, getAvailableLanguages } from '@/i18n';
+import { ChevronDownIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
+import { useDarkMode } from '@/composables/useDarkMode';
 
 // Initialize dark mode
-const { isDarkMode, toggleDarkMode } = useDarkMode()
+const { isDarkMode, toggleDarkMode } = useDarkMode();
 
 // Initialize i18n
-const { t, locale } = useI18n()
+const { t, locale } = useI18n();
 
-// Nav items 
+// Nav items
 const navItems = [
   { key: 'home', path: '#home' },
-  { key: 'experience', path: '#experience' },
+  { key: 'experience', path: '#career' },
+  { key: 'projects', path: '#projects' },
   { key: 'about', path: '#about' },
-  { key: 'contact', path: '#contact' }
-]
+];
 
 // Active link state
-const activeLink = ref('#home')
+const activeLink = ref('#home');
 
 // Set active link
 const setActiveLink = (path) => {
-  activeLink.value = path
-}
+  // Update activeLink state
+  activeLink.value = path;
+
+  // Update URL hash
+  history.pushState(null, null, path);
+
+  // Extract the element ID from the path (remove the # symbol)
+  const targetId = path.substring(1);
+
+  // Find the target element
+  const targetElement = document.getElementById(targetId);
+
+  // Scroll to the element if it exists
+  if (targetElement) {
+    // Use smooth scrolling behavior
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+};
 
 // Mobile menu state
-const isMobileMenuOpen = ref(false)
+const isMobileMenuOpen = ref(false);
 
 // Toggle mobile menu
 const toggleMobileMenu = () => {
-  isMobileMenuOpen.value = !isMobileMenuOpen.value
-}
+  isMobileMenuOpen.value = !isMobileMenuOpen.value;
+};
 
 // Close mobile menu when clicking outside
 const closeMobileMenu = () => {
   if (isMobileMenuOpen.value) {
-    isMobileMenuOpen.value = false
+    isMobileMenuOpen.value = false;
   }
-}
+};
 
 // Language dropdown state
-const isLanguageDropdownOpen = ref(false)
+const isLanguageDropdownOpen = ref(false);
 
 // Toggle language dropdown
 const toggleLanguageDropdown = () => {
-  isLanguageDropdownOpen.value = !isLanguageDropdownOpen.value
-}
+  isLanguageDropdownOpen.value = !isLanguageDropdownOpen.value;
+};
 
 // Close language dropdown
 const closeLanguageDropdown = () => {
-  isLanguageDropdownOpen.value = false
-}
+  isLanguageDropdownOpen.value = false;
+};
 
 // Current locale
-const currentLocale = computed(() => locale.value)
+const currentLocale = computed(() => locale.value);
 
 // Available languages
-const availableLanguages = getAvailableLanguages()
+const availableLanguages = getAvailableLanguages();
 
 // Current language object
 const currentLanguage = computed(() => {
-  return availableLanguages.find(lang => lang.code === locale.value) || availableLanguages[0]
-})
+  return availableLanguages.find((lang) => lang.code === locale.value) || availableLanguages[0];
+});
 
 // Change language
 const changeLanguage = async (langCode) => {
-  await loadLanguageAsync(langCode)
-  closeLanguageDropdown()
-}
+  await loadLanguageAsync(langCode);
+  closeLanguageDropdown();
+};
 
 // Click outside directive
 const vClickOutside = {
   mounted(el, binding) {
     el._clickOutside = (event) => {
       if (!(el === event.target || el.contains(event.target))) {
-        binding.value(event)
+        binding.value(event);
       }
-    }
-    document.body.addEventListener('click', el._clickOutside)
+    };
+    document.body.addEventListener('click', el._clickOutside);
   },
   unmounted(el) {
-    document.body.removeEventListener('click', el._clickOutside)
-  }
-}
+    document.body.removeEventListener('click', el._clickOutside);
+  },
+};
 
 // Initialize active link based on URL hash
 onMounted(() => {
-  const hash = window.location.hash || '#home'
-  activeLink.value = hash
-  
+  const hash = window.location.hash || '#home';
+  activeLink.value = hash;
+
   // Add scroll event listener to highlight active section
-  window.addEventListener('scroll', handleScroll)
-  
+  window.addEventListener('scroll', handleScroll);
+
   // Add click outside listener for mobile menu
-  document.addEventListener('click', handleClickOutside)
-})
+  document.addEventListener('click', handleClickOutside);
+});
 
 // Clean up event listeners
 onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
-  document.removeEventListener('click', handleClickOutside)
-})
+  window.removeEventListener('scroll', handleScroll);
+  document.removeEventListener('click', handleClickOutside);
+});
 
 // Handle scroll to highlight active section
 const handleScroll = () => {
   // This would require implementation based on actual section positioning
   // Here's a placeholder for the functionality
-  const scrollPosition = window.scrollY + 100
-  
+  const scrollPosition = window.scrollY + 100;
+
   // This would be populated with actual section elements
   // For now, we're just using the default home section
-}
+};
 
 // Handle click outside for mobile menu
 const handleClickOutside = (event) => {
-  const menuButton = document.querySelector('[aria-label="Toggle menu"]')
-  const mobileMenu = document.querySelector('.md\\:hidden.mt-4')
-  
-  if (isMobileMenuOpen.value && 
-      menuButton && 
-      !menuButton.contains(event.target) && 
-      mobileMenu && 
-      !mobileMenu.contains(event.target)) {
-    closeMobileMenu()
+  const menuButton = document.querySelector('[aria-label="Toggle menu"]');
+  const mobileMenu = document.querySelector('.md\\:hidden.mt-4');
+
+  if (
+    isMobileMenuOpen.value &&
+    menuButton &&
+    !menuButton.contains(event.target) &&
+    mobileMenu &&
+    !mobileMenu.contains(event.target)
+  ) {
+    closeMobileMenu();
   }
-}
+};
 </script>

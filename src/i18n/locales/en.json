@@ -3,15 +3,15 @@
     "nav": {
       "home": "Home",
       "experience": "Experience",
-      "about": "About",
-      "contact": "Contact"
+      "projects": "Projects",
+      "about": "About"
     },
     "availability": "Available",
     "language": "Language"
   },
   "sections": {
     "hero": {
-      "title": "Jordan Dassaed Garciafigueroa Godoy",
+      "title": "Jordan Garcia",
       "subtitle": "Web Developer",
       "description": "Creating user-centered digital experiences through thoughtful design"
     },

@@ -3,15 +3,15 @@
     "nav": {
       "home": "首页",
       "experience": "经验",
-      "about": "关于我",
-      "contact": "联系"
+      "projects": "项目",
+      "about": "关于我"
     },
     "availability": "可用",
     "language": "语言"
   },
   "sections": {
     "hero": {
-      "title": "Jordan Dassaed Garciafigueroa Godoy",
+      "title": "Jordan Garcia",
       "subtitle": "产品设计师",
       "description": "通过深思熟虑的设计创造以用户为中心的数字体验"
     },
