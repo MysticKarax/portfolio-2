@@ -31,11 +31,11 @@
       <!-- Section title -->
       <div class="text-center mb-16 animate-on-scroll" data-animation="fade-up" data-delay="0">
         <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-          {{ $t('sections.about.title') }}
+          About Me
         </h2>
         <div class="w-20 h-1 bg-accent-primary mx-auto mb-6"></div>
         <p class="text-xl text-accent-primary font-medium max-w-2xl mx-auto">
-          {{ $t('sections.about.subtitle') }}
+          Designing with passion for Problem Solving
         </p>
       </div>
 
@@ -105,7 +105,7 @@
           <div class="mb-8">
             <h3 class="text-2xl font-semibold text-text-primary mb-4">Personal Journey</h3>
             <p class="text-text-secondary mb-4">
-              {{ $t('sections.about.description') }}
+              As a product designer, I focus on creating intuitive and impactful digital experiences. My approach combines aesthetic sensibility with user-centered functionality.
             </p>
             <p class="text-text-secondary">
               I began my design career after studying Interaction Design, and have since worked with
@@ -282,11 +282,9 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n';
 import { onMounted } from 'vue';
 
-// Initialize i18n
-const { t } = useI18n();
+// i18n removed - using direct English text
 
 // Animation on scroll functionality
 onMounted(() => {

@@ -5,7 +5,7 @@
       <div class="text-center mb-16 max-w-3xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll" 
             data-animation="fade-up">
-          {{ $t('sections.about.title') }}
+          About Me
         </h2>
         <div class="w-24 h-1 bg-accent-primary mx-auto rounded-full mb-6 animate-on-scroll"
              data-animation="scale-x" 
@@ -38,13 +38,13 @@
         <!-- Right side: Bio content -->
         <div class="order-1 lg:order-2 animate-on-scroll" data-animation="fade-left">
           <h3 class="text-2xl md:text-3xl font-bold text-accent-primary mb-6">
-            {{ $t('sections.about.subtitle') }}
+          Designing with passion for Problem Solving
           </h3>
 
           <div class="space-y-6">
             <!-- Main description -->
             <p class="text-lg text-text-secondary">
-              {{ $t('sections.about.description') }}
+          As a product designer, I focus on creating intuitive and impactful digital experiences. My approach combines aesthetic sensibility with user-centered functionality.
             </p>
             
             <p class="text-text-secondary">
@@ -120,7 +120,7 @@
                 href="#contact" 
                 class="inline-flex items-center px-6 py-3 bg-accent-primary hover:bg-accent-secondary text-white rounded-full transition-colors duration-300 font-medium"
               >
-                {{ $t('sections.contact.cta') }}
+                Contact Me
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
@@ -134,11 +134,9 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
+// i18n removed - using direct English text
 import { onMounted } from 'vue'
 
-// Initialize i18n
-const { t } = useI18n()
 
 // Animation on scroll functionality
 onMounted(() => {

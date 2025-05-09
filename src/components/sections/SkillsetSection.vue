@@ -5,7 +5,7 @@
       <div class="text-center mb-16 max-w-3xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll" 
             data-animation="fade-up">
-          {{ $t('sections.skillset.title') }}
+          My Skillset
         </h2>
         <div class="w-24 h-1 bg-accent-primary mx-auto rounded-full mb-6 animate-on-scroll"
              data-animation="scale-x" 
@@ -13,7 +13,7 @@
         <p class="text-lg text-accent-tertiary animate-on-scroll" 
            data-animation="fade-up" 
            data-delay="300">
-          {{ $t('sections.skillset.description') }}
+          A web developer with passion for solving complex problems through elegant interfaces
         </p>
       </div>
 
@@ -35,12 +35,12 @@
 
           <!-- Skill title -->
           <h3 class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300">
-            {{ $t('sections.skillset.graphic_design') }}
+            Web Design
           </h3>
 
           <!-- Skill description -->
           <p class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300">
-            {{ $t('sections.skillset.skill_descriptions.graphic_design') }}
+            Creating visual content that communicates messages effectively
           </p>
           
           <!-- Skill level indicator -->
@@ -89,12 +89,12 @@
 
           <!-- Skill title -->
           <h3 class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300">
-            {{ $t('sections.skillset.interface_design') }}
+            User Interface
           </h3>
 
           <!-- Skill description -->
           <p class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300">
-            {{ $t('sections.skillset.skill_descriptions.interface_design') }}
+            Building intuitive interfaces for digital products
           </p>
           
           <!-- Skill level indicator -->
@@ -143,12 +143,12 @@
 
           <!-- Skill title -->
           <h3 class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300">
-            {{ $t('sections.skillset.user_experience') }}
+            User Experience
           </h3>
 
           <!-- Skill description -->
           <p class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300">
-            {{ $t('sections.skillset.skill_descriptions.user_experience') }}
+            Designing seamless and enjoyable user journeys
           </p>
           
           <!-- Skill level indicator -->
@@ -186,12 +186,10 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
 import { onMounted } from 'vue'
 import { CheckIcon, PhotoIcon, DeviceTabletIcon, UserGroupIcon } from '@heroicons/vue/24/outline'
 
-// Initialize i18n
-const { t } = useI18n()
+// i18n removed - using direct English text
 
 // Animation on scroll functionality
 onMounted(() => {

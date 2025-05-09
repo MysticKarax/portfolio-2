@@ -18,11 +18,11 @@
         :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
       >
         <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-          {{ $t('sections.case_studies.title') }}
+          Case Studies
         </h2>
         <div class="w-20 h-1 bg-accent-primary mx-auto mb-6"></div>
         <p class="max-w-2xl mx-auto text-text-secondary text-lg">
-          {{ $t('sections.case_studies.subtitle') }}
+          Detailed looks at selected projects
         </p>
       </div>
 
@@ -84,7 +84,7 @@
               href="#" 
               class="inline-flex items-center text-accent-primary hover:text-accent-secondary transition-colors duration-300"
             >
-              {{ $t('sections.case_studies.read_more') }}
+              Read More
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -148,7 +148,7 @@
               href="#" 
               class="inline-flex items-center text-accent-primary hover:text-accent-secondary transition-colors duration-300"
             >
-              {{ $t('sections.case_studies.read_more') }}
+              Read More
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -212,7 +212,7 @@
               href="#" 
               class="inline-flex items-center text-accent-primary hover:text-accent-secondary transition-colors duration-300"
             >
-              {{ $t('sections.case_studies.read_more') }}
+              Read More
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -273,7 +273,7 @@
               href="#" 
               class="inline-flex items-center text-accent-primary hover:text-accent-secondary transition-colors duration-300"
             >
-              {{ $t('sections.case_studies.read_more') }}
+              Read More
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
@@ -286,10 +286,7 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
-
-// Initialize i18n
-const { t } = useI18n()
+// i18n removed - using direct English text
 
 // Animation directive (same as other components)
 const vMotion = {

@@ -5,7 +5,7 @@
       <div class="text-center mb-16 max-w-3xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll" 
             data-animation="fade-up">
-          {{ $t('sections.process.title') }}
+          Process
         </h2>
         <div class="w-24 h-1 bg-accent-primary mx-auto rounded-full mb-6 animate-on-scroll"
              data-animation="scale-x" 
@@ -13,7 +13,7 @@
         <p class="text-lg text-accent-tertiary animate-on-scroll" 
            data-animation="fade-up" 
            data-delay="300">
-          {{ $t('sections.process.description') }}
+          My methodical approach ensures every project meets and exceeds expectations
         </p>
       </div>
 
@@ -28,7 +28,7 @@
           <div class="process-step flex items-center mb-12 md:mb-24 animate-on-scroll" data-animation="fade-up">
             <div class="w-1/2 pr-12 text-right">
               <h3 class="text-xl lg:text-2xl font-semibold mb-3 text-text-primary">
-                {{ $t('sections.process.steps.pre_process') }}
+                Pre-Process
               </h3>
               <p class="text-accent-tertiary">Understanding client needs and market research to establish project goals and requirements.</p>
             </div>
@@ -60,7 +60,7 @@
             </div>
             <div class="w-1/2 pl-12">
               <h3 class="text-xl lg:text-2xl font-semibold mb-3 text-text-primary">
-                {{ $t('sections.process.steps.low_fidelity') }}
+                Low Fidelity
               </h3>
               <p class="text-accent-tertiary">Creating initial sketches, wireframes, and basic prototypes to establish the foundation of the design.</p>
             </div>
@@ -70,7 +70,7 @@
           <div class="process-step flex items-center mb-12 md:mb-24 animate-on-scroll" data-animation="fade-up" data-delay="300">
             <div class="w-1/2 pr-12 text-right">
               <h3 class="text-xl lg:text-2xl font-semibold mb-3 text-text-primary">
-                {{ $t('sections.process.steps.design') }}
+                Work/Design
               </h3>
               <p class="text-accent-tertiary">Developing high-fidelity designs that incorporate visual elements, branding, and user experience principles.</p>
             </div>
@@ -102,7 +102,7 @@
             </div>
             <div class="w-1/2 pl-12">
               <h3 class="text-xl lg:text-2xl font-semibold mb-3 text-text-primary">
-                {{ $t('sections.process.steps.assets') }}
+                Assets & Delivery
               </h3>
               <p class="text-accent-tertiary">Preparing and organizing design assets for development, ensuring they meet technical specifications.</p>
             </div>
@@ -112,7 +112,7 @@
           <div class="process-step flex items-center mb-12 md:mb-24 animate-on-scroll" data-animation="fade-up" data-delay="500">
             <div class="w-1/2 pr-12 text-right">
               <h3 class="text-xl lg:text-2xl font-semibold mb-3 text-text-primary">
-                {{ $t('sections.process.steps.final') }}
+                Final & Test
               </h3>
               <p class="text-accent-tertiary">Quality assurance, testing, and final refinements to ensure the design meets all requirements.</p>
             </div>
@@ -144,7 +144,7 @@
             </div>
             <div class="w-1/2 pl-12">
               <h3 class="text-xl lg:text-2xl font-semibold mb-3 text-text-primary">
-                {{ $t('sections.process.steps.post_design') }}
+                After Design
               </h3>
               <p class="text-accent-tertiary">Follow-up support, documentation, and continuous improvement based on feedback and analytics.</p>
             </div>
@@ -161,7 +161,7 @@
               <span class="text-base font-bold">1</span>
             </div>
             <h3 class="text-xl font-semibold text-text-primary">
-              {{ $t('sections.process.steps.pre_process') }}
+              Pre-Process
             </h3>
           </div>
           <div class="pl-14">
@@ -179,7 +179,7 @@
               <span class="text-base font-bold">2</span>
             </div>
             <h3 class="text-xl font-semibold text-text-primary">
-              {{ $t('sections.process.steps.low_fidelity') }}
+              Low Fidelity
             </h3>
           </div>
           <div class="pl-14">
@@ -197,7 +197,7 @@
               <span class="text-base font-bold">3</span>
             </div>
             <h3 class="text-xl font-semibold text-text-primary">
-              {{ $t('sections.process.steps.design') }}
+              Work/Design
             </h3>
           </div>
           <div class="pl-14">
@@ -215,7 +215,7 @@
               <span class="text-base font-bold">4</span>
             </div>
             <h3 class="text-xl font-semibold text-text-primary">
-              {{ $t('sections.process.steps.assets') }}
+              Assets & Delivery
             </h3>
           </div>
           <div class="pl-14">
@@ -233,7 +233,7 @@
               <span class="text-base font-bold">5</span>
             </div>
             <h3 class="text-xl font-semibold text-text-primary">
-              {{ $t('sections.process.steps.final') }}
+              Final & Test
             </h3>
           </div>
           <div class="pl-14">
@@ -251,7 +251,7 @@
               <span class="text-base font-bold">6</span>
             </div>
             <h3 class="text-xl font-semibold text-text-primary">
-              {{ $t('sections.process.steps.post_design') }}
+              After Design
             </h3>
           </div>
           <div class="pl-14">
@@ -267,19 +267,17 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
 import { onMounted } from 'vue'
 import { 
-  LightBulbIcon, 
-  PencilSquareIcon, 
+  LightBulbIcon,
+  PencilSquareIcon,
   PaintBrushIcon, 
   ArchiveBoxIcon, 
   CheckCircleIcon, 
   BoltIcon 
 } from '@heroicons/vue/24/outline'
 
-// Initialize i18n
-const { t } = useI18n()
+// i18n removed - using direct English text
 
 // Animation on scroll functionality
 onMounted(() => {

@@ -25,7 +25,7 @@
             "
             @click.prevent="setActiveLink(navItem.path)"
           >
-            {{ $t(`header.nav.${navItem.key}`) }}
+            {{ navItem.label }}
           </a>
         </div>
 
@@ -34,42 +34,10 @@
           <!-- Availability Status -->
           <div class="hidden lg:flex items-center space-x-2">
             <span class="h-2.5 w-2.5 rounded-full bg-available"></span>
-            <span class="text-text-primary text-sm">{{ $t('header.availability') }}</span>
+            <span class="text-text-primary text-sm">Available</span>
           </div>
 
-          <!-- Language Selector -->
-          <div class="relative" v-click-outside="closeLanguageDropdown">
-            <button
-              @click="toggleLanguageDropdown"
-              class="flex items-center space-x-1 text-accent-tertiary hover:text-text-primary transition-colors duration-200"
-            >
-              <span class="text-sm">{{ currentLanguage.name }}</span>
-              <ChevronDownIcon
-                class="h-4 w-4 transition-transform duration-200"
-                :class="{ 'rotate-180': isLanguageDropdownOpen }"
-              />
-            </button>
-
-            <!-- Language Dropdown -->
-            <div
-              v-if="isLanguageDropdownOpen"
-              class="absolute right-0 mt-2 w-36 bg-background-alt dark:bg-nav-active border border-accent-tertiary/20 rounded-lg shadow-lg py-1 z-50"
-            >
-              <button
-                v-for="language in availableLanguages"
-                :key="language.code"
-                @click="changeLanguage(language.code)"
-                class="block w-full text-left px-4 py-2 text-sm hover:bg-accent-primary/10 transition-colors duration-200"
-                :class="
-                  currentLocale === language.code
-                    ? 'text-accent-primary font-medium'
-                    : 'text-text-primary'
-                "
-              >
-                {{ language.name }}
-              </button>
-            </div>
-          </div>
+          <!-- Language Selector Removed -->
 
           <!-- Social Media Icons -->
           <div class="flex items-center space-x-4">
@@ -148,7 +116,7 @@
               toggleMobileMenu();
             "
           >
-            {{ $t(`header.nav.${navItem.key}`) }}
+            {{ navItem.label }}
           </a>
         </div>
 
@@ -156,30 +124,10 @@
           <!-- Mobile Availability Status -->
           <div class="flex items-center space-x-2 px-3 py-2">
             <span class="h-2.5 w-2.5 rounded-full bg-available"></span>
-            <span class="text-text-primary text-sm">{{ $t('header.availability') }}</span>
+            <span class="text-text-primary text-sm">Available</span>
           </div>
 
-          <!-- Mobile Language Switcher -->
-          <div class="mt-4 px-3">
-            <p class="text-xs uppercase text-accent-tertiary mb-2">
-              {{ $t('header.language') }}
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <button
-                v-for="language in availableLanguages"
-                :key="language.code"
-                @click="changeLanguage(language.code)"
-                class="px-3 py-1 text-sm rounded-full border"
-                :class="
-                  currentLocale === language.code
-                    ? 'bg-accent-primary/10 border-accent-primary text-accent-primary'
-                    : 'border-accent-tertiary/30 text-accent-tertiary hover:text-text-primary'
-                "
-              >
-                {{ language.name }}
-              </button>
-            </div>
-          </div>
+          <!-- Mobile Language Switcher Removed -->
 
           <!-- Mobile Social Media Icons -->
           <div class="mt-4 px-3 flex items-center space-x-6">
@@ -228,23 +176,18 @@
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue';
-import { useI18n } from 'vue-i18n';
-import { loadLanguageAsync, getAvailableLanguages } from '@/i18n';
-import { ChevronDownIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
+import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
 import { useDarkMode } from '@/composables/useDarkMode';
 
 // Initialize dark mode
 const { isDarkMode, toggleDarkMode } = useDarkMode();
 
-// Initialize i18n
-const { t, locale } = useI18n();
-
 // Nav items
 const navItems = [
-  { key: 'home', path: '#home' },
-  { key: 'experience', path: '#career' },
-  { key: 'projects', path: '#projects' },
-  { key: 'about', path: '#about' },
+  { key: 'home', path: '#home', label: 'Home' },
+  { key: 'experience', path: '#career', label: 'Experience' },
+  { key: 'projects', path: '#projects', label: 'Projects' },
+  { key: 'about', path: '#about', label: 'About' },
 ];
 
 // Active link state
@@ -289,50 +232,9 @@ const closeMobileMenu = () => {
   }
 };
 
-// Language dropdown state
-const isLanguageDropdownOpen = ref(false);
+// Language functionality removed - using direct English text
 
-// Toggle language dropdown
-const toggleLanguageDropdown = () => {
-  isLanguageDropdownOpen.value = !isLanguageDropdownOpen.value;
-};
-
-// Close language dropdown
-const closeLanguageDropdown = () => {
-  isLanguageDropdownOpen.value = false;
-};
-
-// Current locale
-const currentLocale = computed(() => locale.value);
-
-// Available languages
-const availableLanguages = getAvailableLanguages();
-
-// Current language object
-const currentLanguage = computed(() => {
-  return availableLanguages.find((lang) => lang.code === locale.value) || availableLanguages[0];
-});
-
-// Change language
-const changeLanguage = async (langCode) => {
-  await loadLanguageAsync(langCode);
-  closeLanguageDropdown();
-};
-
-// Click outside directive
-const vClickOutside = {
-  mounted(el, binding) {
-    el._clickOutside = (event) => {
-      if (!(el === event.target || el.contains(event.target))) {
-        binding.value(event);
-      }
-    };
-    document.body.addEventListener('click', el._clickOutside);
-  },
-  unmounted(el) {
-    document.body.removeEventListener('click', el._clickOutside);
-  },
-};
+// Click outside directive removed - not needed after removing language dropdown
 
 // Initialize active link based on URL hash
 onMounted(() => {

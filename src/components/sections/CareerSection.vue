@@ -4,7 +4,7 @@
       <!-- Section header -->
       <div class="text-center mb-16 max-w-3xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll" data-animation="fade-up">
-          {{ $t('sections.career.title') }}
+                Career Path
         </h2>
         <div
           class="w-24 h-1 bg-accent-primary mx-auto rounded-full mb-6 animate-on-scroll"
@@ -16,7 +16,7 @@
           data-animation="fade-up"
           data-delay="300"
         >
-          {{ $t('sections.career.description') }}
+                My professional journey and experience across various roles and companies
         </p>
       </div>
 
@@ -34,7 +34,7 @@
             <ClockIcon class="h-8 w-8 text-accent-primary" />
           </div>
           <h3 class="text-4xl font-bold text-accent-primary mb-2 counter" data-target="5">0</h3>
-          <p class="text-text-primary">{{ $t('sections.career.experience') }}</p>
+          <p class="text-text-primary">Years of Experience</p>
         </div>
 
         <!-- Clients Worldwide -->
@@ -49,7 +49,7 @@
             <GlobeAltIcon class="h-8 w-8 text-accent-primary" />
           </div>
           <h3 class="text-4xl font-bold text-accent-primary mb-2 counter" data-target="40">0</h3>
-          <p class="text-text-primary">{{ $t('sections.career.clients') }}</p>
+          <p class="text-text-primary">Clients Worldwide</p>
         </div>
 
         <!-- Completed Projects -->
@@ -64,7 +64,7 @@
             <ClipboardDocumentCheckIcon class="h-8 w-8 text-accent-primary" />
           </div>
           <h3 class="text-4xl font-bold text-accent-primary mb-2 counter" data-target="100">0</h3>
-          <p class="text-text-primary">{{ $t('sections.career.projects') }}</p>
+          <p class="text-text-primary">Completed Projects</p>
         </div>
       </div>
 
@@ -393,11 +393,9 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
-import { onMounted, ref } from 'vue'
+import { onMounted } from 'vue'
 
-// Initialize i18n
-const { t } = useI18n()
+// i18n removed - using direct English text
 
 // Animation on scroll functionality
 onMounted(() => {

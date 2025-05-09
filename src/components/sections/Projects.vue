@@ -19,7 +19,7 @@
         :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
       >
         <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-          {{ $t('sections.projects.title') }}
+          Projects
         </h2>
         <div class="w-20 h-1 bg-accent-primary mx-auto mb-6"></div>
         <p class="max-w-2xl mx-auto text-text-secondary text-lg">
@@ -69,7 +69,7 @@
                 href="#"
                 class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary text-white transition-colors duration-300"
               >
-                {{ $t('sections.projects.view_case') }}
+                View Case Study
               </a>
             </div>
           </div>
@@ -136,7 +136,7 @@
                 href="#"
                 class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary text-white transition-colors duration-300"
               >
-                {{ $t('sections.projects.view_case') }}
+                View Case Study
               </a>
             </div>
           </div>
@@ -203,7 +203,7 @@
                 href="#"
                 class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary text-white transition-colors duration-300"
               >
-                {{ $t('sections.projects.view_case') }}
+                View Case Study
               </a>
             </div>
           </div>
@@ -270,7 +270,7 @@
                 href="#"
                 class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary text-white transition-colors duration-300"
               >
-                {{ $t('sections.projects.view_case') }}
+                View Case Study
               </a>
             </div>
           </div>
@@ -337,7 +337,7 @@
                 href="#"
                 class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary text-white transition-colors duration-300"
               >
-                {{ $t('sections.projects.view_case') }}
+                View Case Study
               </a>
             </div>
           </div>
@@ -404,7 +404,7 @@
                 href="#"
                 class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary text-white transition-colors duration-300"
               >
-                {{ $t('sections.projects.view_case') }}
+                View Case Study
               </a>
             </div>
           </div>
@@ -436,10 +436,6 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n';
-
-// Initialize i18n
-const { t } = useI18n();
 
 // Animation directive (same as other components)
 const vMotion = {

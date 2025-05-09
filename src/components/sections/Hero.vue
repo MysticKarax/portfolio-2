@@ -30,7 +30,7 @@
             :initial="{ opacity: 0, y: 20 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 400, duration: 700 } }"
           >
-            {{ $t('sections.hero.subtitle') }}
+            Web Developer
           </div>
 
           <!-- Main Title -->
@@ -40,7 +40,7 @@
             :initial="{ opacity: 0, y: 20 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 600, duration: 700 } }"
           >
-            {{ $t('sections.hero.title') }}
+            Jordan Garcia
           </h1>
 
           <!-- Description -->
@@ -50,7 +50,7 @@
             :initial="{ opacity: 0, y: 20 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 800, duration: 700 } }"
           >
-            {{ $t('sections.hero.description') }}
+            I'm drawn to web development because it reveals how systems shape our everyday experience. For me, programming is more than code—it's a tool to simplify life, improve connection, and explore the deeper logic of how things work.
           </p>
 
           <!-- CTA section -->
@@ -64,13 +64,13 @@
               href="#projects"
               class="px-6 py-3 bg-accent-primary text-white hover:bg-accent-secondary hover:text-white rounded-full transition-colors duration-300 font-medium text-base shadow-lg shadow-accent-primary/20"
             >
-              {{ $t('common.view_details') }}
+              View Details
             </a>
             <a
               href="#about"
               class="px-6 py-3 bg-transparent border border-accent-tertiary/30 hover:border-accent-primary text-text-primary hover:text-accent-primary rounded-full transition-colors duration-300 font-medium text-base"
             >
-              {{ $t('common.learn_more') }}
+              Learn More
             </a>
           </div>
         </div>
@@ -130,10 +130,7 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n';
-
-// Initialize i18n
-const { t } = useI18n();
+// i18n removed - using direct English text
 
 // Define the v-motion directive
 const vMotion = {

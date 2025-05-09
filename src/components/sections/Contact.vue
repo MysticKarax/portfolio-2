@@ -34,15 +34,15 @@
           class="inline-flex items-center px-4 py-2 rounded-full bg-background/20 dark:bg-background/40 backdrop-blur-sm mb-6"
         >
           <span class="h-2.5 w-2.5 rounded-full bg-available mr-2"></span>
-          <span class="text-text-primary text-sm font-medium">{{ $t('header.availability') }}</span>
+          <span class="text-text-primary text-sm font-medium">Available</span>
         </div>
 
         <!-- Section headline -->
         <h2 class="text-4xl md:text-5xl font-bold text-text-primary mb-4">
-          {{ $t('sections.contact.title') }}
+          Let's Work Together
         </h2>
         <p class="text-xl text-text-secondary mb-10 max-w-xl mx-auto">
-          {{ $t('sections.contact.subtitle') }}
+          Got a project? Let's talk!
         </p>
 
         <!-- CTA button -->
@@ -51,7 +51,7 @@
             href="mailto:contact@example.com"
             class="inline-flex items-center gap-3 px-8 py-4 bg-accent-primary text-white hover:bg-accent-secondary hover:text-white rounded-full transition-all duration-300 shadow-lg shadow-accent-primary/25 hover:shadow-accent-secondary/30 text-lg font-medium transform hover:-translate-y-1"
           >
-            <span>{{ $t('sections.contact.email') }}</span>
+            <span>Email Me</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -104,10 +104,7 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n';
-
-// Initialize i18n
-const { t } = useI18n();
+// i18n removed - using direct English text
 
 // Animation directive (same as other components)
 const vMotion = {

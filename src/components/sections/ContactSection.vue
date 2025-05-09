@@ -5,7 +5,7 @@
       <div class="text-center mb-16 max-w-3xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll" 
             data-animation="fade-up">
-          {{ $t('sections.contact.title') }}
+          Let's Work Together
         </h2>
         <div class="w-24 h-1 bg-accent-primary mx-auto rounded-full mb-6 animate-on-scroll"
              data-animation="scale-x" 
@@ -13,7 +13,7 @@
         <p class="text-lg text-accent-tertiary animate-on-scroll" 
            data-animation="fade-up" 
            data-delay="300">
-          {{ $t('sections.contact.subtitle') }}
+          Got a project? Let's talk!
         </p>
       </div>
 
@@ -21,7 +21,7 @@
         <!-- Contact Information -->
         <div class="animate-on-scroll" data-animation="fade-right" data-delay="400">
           <div class="bg-background p-8 rounded-2xl shadow-md border border-accent-tertiary/20">
-            <h3 class="text-2xl font-bold mb-6 text-text-primary">{{ $t('sections.contact.get_in_touch') }}</h3>
+            <h3 class="text-2xl font-bold mb-6 text-text-primary">Get in Touch</h3>
             
             <div class="space-y-6">
               <!-- Email -->
@@ -32,7 +32,7 @@
                   </svg>
                 </div>
                 <div>
-                  <h4 class="text-lg font-medium text-text-primary mb-1">{{ $t('sections.contact.email') }}</h4>
+                  <h4 class="text-lg font-medium text-text-primary mb-1">Email Me</h4>
                   <a href="mailto:hello@yourportfolio.com" class="text-accent-primary hover:text-accent-secondary transition-colors">hello@yourportfolio.com</a>
                 </div>
               </div>
@@ -46,7 +46,7 @@
                   </svg>
                 </div>
                 <div>
-                  <h4 class="text-lg font-medium text-text-primary mb-1">{{ $t('sections.contact.location') }}</h4>
+                  <h4 class="text-lg font-medium text-text-primary mb-1">Location</h4>
                   <p class="text-accent-tertiary">Remote / Worldwide</p>
                 </div>
               </div>
@@ -59,15 +59,15 @@
                   </svg>
                 </div>
                 <div>
-                  <h4 class="text-lg font-medium text-text-primary mb-1">{{ $t('sections.contact.availability') }}</h4>
-                  <p class="text-accent-tertiary">{{ $t('sections.contact.availability_status') }}</p>
+                  <h4 class="text-lg font-medium text-text-primary mb-1">Availability</h4>
+                  <p class="text-accent-tertiary">Available for new projects</p>
                 </div>
               </div>
             </div>
             
             <!-- Social Media Links -->
             <div class="mt-8">
-              <h4 class="text-lg font-medium text-text-primary mb-4">{{ $t('sections.contact.connect') }}</h4>
+              <h4 class="text-lg font-medium text-text-primary mb-4">Connect with me</h4>
               <div class="flex space-x-4">
                 <a href="#" class="bg-background-alt hover:bg-accent-primary text-accent-primary hover:text-white p-3 rounded-full transition-colors duration-300">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -97,26 +97,26 @@
         <!-- Contact Form -->
         <div class="animate-on-scroll" data-animation="fade-left" data-delay="500">
           <div class="bg-background p-8 rounded-2xl shadow-md border border-accent-tertiary/20">
-            <h3 class="text-2xl font-bold mb-6 text-text-primary">{{ $t('sections.contact.send_message') }}</h3>
+            <h3 class="text-2xl font-bold mb-6 text-text-primary">Send a Message</h3>
             
             <form class="space-y-6">
               <div>
-                <label for="name" class="block text-sm font-medium text-accent-tertiary mb-1">{{ $t('sections.contact.name') }}</label>
+                <label for="name" class="block text-sm font-medium text-accent-tertiary mb-1">Name</label>
                 <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-background-alt border border-accent-tertiary/20 rounded-lg focus:ring-2 focus:ring-accent-primary focus:border-transparent outline-none transition" />
               </div>
               
               <div>
-                <label for="email" class="block text-sm font-medium text-accent-tertiary mb-1">{{ $t('sections.contact.email_address') }}</label>
+                <label for="email" class="block text-sm font-medium text-accent-tertiary mb-1">Email Address</label>
                 <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-background-alt border border-accent-tertiary/20 rounded-lg focus:ring-2 focus:ring-accent-primary focus:border-transparent outline-none transition" />
               </div>
               
               <div>
-                <label for="subject" class="block text-sm font-medium text-accent-tertiary mb-1">{{ $t('sections.contact.subject') }}</label>
+                <label for="subject" class="block text-sm font-medium text-accent-tertiary mb-1">Subject</label>
                 <input type="text" id="subject" name="subject" class="w-full px-4 py-3 bg-background-alt border border-accent-tertiary/20 rounded-lg focus:ring-2 focus:ring-accent-primary focus:border-transparent outline-none transition" />
               </div>
               
               <div>
-                <label for="message" class="block text-sm font-medium text-accent-tertiary mb-1">{{ $t('sections.contact.message') }}</label>
+                <label for="message" class="block text-sm font-medium text-accent-tertiary mb-1">Message</label>
                 <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-background-alt border border-accent-tertiary/20 rounded-lg focus:ring-2 focus:ring-accent-primary focus:border-transparent outline-none transition resize-none"></textarea>
               </div>
               
@@ -125,7 +125,7 @@
                   type="submit" 
                   class="w-full bg-accent-primary hover:bg-accent-secondary text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300 transform hover:scale-[1.02] shadow-sm"
                 >
-                  {{ $t('sections.contact.send_message_button') }}
+                  Send Message
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
@@ -139,13 +139,13 @@
       <!-- CTA Section -->
       <div class="mt-20 text-center animate-on-scroll" data-animation="fade-up" data-delay="600">
         <div class="max-w-3xl mx-auto">
-          <h3 class="text-2xl md:text-3xl font-bold mb-6">{{ $t('sections.contact.cta_heading') }}</h3>
-          <p class="text-accent-tertiary mb-8">{{ $t('sections.contact.cta_text') }}</p>
+          <h3 class="text-2xl md:text-3xl font-bold mb-6">Ready to Start a Project?</h3>
+          <p class="text-accent-tertiary mb-8">Let's discuss your ideas and make them reality</p>
           <a 
             href="mailto:hello@yourportfolio.com" 
             class="inline-flex items-center bg-accent-primary hover:bg-accent-secondary text-white font-medium py-3 px-8 rounded-lg transition-colors duration-300 transform hover:scale-105 shadow-md"
           >
-            {{ $t('sections.contact.cta_button') }}
+            Get in Touch
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
@@ -156,41 +156,68 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: 'ContactSection',
-  data() {
-    return {
-      formData: {
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      },
-      formSubmitted: false,
-      formError: null
+<script setup>
+import { ref } from 'vue'
+import { onMounted } from 'vue'
+
+// i18n removed - using direct English text
+
+// Form data using the composition API
+const formData = ref({
+  name: '',
+  email: '',
+  subject: '',
+  message: ''
+})
+const formSubmitted = ref(false)
+const formError = ref(null)
+
+// Submit form method
+const submitForm = () => {
+  // This would typically connect to a backend API
+  // For now, we'll just simulate a successful submission
+  
+  formSubmitted.value = true
+  
+  // Reset form after successful submission
+  setTimeout(() => {
+    formData.value = {
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
     }
-  },
-  methods: {
-    submitForm() {
-      // This would typically connect to a backend API
-      // For now, we'll just simulate a successful submission
-      
-      this.formSubmitted = true;
-      
-      // Reset form after successful submission
-      setTimeout(() => {
-        this.formData = {
-          name: '',
-          email: '',
-          subject: '',
-          message: ''
-        };
-        this.formSubmitted = false;
-      }, 3000);
-    }
-  }
-};
+    formSubmitted.value = false
+  }, 3000)
+}
+
+// Animation on scroll functionality
+onMounted(() => {
+  const animatedElements = document.querySelectorAll('.animate-on-scroll')
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target
+        const animation = el.dataset.animation || 'fade-up'
+        const delay = el.dataset.delay || 0
+        
+        setTimeout(() => {
+          el.classList.add(`animate-${animation}`)
+          el.style.opacity = 1
+        }, delay)
+        
+        // Unobserve after animation
+        observer.unobserve(el)
+      }
+    })
+  }, { threshold: 0.1 })
+  
+  animatedElements.forEach(el => {
+    el.style.opacity = 0
+    observer.observe(el)
+  })
+})
 </script>
 
 <style scoped>
@@ -199,6 +226,24 @@ input:focus, textarea:focus {
   animation: pulse-border 1.5s ease-in-out;
 }
 
+/* Animation classes */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
+.animate-fade-left {
+  animation: fadeLeft 0.7s ease-out forwards;
+}
+
+.animate-fade-right {
+  animation: fadeRight 0.7s ease-out forwards;
+}
+
+/* Keyframe animations */
 @keyframes pulse-border {
   0% {
     box-shadow: 0 0 0 0 rgba(164, 80, 225, 0.4);
@@ -208,6 +253,39 @@ input:focus, textarea:focus {
   }
   100% {
     box-shadow: 0 0 0 0 rgba(164, 80, 225, 0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 </style>

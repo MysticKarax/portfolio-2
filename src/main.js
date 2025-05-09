@@ -3,7 +3,6 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
-import { i18n } from './i18n'
 
 // Create app with i18n support
 const app = createApp(App)
@@ -60,8 +59,7 @@ const vMotion = {
 // Register vMotion directive globally
 app.directive('motion', vMotion)
 
-// Use i18n plugin
-app.use(i18n)
+// i18n removed - using direct English text
 
 // Mount app
 app.mount('#app')

@@ -5,7 +5,7 @@
       <div class="text-center mb-16 max-w-3xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll" 
             data-animation="fade-up">
-          {{ $t('sections.projects.title') }}
+          Recent Projects
         </h2>
         <div class="w-24 h-1 bg-accent-primary mx-auto rounded-full mb-6 animate-on-scroll"
              data-animation="scale-x" 
@@ -13,7 +13,7 @@
         <p class="text-lg text-accent-tertiary animate-on-scroll" 
            data-animation="fade-up" 
            data-delay="300">
-          {{ $t('sections.projects.description') }}
+          Showcasing my latest and most significant design and development projects
         </p>
       </div>
 
@@ -63,7 +63,7 @@
             <div class="absolute inset-0 bg-accent-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-white p-6">
               <p class="text-center mb-4">{{ project.description }}</p>
               <a :href="project.caseStudyUrl" class="px-4 py-2 bg-white text-accent-primary rounded-full text-sm font-medium hover:bg-text-primary transition-colors duration-300">
-                {{ $t('sections.projects.view_case') }}
+                View Case Study
               </a>
             </div>
           </div>
@@ -85,7 +85,7 @@
               :href="project.caseStudyUrl" 
               class="inline-flex items-center text-sm font-medium text-accent-primary hover:text-accent-secondary transition-colors duration-300"
             >
-              {{ $t('sections.projects.view_case') }}
+              View Case Study
               <ArrowRightIcon class="h-4 w-4 ml-1" />
             </a>
           </div>
@@ -98,7 +98,7 @@
           href="#" 
           class="inline-flex items-center px-8 py-3 bg-accent-primary hover:bg-accent-secondary text-white rounded-full transition-colors duration-300 font-medium"
         >
-          {{ $t('sections.projects.view_all') }}
+          View All Projects
           <ArrowRightIcon class="h-5 w-5 ml-2" />
         </a>
       </div>
@@ -107,13 +107,11 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
+// i18n removed - using direct English text
 import { onMounted, ref, computed } from 'vue'
 import { ArrowRightIcon } from '@heroicons/vue/24/outline'
 import LoadingSpinner from '@/components/ui/LoadingSpinner.vue'
 
-// Initialize i18n
-const { t } = useI18n()
 
 // Project categories
 const categories = ref([

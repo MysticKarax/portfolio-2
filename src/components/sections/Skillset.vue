@@ -22,11 +22,11 @@
         :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
       >
         <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-          {{ $t('sections.skillset.title') }}
+          My Skillset
         </h2>
         <div class="w-20 h-1 bg-accent-primary mx-auto mb-6"></div>
         <p class="max-w-2xl mx-auto text-text-secondary text-lg">
-          {{ $t('sections.skillset.description') }}
+          A web developer with passion for solving complex problems through elegant interfaces
         </p>
       </div>
 
@@ -63,12 +63,12 @@
           <h3
             class="text-xl font-semibold mb-3 text-text-primary transition-colors duration-300 group-hover:text-accent-primary"
           >
-            {{ $t('sections.skillset.graphic_design') }}
+            Web Design
           </h3>
 
           <!-- Description -->
           <p class="text-text-secondary text-base leading-relaxed">
-            {{ $t('sections.skillset.skill_descriptions.graphic_design') }}
+            Creating visual content that communicates messages effectively
           </p>
         </div>
 
@@ -103,12 +103,12 @@
           <h3
             class="text-xl font-semibold mb-3 text-text-primary transition-colors duration-300 group-hover:text-accent-primary"
           >
-            {{ $t('sections.skillset.interface_design') }}
+            User Interface
           </h3>
 
           <!-- Description -->
           <p class="text-text-secondary text-base leading-relaxed">
-            {{ $t('sections.skillset.skill_descriptions.interface_design') }}
+            Building intuitive interfaces for digital products
           </p>
         </div>
 
@@ -143,12 +143,12 @@
           <h3
             class="text-xl font-semibold mb-3 text-text-primary transition-colors duration-300 group-hover:text-accent-primary"
           >
-            {{ $t('sections.skillset.user_experience') }}
+            User Experience
           </h3>
 
           <!-- Description -->
           <p class="text-text-secondary text-base leading-relaxed">
-            {{ $t('sections.skillset.skill_descriptions.user_experience') }}
+            Designing seamless and enjoyable user journeys
           </p>
         </div>
       </div>
@@ -165,10 +165,10 @@
           class="text-center p-5 rounded-lg bg-background-alt/20 dark:bg-background/40 border border-accent-tertiary/10 hover:shadow-accent-primary/5 hover:border-accent-primary/20"
         >
           <div class="text-3xl font-bold text-accent-primary mb-1">
-            {{ $t('sections.skillset.career_summary.years_experience_number') }}
+            5+
           </div>
           <div class="text-sm text-text-secondary">
-            {{ $t('sections.skillset.career_summary.years_experience_text') }}
+            Years of Experience
           </div>
         </div>
 
@@ -177,10 +177,10 @@
           class="text-center p-5 rounded-lg bg-background-alt/20 dark:bg-background/40 border border-accent-tertiary/10 hover:shadow-accent-primary/5 hover:border-accent-primary/20"
         >
           <div class="text-3xl font-bold text-accent-primary mb-1">
-            {{ $t('sections.skillset.career_summary.projects_completed_number') }}
+            50+
           </div>
           <div class="text-sm text-text-secondary">
-            {{ $t('sections.skillset.career_summary.projects_completed_text') }}
+            Projects Completed
           </div>
         </div>
 
@@ -189,10 +189,10 @@
           class="text-center p-5 rounded-lg bg-background-alt/20 dark:bg-background/40 border border-accent-tertiary/10 hover:shadow-accent-primary/5 hover:border-accent-primary/20"
         >
           <div class="text-3xl font-bold text-accent-primary mb-1">
-            {{ $t('sections.skillset.career_summary.happy_clients_number') }}
+            20+
           </div>
           <div class="text-sm text-text-secondary">
-            {{ $t('sections.skillset.career_summary.happy_clients_text') }}
+            Happy Clients
           </div>
         </div>
 
@@ -201,10 +201,10 @@
           class="text-center p-5 rounded-lg bg-background-alt/20 dark:bg-background/40 border border-accent-tertiary/10 hover:shadow-accent-primary/5 hover:border-accent-primary/20"
         >
           <div class="text-3xl font-bold text-accent-primary mb-1">
-            {{ $t('sections.skillset.career_summary.satisfaction_rate_number') }}
+            100%
           </div>
           <div class="text-sm text-text-secondary">
-            {{ $t('sections.skillset.career_summary.satisfaction_rate_text') }}
+            Satisfaction
           </div>
         </div>
       </div>
@@ -213,10 +213,7 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n';
-
-// Initialize i18n
-const { t } = useI18n();
+// i18n removed - using direct English text
 
 // Directive for animations (same as Hero component)
 const vMotion = {

@@ -22,7 +22,7 @@
         :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
       >
         <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-          {{ $t('sections.career.title') }}
+          Career Path
         </h2>
         <div class="w-20 h-1 bg-accent-primary mx-auto mb-6"></div>
         <p class="max-w-2xl mx-auto text-text-secondary text-lg">
@@ -42,7 +42,7 @@
           class="bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 text-center border border-accent-tertiary/10 shadow-lg hover:shadow-accent-primary/5 hover:border-accent-primary/20"
         >
           <div class="text-4xl md:text-5xl font-bold text-accent-primary mb-2">5+</div>
-          <div class="text-text-primary font-medium">{{ $t('sections.career.experience') }}</div>
+          <div class="text-text-primary font-medium">Years of Experience</div>
         </div>
 
         <!-- Clients -->
@@ -50,7 +50,7 @@
           class="bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 text-center border border-accent-tertiary/10 shadow-lg hover:shadow-accent-primary/5 hover:border-accent-primary/20"
         >
           <div class="text-4xl md:text-5xl font-bold text-accent-primary mb-2">20+</div>
-          <div class="text-text-primary font-medium">{{ $t('sections.career.clients') }}</div>
+          <div class="text-text-primary font-medium">Clients Worldwide</div>
         </div>
 
         <!-- Projects -->
@@ -58,7 +58,7 @@
           class="bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 text-center border border-accent-tertiary/10 shadow-lg hover:shadow-accent-primary/5 hover:border-accent-primary/20"
         >
           <div class="text-4xl md:text-5xl font-bold text-accent-primary mb-2">50+</div>
-          <div class="text-text-primary font-medium">{{ $t('sections.career.projects') }}</div>
+          <div class="text-text-primary font-medium">Completed Projects</div>
         </div>
       </div>
 
@@ -398,10 +398,9 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n';
+import { onMounted } from 'vue';
 
-// Initialize i18n
-const { t } = useI18n();
+// i18n removed - using direct English text
 </script>
 
 <style scoped>

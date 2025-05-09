@@ -40,7 +40,7 @@
 
       <!-- Quick Links column -->
       <div class="flex flex-col">
-        <h3 class="text-text-primary font-semibold text-lg mb-4">{{ $t('footer.quick_links') }}</h3>
+        <h3 class="text-text-primary font-semibold text-lg mb-4">Quick Links</h3>
         <nav class="flex flex-col space-y-2">
           <a
             v-for="navItem in navItems"
@@ -48,32 +48,32 @@
             :href="navItem.path"
             class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
           >
-            {{ $t(`header.nav.${navItem.key}`) }}
+            {{ navItem.label }}
           </a>
           <a
             href="#skillset"
             class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
           >
-            {{ $t('sections.skillset.title') }}
+            My Skillset
           </a>
           <a
             href="#projects"
             class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
           >
-            {{ $t('sections.projects.title') }}
+            Recent Projects
           </a>
           <a
             href="#case-studies"
             class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
           >
-            {{ $t('sections.case_studies.title') }}
+            Case Studies
           </a>
         </nav>
       </div>
 
       <!-- Contact column -->
       <div class="flex flex-col">
-        <h3 class="text-text-primary font-semibold text-lg mb-4">{{ $t('footer.contact') }}</h3>
+        <h3 class="text-text-primary font-semibold text-lg mb-4">Contact</h3>
         <a
           href="mailto:jordidev@proton.me"
           class="text-accent-primary hover:text-accent-secondary transition-colors duration-200 mb-2 inline-flex items-center"
@@ -107,20 +107,20 @@
     <div class="border-t border-accent-tertiary/20 mt-8 pt-8 pb-4">
       <div class="flex flex-col md:flex-row justify-between items-center">
         <p class="text-accent-tertiary text-sm mb-4 md:mb-0">
-          &copy; {{ currentYear }} {{ $t('footer.rights') }}
+          &copy; {{ currentYear }} Created by Warp AI Agent, refined by Jordan Garcia. All Rights Reserved
         </p>
         <div class="flex space-x-4 text-sm">
           <a
             href="#"
             class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
           >
-            {{ $t('footer.privacy') }}
+            Privacy Policy
           </a>
           <a
             href="#"
             class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
           >
-            {{ $t('footer.terms') }}
+            Terms of Service
           </a>
         </div>
       </div>
@@ -154,19 +154,17 @@
 
 <script setup>
 import { computed } from 'vue';
-import { useI18n } from 'vue-i18n';
 
-// Initialize i18n
-const { t } = useI18n();
+// i18n removed - using direct English text
 
 // Current year for copyright
 const currentYear = computed(() => new Date().getFullYear());
 
 // Nav items (matching header)
 const navItems = [
-  { key: 'home', path: '#home' },
-  { key: 'experience', path: '#experience' },
-  { key: 'about', path: '#about' },
+  { key: 'home', path: '#home', label: 'Home' },
+  { key: 'experience', path: '#career', label: 'Experience' },
+  { key: 'about', path: '#about', label: 'About' },
 ];
 </script>
 
