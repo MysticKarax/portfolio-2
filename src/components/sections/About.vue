@@ -57,7 +57,7 @@
             <!-- Profile image -->
             <div class="relative rounded-xl overflow-hidden border-2 border-accent-tertiary/10">
               <img
-                src="../../../public/about-img.png"
+                src="../../../public/test.png"
                 alt="Jordi - Product Designer"
                 class="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-105 about-img"
               />

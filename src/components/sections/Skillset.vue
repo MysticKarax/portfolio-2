@@ -41,7 +41,7 @@
         >
           <!-- Icon -->
           <div
-            class="w-14 h-14 rounded-lg bg-accent-primary/10 flex items-center justify-center mb-6 text-accent-primary transition-all duration-300 group-hover:bg-accent-primary group-hover:text-white"
+            class="w-14 h-14 rounded-lg flex items-center justify-center mb-6 bg-accent-primary/10 text-accent-primary transition-all duration-300 group-hover:bg-accent-primary group-hover:text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -90,7 +90,7 @@
 
             <!-- Hero image with shadow and rounded corners -->
             <img
-              src="../../../public/hero-img.png"
+              src="../../../public/about-img.png"
               alt="Hero illustration"
               class="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-2xl shadow-xl hero-img"
             />
@@ -233,7 +233,7 @@ const vDir = {
 }
 
 .hero-img {
-  mask-image: linear-gradient(to top, black 80%, transparent);
+  mask-image: linear-gradient(black 80%, transparent);
   /* mask-image: linear-gradient(to bottom, black 80%, transparent); */
 }
 </style>

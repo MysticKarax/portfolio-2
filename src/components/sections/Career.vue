@@ -39,7 +39,7 @@
       >
         <!-- Years -->
         <div
-          class="bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 text-center border border-accent-tertiary/10 shadow-lg"
+          class="bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 text-center border border-accent-tertiary/10 shadow-lg hover:shadow-accent-primary/5 hover:border-accent-primary/20"
         >
           <div class="text-4xl md:text-5xl font-bold text-accent-primary mb-2">5+</div>
           <div class="text-text-primary font-medium">{{ $t('sections.career.experience') }}</div>
@@ -47,7 +47,7 @@
 
         <!-- Clients -->
         <div
-          class="bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 text-center border border-accent-tertiary/10 shadow-lg"
+          class="bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 text-center border border-accent-tertiary/10 shadow-lg hover:shadow-accent-primary/5 hover:border-accent-primary/20"
         >
           <div class="text-4xl md:text-5xl font-bold text-accent-primary mb-2">20+</div>
           <div class="text-text-primary font-medium">{{ $t('sections.career.clients') }}</div>
@@ -55,7 +55,7 @@
 
         <!-- Projects -->
         <div
-          class="bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 text-center border border-accent-tertiary/10 shadow-lg"
+          class="bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 text-center border border-accent-tertiary/10 shadow-lg hover:shadow-accent-primary/5 hover:border-accent-primary/20"
         >
           <div class="text-4xl md:text-5xl font-bold text-accent-primary mb-2">50+</div>
           <div class="text-text-primary font-medium">{{ $t('sections.career.projects') }}</div>
