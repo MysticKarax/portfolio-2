@@ -78,6 +78,7 @@
               class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
               aria-label="LinkedIn"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <!-- LinkedIn Icon -->
               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -91,6 +92,7 @@
               class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
               aria-label="GitHub"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <!-- GitHub Icon -->
               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
@@ -105,6 +107,7 @@
               class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
               aria-label="Email"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <!-- Email Icon -->
               <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">

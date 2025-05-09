@@ -62,7 +62,7 @@
           >
             <a
               href="#projects"
-              class="px-6 py-3 bg-accent-primary hover:bg-accent-secondary text-white rounded-full transition-colors duration-300 font-medium text-base shadow-lg shadow-accent-primary/20"
+              class="px-6 py-3 bg-accent-primary text-white hover:bg-accent-secondary hover:text-white rounded-full transition-colors duration-300 font-medium text-base shadow-lg shadow-accent-primary/20"
             >
               {{ $t('common.view_details') }}
             </a>
@@ -130,10 +130,10 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
+import { useI18n } from 'vue-i18n';
 
 // Initialize i18n
-const { t } = useI18n()
+const { t } = useI18n();
 
 // Define the v-motion directive
 const vMotion = {
@@ -141,78 +141,78 @@ const vMotion = {
     try {
       // Make sure binding.value exists before accessing its properties
       if (!binding || !binding.value) {
-        console.warn('v-motion directive received undefined binding value')
-        return
+        console.warn('v-motion directive received undefined binding value');
+        return;
       }
 
       // Apply initial styles based on binding value (with safety checks)
-      const initialStyles = binding.value.initial || {}
-      let transform = []
+      const initialStyles = binding.value.initial || {};
+      let transform = [];
 
       if (initialStyles.opacity !== undefined) {
-        el.style.opacity = initialStyles.opacity
+        el.style.opacity = initialStyles.opacity;
       }
 
       if (initialStyles.y !== undefined) {
-        transform.push(`translateY(${initialStyles.y}px)`)
+        transform.push(`translateY(${initialStyles.y}px)`);
       }
 
       if (initialStyles.scale !== undefined) {
-        transform.push(`scale(${initialStyles.scale})`)
+        transform.push(`scale(${initialStyles.scale})`);
       }
 
       if (initialStyles.x !== undefined) {
-        transform.push(`translateX(${initialStyles.x}px)`)
+        transform.push(`translateX(${initialStyles.x}px)`);
       }
 
       if (transform.length > 0) {
-        el.style.transform = transform.join(' ')
+        el.style.transform = transform.join(' ');
       }
 
       // After a delay, transition to the enter state
       setTimeout(() => {
         // Safety check for enter value
-        const enterStyles = binding.value.enter || {}
-        const transition = enterStyles.transition || {}
+        const enterStyles = binding.value.enter || {};
+        const transition = enterStyles.transition || {};
 
         // Apply transition with fallback values
-        el.style.transition = `all ${transition.duration || 500}ms ${transition.ease || 'ease'}`
+        el.style.transition = `all ${transition.duration || 500}ms ${transition.ease || 'ease'}`;
 
         if (enterStyles.opacity !== undefined) {
-          el.style.opacity = enterStyles.opacity
+          el.style.opacity = enterStyles.opacity;
         }
 
         // Create transform string for enter state
-        let enterTransform = []
+        let enterTransform = [];
 
         if (enterStyles.y !== undefined) {
-          enterTransform.push(`translateY(${enterStyles.y}px)`)
+          enterTransform.push(`translateY(${enterStyles.y}px)`);
         }
 
         if (enterStyles.scale !== undefined) {
-          enterTransform.push(`scale(${enterStyles.scale})`)
+          enterTransform.push(`scale(${enterStyles.scale})`);
         }
 
         if (enterStyles.x !== undefined) {
-          enterTransform.push(`translateX(${enterStyles.x}px)`)
+          enterTransform.push(`translateX(${enterStyles.x}px)`);
         }
 
         if (enterTransform.length > 0) {
-          el.style.transform = enterTransform.join(' ')
+          el.style.transform = enterTransform.join(' ');
         }
-      }, binding.value.enter?.transition?.delay || 0)
+      }, binding.value.enter?.transition?.delay || 0);
     } catch (error) {
-      console.error('Error in v-motion directive:', error)
+      console.error('Error in v-motion directive:', error);
     }
   },
   // Add unmounted lifecycle hook for cleanup if needed
   unmounted(el) {
     // Any cleanup needed when element is unmounted
-    el.style.transition = ''
-    el.style.transform = ''
-    el.style.opacity = ''
+    el.style.transition = '';
+    el.style.transform = '';
+    el.style.opacity = '';
   },
-}
+};
 
 // Register the directive with the component
 // In Vue 3's script setup, directives are automatically registered with 'v' prefix
@@ -220,7 +220,7 @@ const vMotion = {
 const vDir = {
   mounted: vMotion.mounted,
   unmounted: vMotion.unmounted,
-}
+};
 </script>
 
 <style scoped>
