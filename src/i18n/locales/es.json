@@ -1,0 +1,83 @@
+{
+  "header": {
+    "nav": {
+      "home": "Inicio",
+      "experience": "Experiencia",
+      "about": "Sobre Mí",
+      "contact": "Contacto"
+    },
+    "availability": "Disponible",
+    "language": "Idioma"
+  },
+  "sections": {
+    "hero": {
+      "title": "Jordan Dassaed Garciafigueroa Godoy",
+      "subtitle": "Diseñador de Productos",
+      "description": "Creando experiencias digitales centradas en el usuario a través de un diseño reflexivo"
+    },
+    "skillset": {
+      "title": "Mis Habilidades",
+      "graphic_design": "Diseño Gráfico",
+      "interface_design": "Diseño de Interfaces",
+      "user_experience": "Experiencia de Usuario",
+      "skill_descriptions": {
+        "graphic_design": "Creación de contenido visual que comunica mensajes de manera efectiva",
+        "interface_design": "Construcción de interfaces intuitivas para productos digitales",
+        "user_experience": "Diseño de experiencias de usuario fluidas y agradables"
+      }
+    },
+    "process": {
+      "title": "Proceso",
+      "steps": {
+        "pre_process": "Pre-Proceso",
+        "low_fidelity": "Baja Fidelidad",
+        "design": "Trabajo/Diseño",
+        "assets": "Activos y Entrega",
+        "final": "Final y Prueba",
+        "post_design": "Post Diseño"
+      },
+      "description": "Mi enfoque metódico asegura que cada proyecto cumpla y supere las expectativas"
+    },
+    "projects": {
+      "title": "Proyectos Recientes",
+      "view_all": "Ver Todos los Proyectos",
+      "view_case": "Ver Caso de Estudio"
+    },
+    "career": {
+      "title": "Trayectoria Profesional",
+      "experience": "Años de Experiencia",
+      "clients": "Clientes en Todo el Mundo",
+      "projects": "Proyectos Completados"
+    },
+    "about": {
+      "title": "Sobre Mí",
+      "subtitle": "Diseñando con pasión para resolver problemas",
+      "description": "Como diseñador de productos, me enfoco en crear experiencias digitales intuitivas e impactantes. Mi enfoque combina sensibilidad estética con funcionalidad centrada en el usuario."
+    },
+    "case_studies": {
+      "title": "Casos de Estudio",
+      "subtitle": "Análisis detallados de proyectos seleccionados",
+      "read_more": "Leer Más"
+    },
+    "contact": {
+      "title": "Trabajemos Juntos",
+      "subtitle": "¿Tienes un proyecto? ¡Hablemos!",
+      "cta": "Contáctame",
+      "email": "Envíame un Correo"
+    }
+  },
+  "common": {
+    "learn_more": "Saber Más",
+    "view_details": "Ver Detalles",
+    "back": "Volver",
+    "next": "Siguiente",
+    "previous": "Anterior"
+  },
+  "footer": {
+    "quick_links": "Enlaces Rápidos",
+    "contact": "Contacto",
+    "rights": "Todos los Derechos Reservados",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
+  }
+}
