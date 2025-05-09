@@ -14,7 +14,7 @@ export const i18n = createI18n({
 // Lazy loading of other languages
 export async function loadLanguageAsync(locale) {
   // If the language was already loaded
-  if (i18n.global.availableLocales.includes(locale)) {
+  if (Array.from(i18n.global.availableLocales).includes(locale)) {
     i18n.global.locale.value = locale
     return
   }
