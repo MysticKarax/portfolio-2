@@ -13,14 +13,14 @@
         <!-- Skillset Section -->
         <Skillset key="skillset" />
 
-        <!-- Process Section -->
-        <Process key="process" />
-
         <!-- Recent Projects Section -->
         <Projects key="projects" />
 
         <!-- Career Section -->
         <Career key="career" />
+
+        <!-- Process Section -->
+        <Process key="process" />
 
         <!-- About Me Section -->
         <About key="about" />
@@ -81,117 +81,117 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref } from 'vue';
 
 // Layout components
-import Header from './components/layout/Header.vue'
-import Footer from './components/layout/Footer.vue'
+import Header from './components/layout/Header.vue';
+import Footer from './components/layout/Footer.vue';
 
 // Section components
-import Hero from './components/sections/Hero.vue'
-import Skillset from './components/sections/Skillset.vue'
-import Process from './components/sections/Process.vue'
-import Projects from './components/sections/Projects.vue'
-import Career from './components/sections/Career.vue'
-import About from './components/sections/About.vue'
-import CaseStudies from './components/sections/CaseStudies.vue'
-import Contact from './components/sections/Contact.vue'
+import Hero from './components/sections/Hero.vue';
+import Skillset from './components/sections/Skillset.vue';
+import Process from './components/sections/Process.vue';
+import Projects from './components/sections/Projects.vue';
+import Career from './components/sections/Career.vue';
+import About from './components/sections/About.vue';
+import CaseStudies from './components/sections/CaseStudies.vue';
+import Contact from './components/sections/Contact.vue';
 
 // Dark mode functionality
-const isDarkMode = ref(false)
+const isDarkMode = ref(false);
 
 const toggleDarkMode = () => {
-  isDarkMode.value = !isDarkMode.value
+  isDarkMode.value = !isDarkMode.value;
 
   if (isDarkMode.value) {
-    document.documentElement.classList.add('dark')
-    localStorage.setItem('darkMode', 'true')
+    document.documentElement.classList.add('dark');
+    localStorage.setItem('darkMode', 'true');
   } else {
-    document.documentElement.classList.remove('dark')
-    localStorage.setItem('darkMode', 'false')
+    document.documentElement.classList.remove('dark');
+    localStorage.setItem('darkMode', 'false');
   }
-}
+};
 
 // Check for saved dark mode preference or system preference
 onMounted(() => {
   // Check localStorage
-  const savedDarkMode = localStorage.getItem('darkMode')
+  const savedDarkMode = localStorage.getItem('darkMode');
 
   if (savedDarkMode === 'true') {
-    isDarkMode.value = true
-    document.documentElement.classList.add('dark')
+    isDarkMode.value = true;
+    document.documentElement.classList.add('dark');
   } else if (savedDarkMode === 'false') {
-    isDarkMode.value = false
-    document.documentElement.classList.remove('dark')
+    isDarkMode.value = false;
+    document.documentElement.classList.remove('dark');
   } else {
     // Check system preference
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      isDarkMode.value = true
-      document.documentElement.classList.add('dark')
+      isDarkMode.value = true;
+      document.documentElement.classList.add('dark');
     }
   }
 
   // Add scroll event listener to update active section in header
-  window.addEventListener('scroll', handleScroll, { passive: true })
+  window.addEventListener('scroll', handleScroll, { passive: true });
 
   return () => {
-    window.removeEventListener('scroll', handleScroll)
-  }
-})
+    window.removeEventListener('scroll', handleScroll);
+  };
+});
 
 // Function to highlight active section when scrolling
 const handleScroll = () => {
-  const sections = document.querySelectorAll('section[id]')
-  let scrollPosition = window.scrollY + 100
+  const sections = document.querySelectorAll('section[id]');
+  let scrollPosition = window.scrollY + 100;
 
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop
-    const sectionHeight = section.offsetHeight
-    const sectionId = section.getAttribute('id')
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute('id');
 
     if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
       document.querySelectorAll('a[href*="#"]').forEach((link) => {
-        link.classList.remove('active')
-      })
+        link.classList.remove('active');
+      });
 
-      const activeLink = document.querySelector(`a[href*="#${sectionId}"]`)
+      const activeLink = document.querySelector(`a[href*="#${sectionId}"]`);
       if (activeLink) {
-        activeLink.classList.add('active')
+        activeLink.classList.add('active');
       }
     }
-  })
-}
+  });
+};
 
 // Set up intersection observer for scroll animations
 onMounted(() => {
   if ('IntersectionObserver' in window) {
-    const animateElements = document.querySelectorAll('.animate-on-scroll')
+    const animateElements = document.querySelectorAll('.animate-on-scroll');
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('visible')
+            entry.target.classList.add('visible');
             // Optionally unobserve after animation
             // observer.unobserve(entry.target)
           } else {
             // Optional: remove the class when element is out of view
             // entry.target.classList.remove('visible')
           }
-        })
+        });
       },
       {
         root: null,
         threshold: 0.1,
         rootMargin: '0px 0px -100px 0px',
       },
-    )
+    );
 
     animateElements.forEach((element) => {
-      observer.observe(element)
-    })
+      observer.observe(element);
+    });
   }
-})
+});
 </script>
 
 <style>
