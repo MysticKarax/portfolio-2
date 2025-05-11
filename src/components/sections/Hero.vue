@@ -17,38 +17,30 @@
     <div class="container mx-auto px-4 z-10 relative">
       <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
         <!-- Left column: Text content -->
-        <div
-          class="w-full lg:w-1/2"
-          v-motion
-          :initial="{ opacity: 0, y: 40 }"
-          :enter="{ opacity: 1, y: 0, transition: { delay: 200, duration: 800 } }"
-        >
+        <div class="w-full lg:w-1/2 animate-on-scroll" data-animation="fade-up" data-delay="200">
           <!-- Subtitle / Pre-title -->
           <div
-            class="inline-block mb-3 px-4 py-1 rounded-full bg-accent-primary/10 text-accent-primary font-medium text-sm md:text-base tracking-wide"
-            v-motion
-            :initial="{ opacity: 0, y: 20 }"
-            :enter="{ opacity: 1, y: 0, transition: { delay: 400, duration: 700 } }"
+            class="inline-block mb-3 px-4 py-1 rounded-full bg-accent-primary/10 text-accent-primary font-medium text-sm md:text-base tracking-wide animate-on-scroll"
+            data-animation="fade-up"
+            data-delay="400"
           >
             Web Developer
           </div>
 
           <!-- Main Title -->
           <h1
-            class="text-5xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-4 leading-tight tracking-tight"
-            v-motion
-            :initial="{ opacity: 0, y: 20 }"
-            :enter="{ opacity: 1, y: 0, transition: { delay: 600, duration: 700 } }"
+            class="text-5xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-4 leading-tight tracking-tight animate-on-scroll"
+            data-animation="fade-up"
+            data-delay="600"
           >
             Jordan Garcia
           </h1>
 
           <!-- Description -->
           <p
-            class="text-xl md:text-2xl text-text-secondary max-w-2xl leading-relaxed mb-8"
-            v-motion
-            :initial="{ opacity: 0, y: 20 }"
-            :enter="{ opacity: 1, y: 0, transition: { delay: 800, duration: 700 } }"
+            class="text-xl md:text-2xl text-text-secondary max-w-2xl leading-relaxed mb-8 animate-on-scroll"
+            data-animation="fade-up"
+            data-delay="800"
           >
             I'm drawn to web development because it reveals how systems shape our everyday
             experience. For me, programming is more than code—it's a tool to simplify life, improve
@@ -57,10 +49,9 @@
 
           <!-- CTA section -->
           <div
-            class="flex flex-wrap gap-4 mt-8"
-            v-motion
-            :initial="{ opacity: 0, y: 20 }"
-            :enter="{ opacity: 1, y: 0, transition: { delay: 1000, duration: 700 } }"
+            class="flex flex-wrap gap-4 mt-8 animate-on-scroll"
+            data-animation="fade-up"
+            data-delay="1000"
           >
             <a
               href="#projects"
@@ -79,10 +70,9 @@
 
         <!-- Right column: Hero image -->
         <div
-          class="w-full lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0"
-          v-motion
-          :initial="{ opacity: 0, x: 40 }"
-          :enter="{ opacity: 1, x: 0, transition: { delay: 600, duration: 800 } }"
+          class="w-full lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0 animate-on-scroll"
+          data-animation="fade-right"
+          data-delay="600"
         >
           <div class="relative">
             <!-- Background decoration -->
@@ -91,11 +81,23 @@
             ></div>
 
             <!-- Hero image with shadow and rounded corners -->
-            <img
-              src="/yo-1.png"
-              alt="Hero illustration"
-              class="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-2xl shadow-xl hero-img"
-            />
+            <div class="relative">
+              <img
+                src="/yo-1.png"
+                alt="Hero illustration"
+                class="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-2xl shadow-xl hero-img"
+                loading="lazy"
+                @load="imageLoaded"
+                @error="handleImageError"
+              />
+              <!-- Loading spinner -->
+              <div
+                v-if="isImageLoading"
+                class="absolute inset-0 flex items-center justify-center bg-background-alt/80 dark:bg-background/80 rounded-2xl"
+              >
+                <LoadingSpinner :size="60" color="text-accent-primary" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -103,10 +105,9 @@
 
     <!-- Down arrow indicator -->
     <div
-      class="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden md:block"
-      v-motion
-      :initial="{ opacity: 0, y: -20 }"
-      :enter="{ opacity: 0.7, y: 0, transition: { delay: 1500, duration: 700 } }"
+      class="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden md:block animate-on-scroll"
+      data-animation="fade-up"
+      data-delay="1500"
     >
       <a
         href="#skillset"
@@ -132,94 +133,53 @@
 </template>
 
 <script setup>
-// i18n removed - using direct English text
+import { ref, onMounted } from 'vue';
+import LoadingSpinner from '@/components/ui/LoadingSpinner.vue';
 
-// Define the v-motion directive
-const vMotion = {
-  mounted(el, binding) {
-    try {
-      // Make sure binding.value exists before accessing its properties
-      if (!binding || !binding.value) {
-        console.warn('v-motion directive received undefined binding value');
-        return;
-      }
+// Image loading state
+const isImageLoading = ref(true);
 
-      // Apply initial styles based on binding value (with safety checks)
-      const initialStyles = binding.value.initial || {};
-      let transform = [];
-
-      if (initialStyles.opacity !== undefined) {
-        el.style.opacity = initialStyles.opacity;
-      }
-
-      if (initialStyles.y !== undefined) {
-        transform.push(`translateY(${initialStyles.y}px)`);
-      }
-
-      if (initialStyles.scale !== undefined) {
-        transform.push(`scale(${initialStyles.scale})`);
-      }
-
-      if (initialStyles.x !== undefined) {
-        transform.push(`translateX(${initialStyles.x}px)`);
-      }
-
-      if (transform.length > 0) {
-        el.style.transform = transform.join(' ');
-      }
-
-      // After a delay, transition to the enter state
-      setTimeout(() => {
-        // Safety check for enter value
-        const enterStyles = binding.value.enter || {};
-        const transition = enterStyles.transition || {};
-
-        // Apply transition with fallback values
-        el.style.transition = `all ${transition.duration || 500}ms ${transition.ease || 'ease'}`;
-
-        if (enterStyles.opacity !== undefined) {
-          el.style.opacity = enterStyles.opacity;
-        }
-
-        // Create transform string for enter state
-        let enterTransform = [];
-
-        if (enterStyles.y !== undefined) {
-          enterTransform.push(`translateY(${enterStyles.y}px)`);
-        }
-
-        if (enterStyles.scale !== undefined) {
-          enterTransform.push(`scale(${enterStyles.scale})`);
-        }
-
-        if (enterStyles.x !== undefined) {
-          enterTransform.push(`translateX(${enterStyles.x}px)`);
-        }
-
-        if (enterTransform.length > 0) {
-          el.style.transform = enterTransform.join(' ');
-        }
-      }, binding.value.enter?.transition?.delay || 0);
-    } catch (error) {
-      console.error('Error in v-motion directive:', error);
-    }
-  },
-  // Add unmounted lifecycle hook for cleanup if needed
-  unmounted(el) {
-    // Any cleanup needed when element is unmounted
-    el.style.transition = '';
-    el.style.transform = '';
-    el.style.opacity = '';
-  },
+// Image handling methods
+const imageLoaded = () => {
+  isImageLoading.value = false;
 };
 
-// Register the directive with the component
-// In Vue 3's script setup, directives are automatically registered with 'v' prefix
-// No need for defineDirective - just export the directive object with proper name
-const vDir = {
-  mounted: vMotion.mounted,
-  unmounted: vMotion.unmounted,
+const handleImageError = () => {
+  isImageLoading.value = false;
+  console.error('Failed to load hero image');
 };
+
+// Initialize animations
+onMounted(() => {
+  // Animation on scroll setup
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const animation = el.dataset.animation || 'fade-up';
+          const delay = el.dataset.delay || 0;
+
+          setTimeout(() => {
+            el.classList.add(`animate-${animation}`);
+            el.style.opacity = 1;
+          }, delay);
+
+          // Unobserve after animation
+          observer.unobserve(el);
+        }
+      });
+    },
+    { threshold: 0.1 },
+  );
+
+  animatedElements.forEach((el) => {
+    el.style.opacity = 0;
+    observer.observe(el);
+  });
+});
 </script>
 
 <style scoped>
@@ -234,5 +194,44 @@ const vDir = {
 .hero-img {
   mask-image: linear-gradient(black 80%, transparent);
   /* mask-image: linear-gradient(to bottom, black 80%, transparent); */
+}
+
+/* Animation classes */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
+.animate-fade-right {
+  animation: fadeRight 0.7s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-right {
+  animation: fadeRight 0.7s ease-out forwards;
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 </style>
