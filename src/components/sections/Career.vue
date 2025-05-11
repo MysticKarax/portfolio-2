@@ -193,6 +193,119 @@
             </div>
           </div>
         </div>
+
+        <!-- Role 2 -->
+        <div class="timeline-item md:grid md:grid-cols-2 relative">
+          <!-- Left column (odd items) -->
+          <div class="timeline-content md:pr-12 animate-on-scroll" data-animation="fade-left">
+            <div
+              class="bg-background dark:bg-background-alt p-6 rounded-xl border border-accent-tertiary/20 relative career-card"
+            >
+              <span
+                class="timeline-date px-4 py-1 bg-accent-primary text-white text-sm rounded-full absolute top-0 right-6 transform -translate-y-1/2"
+                >2019 - 2022</span
+              >
+              <div class="flex items-start">
+                <div class="company-logo mr-4 flex-shrink-0">
+                  <div
+                    class="w-12 h-12 rounded-lg bg-background-alt/70 dark:bg-background/70 flex items-center justify-center border border-accent-tertiary/30"
+                  >
+                    <img
+                      src="https://picsum.photos/600/400?random=7"
+                      alt="TechVision Global"
+                      class="w-8 h-8 object-contain"
+                      onerror="this.src='/JordiLogo.jpg'; this.classList.add('w-6', 'h-6');"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-text-primary mb-1">UX Designer</h3>
+                  <h4 class="text-accent-primary mb-3">TechVision Global</h4>
+                </div>
+              </div>
+              <p class="text-accent-tertiary mb-4">
+                Designed user interfaces for mobile applications and web platforms with a focus on
+                improving user experience.
+              </p>
+              <div class="space-y-2">
+                <div class="flex items-start">
+                  <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <p class="text-text-secondary">
+                    Created user experiences for banking apps with 2M+ active users
+                  </p>
+                </div>
+                <div class="flex items-start">
+                  <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <p class="text-text-secondary">
+                    Led redesign project that increased conversion rates by 32%
+                  </p>
+                </div>
+                <div class="flex items-start">
+                  <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <p class="text-text-secondary">
+                    Collaborated with development teams to implement pixel-perfect designs
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-5 pt-4 border-t border-accent-tertiary/20">
+                <p class="text-sm text-accent-tertiary mb-2 font-medium">Technologies & Tools</p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                    >Sketch</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                    >InVision</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                    >Adobe XD</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                    >Principle</span
+                  >
+                </div>
+              </div>
+
+              <div class="mt-4 pt-0">
+                <button
+                  @click="toggleDetails(2)"
+                  class="text-sm font-medium text-accent-primary flex items-center hover:text-accent-secondary transition-colors"
+                >
+                  <span v-if="expandedItems[2]">Hide Details</span>
+                  <span v-else>Show Details</span>
+                  <ChevronDownIcon
+                    class="h-4 w-4 ml-1 transition-transform duration-300"
+                    :class="{ 'rotate-180': expandedItems[2] }"
+                  />
+                </button>
+
+                <div
+                  v-if="expandedItems[2]"
+                  class="pt-3 mt-3 border-t border-accent-tertiary/10 animate-expand"
+                >
+                  <p class="text-text-secondary text-sm">
+                    As UX Designer at TechVision Global, I was responsible for designing intuitive
+                    and engaging user interfaces for various financial and healthcare applications.
+                    My focus was on creating accessible and user-friendly experiences that drove
+                    business metrics.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center dot - visible on md+ screens -->
+          <div
+            class="hidden md:block absolute left-1/2 top-7 transform -translate-x-1/2 w-5 h-5 rounded-full bg-accent-primary z-10"
+          ></div>
+
+          <!-- Right column (even items) - visible on md+ screens -->
+          <div class="hidden md:block"></div>
+        </div>
       </div>
     </div>
   </section>
