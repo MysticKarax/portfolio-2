@@ -5,8 +5,7 @@
       <!-- Logo and About column -->
       <div class="flex flex-col">
         <div class="flex items-center mb-4">
-          <img src="/JordiLogo.jpg" alt="Jordi Logo" class="h-10 w-auto rounded-full mr-3" />
-          <span class="text-xl font-semibold text-text-primary">Jordi</span>
+          <img src="/logo.svg" alt="Jordi Logo" class="h-10 w-auto" />
         </div>
 
         <!-- Social Media Icons -->
@@ -76,7 +75,7 @@
         <h3 class="text-text-primary font-semibold text-lg mb-4">Contact</h3>
         <a
           href="mailto:jordidev@proton.me"
-          class="text-accent-primary hover:text-accent-secondary transition-colors duration-200 mb-2 inline-flex items-center"
+          class="text-accent-primary hover:text-white transition-colors duration-200 mb-2 inline-flex items-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -95,8 +94,8 @@
           jordidev@proton.me
         </a>
         <a
-          href="tel:+5215541234567"
-          class="text-accent-primary hover:text-accent-secondary transition-colors duration-200"
+          href="tel:+523329378090"
+          class="text-accent-primary hover:text-white transition-colors duration-200"
         >
           +52 33 2937 8090
         </a>
@@ -107,7 +106,8 @@
     <div class="border-t border-accent-tertiary/20 mt-8 pt-8 pb-4">
       <div class="flex flex-col md:flex-row justify-between items-center">
         <p class="text-accent-tertiary text-sm mb-4 md:mb-0">
-          &copy; {{ currentYear }} Created by Warp AI Agent, refined by Jordan Garcia. All Rights Reserved
+          &copy; {{ currentYear }} Created by Warp AI Agent, refined by Jordan Garcia. All Rights
+          Reserved
         </p>
         <div class="flex space-x-4 text-sm">
           <a

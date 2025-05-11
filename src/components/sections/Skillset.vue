@@ -1,8 +1,5 @@
 <template>
-  <section
-    id="skillset"
-    class="py-16 md:py-20 lg:py-24 bg-background-alt/30 dark:bg-background/50 relative overflow-hidden"
-  >
+  <section id="skillset" class="py-16 md:py-20 lg:py-24 relative overflow-hidden">
     <!-- Background elements -->
     <div class="absolute inset-0 z-0 opacity-5">
       <div
@@ -21,9 +18,7 @@
         :initial="{ opacity: 0, y: 20 }"
         :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
       >
-        <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-          My Skillset
-        </h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">My Skillset</h2>
         <div class="w-20 h-1 bg-accent-primary mx-auto mb-6"></div>
         <p class="max-w-2xl mx-auto text-text-secondary text-lg">
           A web developer with passion for solving complex problems through elegant interfaces
@@ -164,48 +159,32 @@
         <div
           class="text-center p-5 rounded-lg bg-background-alt/20 dark:bg-background/40 border border-accent-tertiary/10 hover:shadow-accent-primary/5 hover:border-accent-primary/20"
         >
-          <div class="text-3xl font-bold text-accent-primary mb-1">
-            5+
-          </div>
-          <div class="text-sm text-text-secondary">
-            Years of Experience
-          </div>
+          <div class="text-3xl font-bold text-accent-primary mb-1">5+</div>
+          <div class="text-sm text-text-secondary">Years of Experience</div>
         </div>
 
         <!-- Skill stat 2 -->
         <div
           class="text-center p-5 rounded-lg bg-background-alt/20 dark:bg-background/40 border border-accent-tertiary/10 hover:shadow-accent-primary/5 hover:border-accent-primary/20"
         >
-          <div class="text-3xl font-bold text-accent-primary mb-1">
-            50+
-          </div>
-          <div class="text-sm text-text-secondary">
-            Projects Completed
-          </div>
+          <div class="text-3xl font-bold text-accent-primary mb-1">50+</div>
+          <div class="text-sm text-text-secondary">Projects Completed</div>
         </div>
 
         <!-- Skill stat 3 -->
         <div
           class="text-center p-5 rounded-lg bg-background-alt/20 dark:bg-background/40 border border-accent-tertiary/10 hover:shadow-accent-primary/5 hover:border-accent-primary/20"
         >
-          <div class="text-3xl font-bold text-accent-primary mb-1">
-            20+
-          </div>
-          <div class="text-sm text-text-secondary">
-            Happy Clients
-          </div>
+          <div class="text-3xl font-bold text-accent-primary mb-1">20+</div>
+          <div class="text-sm text-text-secondary">Happy Clients</div>
         </div>
 
         <!-- Skill stat 4 -->
         <div
           class="text-center p-5 rounded-lg bg-background-alt/20 dark:bg-background/40 border border-accent-tertiary/10 hover:shadow-accent-primary/5 hover:border-accent-primary/20"
         >
-          <div class="text-3xl font-bold text-accent-primary mb-1">
-            100%
-          </div>
-          <div class="text-sm text-text-secondary">
-            Satisfaction
-          </div>
+          <div class="text-3xl font-bold text-accent-primary mb-1">100%</div>
+          <div class="text-sm text-text-secondary">Satisfaction</div>
         </div>
       </div>
     </div>

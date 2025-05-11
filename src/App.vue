@@ -10,11 +10,11 @@
         <!-- Hero Section -->
         <Hero key="hero" />
 
-        <!-- Skillset Section -->
-        <Skillset key="skillset" />
-
         <!-- Recent Projects Section -->
         <Projects key="projects" />
+
+        <!-- Skillset Section -->
+        <Skillset key="skillset" />
 
         <!-- Career Section -->
         <Career key="career" />

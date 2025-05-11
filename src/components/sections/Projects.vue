@@ -1,5 +1,8 @@
 <template>
-  <section id="projects" class="py-16 md:py-24 relative overflow-hidden">
+  <section
+    id="projects"
+    class="py-16 md:py-24 bg-background-alt/30 dark:bg-background/50 relative overflow-hidden"
+  >
     <!-- Background elements -->
     <div class="absolute inset-0 z-0 opacity-5">
       <div
@@ -18,9 +21,7 @@
         :initial="{ opacity: 0, y: 20 }"
         :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
       >
-        <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-          Projects
-        </h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">Projects</h2>
         <div class="w-20 h-1 bg-accent-primary mx-auto mb-6"></div>
         <p class="max-w-2xl mx-auto text-text-secondary text-lg">
           Selected projects showcasing my design approach and problem-solving skills
@@ -436,7 +437,6 @@
 </template>
 
 <script setup>
-
 // Animation directive (same as other components)
 const vMotion = {
   mounted(el, binding) {

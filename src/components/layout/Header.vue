@@ -7,7 +7,7 @@
         <!-- Logo - Left side -->
         <div class="flex items-center">
           <a href="#" class="block">
-            <img src="/JordiLogo.jpg" alt="Jordi Logo" class="h-10 w-auto rounded-full" />
+            <img src="/logo.svg" alt="Jordi Logo" class="h-10 w-auto" />
           </a>
         </div>
 
