@@ -15,12 +15,7 @@
 
     <div class="container mx-auto px-4 relative z-10">
       <!-- Section title -->
-      <div
-        class="text-center mb-16"
-        v-motion
-        :initial="{ opacity: 0, y: 20 }"
-        :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-      >
+      <div class="text-center mb-16 animate-on-scroll" data-animation="fade-up">
         <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">Projects</h2>
         <div class="w-20 h-1 bg-accent-primary mx-auto mb-6"></div>
         <p class="max-w-2xl mx-auto text-text-secondary text-lg">
@@ -32,10 +27,9 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         <!-- Project 1 -->
         <div
-          class="group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20"
-          v-motion
-          :initial="{ opacity: 0, y: 30 }"
-          :enter="{ opacity: 1, y: 0, transition: { delay: 200, duration: 600 } }"
+          class="project-card group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 animate-on-scroll"
+          data-animation="fade-up"
+          data-delay="200"
         >
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
@@ -43,7 +37,17 @@
               src="https://picsum.photos/600/400?random=1"
               alt="E-Commerce App Redesign"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              @load="imageLoaded(1)"
+              @error="handleImageError(1)"
             />
+            <!-- Loading state -->
+            <div
+              v-if="loadingImages[1]"
+              class="absolute inset-0 flex items-center justify-center bg-background-alt/80 dark:bg-background/80"
+            >
+              <LoadingSpinner :size="40" color="text-accent-primary" />
+            </div>
             <!-- Overlay with tags on hover -->
             <div
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
@@ -85,12 +89,10 @@
               Complete redesign of an e-commerce platform focusing on user experience
             </p>
             <div class="flex gap-2">
-              <span
-                class="px-2 py-1 text-xs rounded-full bg-accent-tertiary/10 text-accent-tertiary dark:text-accent-tertiary/70"
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
                 >UX Design</span
               >
-              <span
-                class="px-2 py-1 text-xs rounded-full bg-accent-tertiary/10 text-accent-tertiary dark:text-accent-tertiary/70"
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
                 >UI Design</span
               >
             </div>
@@ -99,10 +101,9 @@
 
         <!-- Project 2 -->
         <div
-          class="group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20"
-          v-motion
-          :initial="{ opacity: 0, y: 30 }"
-          :enter="{ opacity: 1, y: 0, transition: { delay: 400, duration: 600 } }"
+          class="project-card group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 animate-on-scroll"
+          data-animation="fade-up"
+          data-delay="300"
         >
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
@@ -110,7 +111,17 @@
               src="https://picsum.photos/600/400?random=2"
               alt="Finance Dashboard"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              @load="imageLoaded(2)"
+              @error="handleImageError(2)"
             />
+            <!-- Loading state -->
+            <div
+              v-if="loadingImages[2]"
+              class="absolute inset-0 flex items-center justify-center bg-background-alt/80 dark:bg-background/80"
+            >
+              <LoadingSpinner :size="40" color="text-accent-primary" />
+            </div>
             <!-- Overlay with tags on hover -->
             <div
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
@@ -152,12 +163,10 @@
               Data visualization dashboard for personal finance management
             </p>
             <div class="flex gap-2">
-              <span
-                class="px-2 py-1 text-xs rounded-full bg-accent-tertiary/10 text-accent-tertiary dark:text-accent-tertiary/70"
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
                 >Dashboard</span
               >
-              <span
-                class="px-2 py-1 text-xs rounded-full bg-accent-tertiary/10 text-accent-tertiary dark:text-accent-tertiary/70"
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
                 >Data Viz</span
               >
             </div>
@@ -166,10 +175,9 @@
 
         <!-- Project 3 -->
         <div
-          class="group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20"
-          v-motion
-          :initial="{ opacity: 0, y: 30 }"
-          :enter="{ opacity: 1, y: 0, transition: { delay: 600, duration: 600 } }"
+          class="project-card group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 animate-on-scroll"
+          data-animation="fade-up"
+          data-delay="400"
         >
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
@@ -177,7 +185,17 @@
               src="https://picsum.photos/600/400?random=3"
               alt="Health Tracking App"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              @load="imageLoaded(3)"
+              @error="handleImageError(3)"
             />
+            <!-- Loading state -->
+            <div
+              v-if="loadingImages[3]"
+              class="absolute inset-0 flex items-center justify-center bg-background-alt/80 dark:bg-background/80"
+            >
+              <LoadingSpinner :size="40" color="text-accent-primary" />
+            </div>
             <!-- Overlay with tags on hover -->
             <div
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
@@ -219,12 +237,10 @@
               Mobile app for tracking fitness and health metrics with visual progress
             </p>
             <div class="flex gap-2">
-              <span
-                class="px-2 py-1 text-xs rounded-full bg-accent-tertiary/10 text-accent-tertiary dark:text-accent-tertiary/70"
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
                 >Mobile</span
               >
-              <span
-                class="px-2 py-1 text-xs rounded-full bg-accent-tertiary/10 text-accent-tertiary dark:text-accent-tertiary/70"
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
                 >UX Research</span
               >
             </div>
@@ -233,10 +249,9 @@
 
         <!-- Project 4 -->
         <div
-          class="group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 md:hidden lg:block"
-          v-motion
-          :initial="{ opacity: 0, y: 30 }"
-          :enter="{ opacity: 1, y: 0, transition: { delay: 800, duration: 600 } }"
+          class="project-card group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 md:hidden lg:block animate-on-scroll"
+          data-animation="fade-up"
+          data-delay="500"
         >
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
@@ -244,6 +259,9 @@
               src="https://picsum.photos/600/400?random=4"
               alt="Smart Home Interface"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              @load="imageLoaded(4)"
+              @error="handleImageError(4)"
             />
             <!-- Overlay with tags on hover -->
             <div
@@ -286,12 +304,10 @@
               IoT control interface for managing connected home devices
             </p>
             <div class="flex gap-2">
-              <span
-                class="px-2 py-1 text-xs rounded-full bg-accent-tertiary/10 text-accent-tertiary dark:text-accent-tertiary/70"
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
                 >IoT</span
               >
-              <span
-                class="px-2 py-1 text-xs rounded-full bg-accent-tertiary/10 text-accent-tertiary dark:text-accent-tertiary/70"
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
                 >Product Design</span
               >
             </div>
@@ -300,10 +316,9 @@
 
         <!-- Project 5 -->
         <div
-          class="group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 md:hidden lg:block"
-          v-motion
-          :initial="{ opacity: 0, y: 30 }"
-          :enter="{ opacity: 1, y: 0, transition: { delay: 1000, duration: 600 } }"
+          class="project-card group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 md:hidden lg:block animate-on-scroll"
+          data-animation="fade-up"
+          data-delay="600"
         >
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
@@ -311,7 +326,17 @@
               src="https://picsum.photos/600/400?random=5"
               alt="AR Shopping Experience"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              @load="imageLoaded(5)"
+              @error="handleImageError(5)"
             />
+            <!-- Loading state -->
+            <div
+              v-if="loadingImages[5]"
+              class="absolute inset-0 flex items-center justify-center bg-background-alt/80 dark:bg-background/80"
+            >
+              <LoadingSpinner :size="40" color="text-accent-primary" />
+            </div>
             <!-- Overlay with tags on hover -->
             <div
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
@@ -353,12 +378,10 @@
               Augmented reality interface for trying furniture in your home
             </p>
             <div class="flex gap-2">
-              <span
-                class="px-2 py-1 text-xs rounded-full bg-accent-tertiary/10 text-accent-tertiary dark:text-accent-tertiary/70"
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
                 >AR/VR</span
               >
-              <span
-                class="px-2 py-1 text-xs rounded-full bg-accent-tertiary/10 text-accent-tertiary dark:text-accent-tertiary/70"
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
                 >Mobile</span
               >
             </div>
@@ -367,10 +390,9 @@
 
         <!-- Project 6 -->
         <div
-          class="group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 md:hidden lg:block"
-          v-motion
-          :initial="{ opacity: 0, y: 30 }"
-          :enter="{ opacity: 1, y: 0, transition: { delay: 1200, duration: 600 } }"
+          class="project-card group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 md:hidden lg:block animate-on-scroll"
+          data-animation="fade-up"
+          data-delay="700"
         >
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
@@ -378,7 +400,17 @@
               src="https://picsum.photos/600/400?random=6"
               alt="Travel Booking Platform"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              @load="imageLoaded(6)"
+              @error="handleImageError(6)"
             />
+            <!-- Loading state -->
+            <div
+              v-if="loadingImages[6]"
+              class="absolute inset-0 flex items-center justify-center bg-background-alt/80 dark:bg-background/80"
+            >
+              <LoadingSpinner :size="40" color="text-accent-primary" />
+            </div>
             <!-- Overlay with tags on hover -->
             <div
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
@@ -420,12 +452,10 @@
               Comprehensive travel booking experience with personalized recommendations
             </p>
             <div class="flex gap-2">
-              <span
-                class="px-2 py-1 text-xs rounded-full bg-accent-tertiary/10 text-accent-tertiary dark:text-accent-tertiary/70"
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
                 >Web App</span
               >
-              <span
-                class="px-2 py-1 text-xs rounded-full bg-accent-tertiary/10 text-accent-tertiary dark:text-accent-tertiary/70"
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
                 >Service Design</span
               >
             </div>
@@ -437,42 +467,58 @@
 </template>
 
 <script setup>
-// Animation directive (same as other components)
-const vMotion = {
-  mounted(el, binding) {
-    // Check if binding.value exists before accessing its properties
-    if (!binding?.value) return;
+import { onMounted, ref } from 'vue';
+import LoadingSpinner from '@/components/ui/LoadingSpinner.vue';
 
-    // Add initial state if it exists
-    if (binding.value.initial) {
-      Object.entries(binding.value.initial).forEach(([key, value]) => {
-        if (key === 'opacity') {
-          el.style.opacity = value;
-        } else if (key === 'y') {
-          el.style.transform = `translateY(${value}px)`;
-        } else if (key === 'x') {
-          el.style.transform = `translateX(${value}px)`;
+// Loading state management
+const loadingImages = ref({});
+
+// Initialize loading states
+onMounted(() => {
+  // Set initial loading state for all projects
+  for (let i = 1; i <= 6; i++) {
+    loadingImages.value[i] = true;
+  }
+
+  // Animation on scroll setup
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const animation = el.dataset.animation || 'fade-up';
+          const delay = el.dataset.delay || 0;
+
+          setTimeout(() => {
+            el.classList.add(`animate-${animation}`);
+            el.style.opacity = 1;
+          }, delay);
+
+          // Unobserve after animation
+          observer.unobserve(el);
         }
       });
-    }
+    },
+    { threshold: 0.1 },
+  );
 
-    // Add enter animation after a short delay
-    setTimeout(() => {
-      el.style.transition = `all ${binding.value.enter?.transition?.duration || 500}ms ease`;
+  animatedElements.forEach((el) => {
+    el.style.opacity = 0;
+    observer.observe(el);
+  });
+});
 
-      if (binding.value.enter) {
-        Object.entries(binding.value.enter).forEach(([key, value]) => {
-          if (key === 'opacity') {
-            el.style.opacity = value;
-          } else if (key === 'y') {
-            el.style.transform = `translateY(${value}px)`;
-          } else if (key === 'x') {
-            el.style.transform = `translateX(${value}px)`;
-          }
-        });
-      }
-    }, binding.value.enter?.transition?.delay || 0);
-  },
+// Image handling methods
+const imageLoaded = (projectId) => {
+  loadingImages.value[projectId] = false;
+};
+
+const handleImageError = (projectId) => {
+  loadingImages.value[projectId] = false;
+  console.error(`Failed to load image for project ${projectId}`);
+  // Could set a fallback image here if needed
 };
 </script>
 
@@ -522,5 +568,59 @@ const vMotion = {
 
 .img-hover:hover {
   transform: scale(1.05);
+}
+
+/* Animation classes */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
+.animate-scale-x {
+  animation: scaleX 0.7s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleX {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.project-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Fix for line-clamp in some browsers */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 </style>

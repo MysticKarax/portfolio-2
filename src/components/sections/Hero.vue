@@ -50,7 +50,9 @@
             :initial="{ opacity: 0, y: 20 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: 800, duration: 700 } }"
           >
-            I'm drawn to web development because it reveals how systems shape our everyday experience. For me, programming is more than code—it's a tool to simplify life, improve connection, and explore the deeper logic of how things work.
+            I'm drawn to web development because it reveals how systems shape our everyday
+            experience. For me, programming is more than code—it's a tool to simplify life, improve
+            connection, and explore the deeper logic of how things work.
           </p>
 
           <!-- CTA section -->
@@ -90,7 +92,7 @@
 
             <!-- Hero image with shadow and rounded corners -->
             <img
-              src="/about-img.png"
+              src="/yo-1.png"
               alt="Hero illustration"
               class="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-2xl shadow-xl hero-img"
             />
