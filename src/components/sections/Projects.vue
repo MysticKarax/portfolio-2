@@ -31,11 +31,17 @@
           data-animation="fade-up"
           data-delay="200"
         >
+          <!-- Work in Progress Label -->
+          <div
+            class="absolute top-2 right-2 z-20 bg-accent-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-md transform rotate-3 animate-pulse"
+          >
+            Work in Progress
+          </div>
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="https://picsum.photos/600/400?random=1"
-              alt="E-Commerce App Redesign"
+              src="/project-imgs/plcco-fe.png"
+              alt="PLCO Frontend"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
               @load="imageLoaded(1)"
@@ -52,29 +58,13 @@
             <div
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
             >
-              <h3 class="text-lg font-semibold text-text-primary mb-3">E-Commerce App Redesign</h3>
-              <p class="text-text-secondary text-sm mb-4 text-center">
-                Complete redesign of an e-commerce platform focusing on user experience
-              </p>
-              <div class="flex flex-wrap justify-center gap-2 mb-4">
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >UX Design</span
-                >
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >UI Design</span
-                >
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >Prototyping</span
-                >
-              </div>
               <a
-                href="#"
-                class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary text-white transition-colors duration-300"
+                href="https://admin.plccompany.com.mx/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary hover:text-white text-white transition-colors duration-300"
               >
-                View Case Study
+                Go To Project
               </a>
             </div>
           </div>
@@ -83,17 +73,22 @@
             <h3
               class="text-lg font-semibold text-text-primary mb-2 group-hover:text-accent-primary transition-colors duration-300"
             >
-              E-Commerce App Redesign
+              🏭 PLC Company - Industrial Automation
             </h3>
             <p class="text-text-secondary text-sm mb-4">
-              Complete redesign of an e-commerce platform focusing on user experience
+              A custom web solution for a B2B industrial automation firm, offering product tracking,
+              smart quoting, file uploads, and a tailored AI assistant to streamline client
+              operations and communication.
             </p>
             <div class="flex gap-2">
               <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                >UX Design</span
+                >UX/UI Design</span
               >
               <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                >UI Design</span
+                >Data Visualization</span
+              >
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
+                >AI Integration</span
               >
             </div>
           </div>
@@ -108,8 +103,8 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="https://picsum.photos/600/400?random=2"
-              alt="Finance Dashboard"
+              src="/project-imgs/bankist.png"
+              alt="💳 Bankist - Digital Bank Frontend"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
               @load="imageLoaded(2)"
@@ -126,29 +121,13 @@
             <div
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
             >
-              <h3 class="text-lg font-semibold text-text-primary mb-3">Finance Dashboard</h3>
-              <p class="text-text-secondary text-sm mb-4 text-center">
-                Data visualization dashboard for personal finance management
-              </p>
-              <div class="flex flex-wrap justify-center gap-2 mb-4">
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >Dashboard Design</span
-                >
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >Data Visualization</span
-                >
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >User Testing</span
-                >
-              </div>
               <a
-                href="#"
-                class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary text-white transition-colors duration-300"
+                href="https://bankist-interactive.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary hover:text-white text-white transition-colors duration-300"
               >
-                View Case Study
+                Go To Project
               </a>
             </div>
           </div>
@@ -157,17 +136,22 @@
             <h3
               class="text-lg font-semibold text-text-primary mb-2 group-hover:text-accent-primary transition-colors duration-300"
             >
-              Finance Dashboard
+              💷 Bankist - Digital Bank Frontend
             </h3>
             <p class="text-text-secondary text-sm mb-4">
-              Data visualization dashboard for personal finance management
+              A modern digital bank frontend with responsive design, built with a minimalist UI
+              approach to deliver a seamless and intuitive user experience focused entirely on
+              frontend performance and design clarity.
             </p>
             <div class="flex gap-2">
               <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                >Dashboard</span
+                >UI Design</span
               >
               <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                >Data Viz</span
+                >Responsive Design</span
+              >
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
+                >Frontend</span
               >
             </div>
           </div>
@@ -182,8 +166,8 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="https://picsum.photos/600/400?random=3"
-              alt="Health Tracking App"
+              src="/project-imgs/weather-app.png"
+              alt="Weather Dashboard"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
               @load="imageLoaded(3)"
@@ -200,29 +184,13 @@
             <div
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
             >
-              <h3 class="text-lg font-semibold text-text-primary mb-3">Health Tracking App</h3>
-              <p class="text-text-secondary text-sm mb-4 text-center">
-                Mobile app for tracking fitness and health metrics with visual progress
-              </p>
-              <div class="flex flex-wrap justify-center gap-2 mb-4">
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >Mobile Design</span
-                >
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >User Research</span
-                >
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >Interactive Prototype</span
-                >
-              </div>
               <a
-                href="#"
-                class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary text-white transition-colors duration-300"
+                href="https://bankist-interactive.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary hover:text-white text-white transition-colors duration-300"
               >
-                View Case Study
+                Go To Project
               </a>
             </div>
           </div>
@@ -231,17 +199,18 @@
             <h3
               class="text-lg font-semibold text-text-primary mb-2 group-hover:text-accent-primary transition-colors duration-300"
             >
-              Health Tracking App
+              🌤️ Weather Dashboard
             </h3>
             <p class="text-text-secondary text-sm mb-4">
-              Mobile app for tracking fitness and health metrics with visual progress
+              A functional weather dashboard that retrieves and displays current and forecasted
+              weather data for cities worldwide using API integration.
             </p>
             <div class="flex gap-2">
               <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                >Mobile</span
+                >API Integration</span
               >
               <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                >UX Research</span
+                >Data Visualization</span
               >
             </div>
           </div>
@@ -256,8 +225,8 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="https://picsum.photos/600/400?random=4"
-              alt="Smart Home Interface"
+              src="/project-imgs/travel-destinations.png"
+              alt="Travel Destinations SPA - Vue 3 & Vue Router"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
               @load="imageLoaded(4)"
@@ -267,29 +236,13 @@
             <div
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
             >
-              <h3 class="text-lg font-semibold text-text-primary mb-3">Smart Home Interface</h3>
-              <p class="text-text-secondary text-sm mb-4 text-center">
-                IoT control interface for managing connected home devices
-              </p>
-              <div class="flex flex-wrap justify-center gap-2 mb-4">
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >IoT Design</span
-                >
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >UI/UX</span
-                >
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >Product Design</span
-                >
-              </div>
               <a
-                href="#"
-                class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary text-white transition-colors duration-300"
+                href="https://routing-compositions-api.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary hover:text-white text-white transition-colors duration-300"
               >
-                View Case Study
+                Go To Project
               </a>
             </div>
           </div>
@@ -298,17 +251,18 @@
             <h3
               class="text-lg font-semibold text-text-primary mb-2 group-hover:text-accent-primary transition-colors duration-300"
             >
-              Smart Home Interface
+              ✈️ Travel Destinations SPA - Vue 3 & Vue Router
             </h3>
             <p class="text-text-secondary text-sm mb-4">
-              IoT control interface for managing connected home devices
+              A single-page application (SPA) for exploring travel destinations, featuring dynamic
+              routing and smooth navigation.
             </p>
             <div class="flex gap-2">
               <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                >IoT</span
+                >Vue 3</span
               >
               <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                >Product Design</span
+                >Vue Router</span
               >
             </div>
           </div>
@@ -320,10 +274,16 @@
           data-animation="fade-up"
           data-delay="600"
         >
+          <!-- Work in Progress Label -->
+          <div
+            class="absolute top-2 right-2 z-20 bg-accent-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-md transform rotate-3 animate-pulse"
+          >
+            Work in Progress
+          </div>
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="https://picsum.photos/600/400?random=5"
+              src="/project-imgs/voltnest.jpg"
               alt="AR Shopping Experience"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
@@ -341,29 +301,13 @@
             <div
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
             >
-              <h3 class="text-lg font-semibold text-text-primary mb-3">AR Shopping Experience</h3>
-              <p class="text-text-secondary text-sm mb-4 text-center">
-                Augmented reality interface for trying furniture in your home
-              </p>
-              <div class="flex flex-wrap justify-center gap-2 mb-4">
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >AR/VR</span
-                >
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >Mobile</span
-                >
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >3D Modeling</span
-                >
-              </div>
               <a
                 href="#"
-                class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary text-white transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary hover:text-white text-white transition-colors duration-300"
               >
-                View Case Study
+                Go To Project
               </a>
             </div>
           </div>
@@ -372,23 +316,24 @@
             <h3
               class="text-lg font-semibold text-text-primary mb-2 group-hover:text-accent-primary transition-colors duration-300"
             >
-              AR Shopping Experience
+              ⚡VoltNest - 🚘 Electric Vehicle Charging Platform
             </h3>
             <p class="text-text-secondary text-sm mb-4">
-              Augmented reality interface for trying furniture in your home
+              A Flutter-based app connecting EV owners with charging stations, featuring real-time
+              location tracking via a custom Google Maps widget.
             </p>
             <div class="flex gap-2">
               <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                >AR/VR</span
+                >Flutter</span
               >
               <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                >Mobile</span
+                >Geolocation Services</span
               >
             </div>
           </div>
         </div>
 
-        <!-- Project 6 -->
+        <!-- Project 6: Silver Wolf Dice Game -->
         <div
           class="project-card group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 md:hidden lg:block animate-on-scroll"
           data-animation="fade-up"
@@ -397,7 +342,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="https://picsum.photos/600/400?random=6"
+              src="/project-imgs/silver-wolf-dice-game.png"
               alt="Travel Booking Platform"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
@@ -415,29 +360,13 @@
             <div
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
             >
-              <h3 class="text-lg font-semibold text-text-primary mb-3">Travel Booking Platform</h3>
-              <p class="text-text-secondary text-sm mb-4 text-center">
-                Comprehensive travel booking experience with personalized recommendations
-              </p>
-              <div class="flex flex-wrap justify-center gap-2 mb-4">
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >Web App</span
-                >
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >UX Research</span
-                >
-                <span
-                  class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                  >Service Design</span
-                >
-              </div>
               <a
-                href="#"
-                class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary text-white transition-colors duration-300"
+                href="https://silverwolf-dice-game.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary hover:text-white text-white transition-colors duration-300"
               >
-                View Case Study
+                Go To Project
               </a>
             </div>
           </div>
@@ -446,17 +375,21 @@
             <h3
               class="text-lg font-semibold text-text-primary mb-2 group-hover:text-accent-primary transition-colors duration-300"
             >
-              Travel Booking Platform
+              Pig Game - Dice Duel Edition
             </h3>
             <p class="text-text-secondary text-sm mb-4">
-              Comprehensive travel booking experience with personalized recommendations
+              A two-player interactive dice game built with a clean UI and anime-inspired visuals.
+              Designed for quick, turn-based gameplay with simple but engaging mechanics.
             </p>
             <div class="flex gap-2">
               <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
                 >Web App</span
               >
               <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
-                >Service Design</span
+                >UI Design</span
+              >
+              <span class="px-3 py-1 text-xs rounded-full bg-accent-primary/10 text-accent-primary"
+                >JavaScript Game Logic</span
               >
             </div>
           </div>

@@ -63,7 +63,7 @@
               href="#career"
               class="px-6 py-3 bg-transparent border border-accent-tertiary/30 hover:border-accent-primary text-text-primary hover:text-accent-primary rounded-full transition-colors duration-300 font-medium text-base"
             >
-              View Experience
+              View Career
             </a>
           </div>
         </div>

@@ -94,24 +94,16 @@
           aria-label="Toggle menu"
         >
           <transition name="icon-fade" mode="out-in">
-            <Bars3Icon 
-              v-if="!isMobileMenuOpen"
-              key="menu" 
-              class="h-6 w-6 absolute inset-0" 
-            />
-            <XMarkIcon 
-              v-else
-              key="close" 
-              class="h-6 w-6 absolute inset-0" 
-            />
+            <Bars3Icon v-if="!isMobileMenuOpen" key="menu" class="h-6 w-6 absolute inset-0" />
+            <XMarkIcon v-else key="close" class="h-6 w-6 absolute inset-0" />
           </transition>
         </button>
       </nav>
 
       <!-- Mobile Menu (conditionally rendered) -->
       <transition name="menu">
-        <div 
-          v-if="isMobileMenuOpen" 
+        <div
+          v-if="isMobileMenuOpen"
           class="md:hidden fixed inset-x-0 top-[4.5rem] bg-background/90 backdrop-blur-sm dark:bg-background-alt/90"
         >
           <div class="container mx-auto px-4">
@@ -139,7 +131,7 @@
 
               <div class="mt-6 pt-4 border-t border-accent-tertiary/20">
                 <!-- Mobile Availability Status -->
-                <div class="flex items-center space-x-2 px-3 py-2 menu-item" style="--delay: 150ms;">
+                <div class="flex items-center space-x-2 px-3 py-2 menu-item" style="--delay: 150ms">
                   <span class="h-2.5 w-2.5 rounded-full bg-available"></span>
                   <span class="text-text-primary text-sm">Available</span>
                 </div>
@@ -147,7 +139,7 @@
                 <!-- Mobile Language Switcher Removed -->
 
                 <!-- Mobile Social Media Icons -->
-                <div class="mt-4 px-3 flex items-center space-x-6 menu-item" style="--delay: 200ms;">
+                <div class="mt-4 px-3 flex items-center space-x-6 menu-item" style="--delay: 200ms">
                   <a
                     href="#"
                     class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
@@ -205,7 +197,7 @@ const { isDarkMode, toggleDarkMode } = useDarkMode();
 // Nav items
 const navItems = [
   { key: 'home', path: '#home', label: 'Home' },
-  { key: 'experience', path: '#career', label: 'Experience' },
+  { key: 'career', path: '#career', label: 'Career' },
   { key: 'projects', path: '#projects', label: 'Projects' },
   { key: 'about', path: '#about', label: 'About' },
 ];
@@ -304,14 +296,16 @@ const handleClickOutside = (event) => {
 <style scoped>
 /* Mobile Menu Transition */
 .menu-enter-active {
-  transition: opacity 0.3s ease,
-              transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: top;
 }
 
 .menu-leave-active {
-  transition: opacity 0.2s ease,
-              transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: top;
 }
 

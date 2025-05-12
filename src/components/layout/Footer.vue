@@ -163,7 +163,7 @@ const currentYear = computed(() => new Date().getFullYear());
 // Nav items (matching header)
 const navItems = [
   { key: 'home', path: '#home', label: 'Home' },
-  { key: 'experience', path: '#career', label: 'Experience' },
+  { key: 'career', path: '#career', label: 'Career' },
   { key: 'about', path: '#about', label: 'About' },
 ];
 </script>
