@@ -93,7 +93,6 @@
             </svg>
           </a>
         </div>
-        <p class="text-text-secondary text-sm">Or schedule a call with me at your convenience</p>
       </div>
     </div>
   </section>

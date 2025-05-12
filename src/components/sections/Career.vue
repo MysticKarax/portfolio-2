@@ -24,47 +24,152 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 lg:mb-24">
         <!-- Years of Experience -->
         <div
-          class="stat-card bg-background dark:bg-background-alt border border-accent-tertiary/20 rounded-xl p-6 text-center animate-on-scroll"
+          class="skill-card group bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:border-accent-primary/50 animate-on-scroll"
           data-animation="fade-up"
           data-delay="100"
         >
-          <div
-            class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent-primary/10 mb-4"
-          >
-            <ClockIcon class="h-8 w-8 text-accent-primary" />
+          <!-- Icon -->
+          <div class="skill-icon-wrapper mb-6">
+            <div
+              class="h-16 w-16 rounded-lg bg-accent-primary/10 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-all duration-300"
+            >
+              <ClockIcon class="h-8 w-8" />
+            </div>
           </div>
-          <h3 class="text-4xl font-bold text-accent-primary mb-2 counter" data-target="5">0</h3>
-          <p class="text-text-primary">Years of Experience</p>
+
+          <!-- Title and Counter -->
+          <h3
+            class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300"
+          >
+            <span class="counter" data-target="5">5</span>+ Years
+          </h3>
+
+          <!-- Description -->
+          <p
+            class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300"
+          >
+            Professional Experience
+          </p>
+
+          <!-- Additional details on hover -->
+          <div
+            class="skill-details mt-6 pt-6 border-t border-accent-tertiary/20 opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-96 transition-all duration-500"
+          >
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Full-stack Development</span>
+              </li>
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>UI/UX Design</span>
+              </li>
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Project Management</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- Clients Worldwide -->
         <div
-          class="stat-card bg-background dark:bg-background-alt border border-accent-tertiary/20 rounded-xl p-6 text-center animate-on-scroll"
+          class="skill-card group bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:border-accent-primary/50 animate-on-scroll"
           data-animation="fade-up"
           data-delay="200"
         >
-          <div
-            class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent-primary/10 mb-4"
-          >
-            <GlobeAltIcon class="h-8 w-8 text-accent-primary" />
+          <!-- Icon -->
+          <div class="skill-icon-wrapper mb-6">
+            <div
+              class="h-16 w-16 rounded-lg bg-accent-primary/10 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-all duration-300"
+            >
+              <GlobeAltIcon class="h-8 w-8" />
+            </div>
           </div>
-          <h3 class="text-4xl font-bold text-accent-primary mb-2 counter" data-target="40">0</h3>
-          <p class="text-text-primary">Clients Worldwide</p>
+
+          <!-- Title and Counter -->
+          <h3
+            class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300"
+          >
+            <span class="counter" data-target="40">40</span>+ Clients
+          </h3>
+
+          <!-- Description -->
+          <p
+            class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300"
+          >
+            Worldwide
+          </p>
+
+          <!-- Additional details on hover -->
+          <div
+            class="skill-details mt-6 pt-6 border-t border-accent-tertiary/20 opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-96 transition-all duration-500"
+          >
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Global Companies</span>
+              </li>
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Start-ups</span>
+              </li>
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Tech Enterprises</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- Completed Projects -->
         <div
-          class="stat-card bg-background dark:bg-background-alt border border-accent-tertiary/20 rounded-xl p-6 text-center animate-on-scroll"
+          class="skill-card group bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:border-accent-primary/50 animate-on-scroll"
           data-animation="fade-up"
           data-delay="300"
         >
-          <div
-            class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent-primary/10 mb-4"
-          >
-            <ClipboardDocumentCheckIcon class="h-8 w-8 text-accent-primary" />
+          <!-- Icon -->
+          <div class="skill-icon-wrapper mb-6">
+            <div
+              class="h-16 w-16 rounded-lg bg-accent-primary/10 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-all duration-300"
+            >
+              <ClipboardDocumentCheckIcon class="h-8 w-8" />
+            </div>
           </div>
-          <h3 class="text-4xl font-bold text-accent-primary mb-2 counter" data-target="100">0</h3>
-          <p class="text-text-primary">Completed Projects</p>
+
+          <!-- Title and Counter -->
+          <h3
+            class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300"
+          >
+            <span class="counter" data-target="100">100</span>+ Projects
+          </h3>
+
+          <!-- Description -->
+          <p
+            class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300"
+          >
+            Successfully Completed
+          </p>
+
+          <!-- Additional details on hover -->
+          <div
+            class="skill-details mt-6 pt-6 border-t border-accent-tertiary/20 opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-96 transition-all duration-500"
+          >
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Web Applications</span>
+              </li>
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Mobile Apps</span>
+              </li>
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Design Systems</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
