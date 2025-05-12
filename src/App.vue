@@ -26,7 +26,7 @@
         <About key="about" />
 
         <!-- Case Studies Section -->
-        <CaseStudies key="case-studies" />
+        <!-- <CaseStudies key="case-studies" /> -->
 
         <!-- Contact Section -->
         <Contact key="contact" />

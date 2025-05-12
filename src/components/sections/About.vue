@@ -30,9 +30,7 @@
     <div class="container mx-auto px-4 relative z-10">
       <!-- Section title -->
       <div class="text-center mb-16 animate-on-scroll" data-animation="fade-up" data-delay="0">
-        <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-          About Me
-        </h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">About Me</h2>
         <div class="w-20 h-1 bg-accent-primary mx-auto mb-6"></div>
         <p class="text-xl text-accent-primary font-medium max-w-2xl mx-auto">
           Designing with passion for Problem Solving
@@ -57,7 +55,7 @@
             <!-- Profile image -->
             <div class="relative rounded-xl overflow-hidden border-2 border-accent-tertiary/10">
               <img
-                src="/test.png"
+                src="/yo-2.png"
                 alt="Jordi - Product Designer"
                 class="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-105 about-img"
               />
@@ -105,7 +103,9 @@
           <div class="mb-8">
             <h3 class="text-2xl font-semibold text-text-primary mb-4">Personal Journey</h3>
             <p class="text-text-secondary mb-4">
-              As a product designer, I focus on creating intuitive and impactful digital experiences. My approach combines aesthetic sensibility with user-centered functionality.
+              As a product designer, I focus on creating intuitive and impactful digital
+              experiences. My approach combines aesthetic sensibility with user-centered
+              functionality.
             </p>
             <p class="text-text-secondary">
               I began my design career after studying Interaction Design, and have since worked with

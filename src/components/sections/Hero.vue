@@ -57,13 +57,13 @@
               href="#projects"
               class="px-6 py-3 bg-accent-primary text-white hover:bg-accent-secondary hover:text-white rounded-full transition-colors duration-300 font-medium text-base shadow-lg shadow-accent-primary/20"
             >
-              View Details
+              View Projects
             </a>
             <a
-              href="#about"
+              href="#career"
               class="px-6 py-3 bg-transparent border border-accent-tertiary/30 hover:border-accent-primary text-text-primary hover:text-accent-primary rounded-full transition-colors duration-300 font-medium text-base"
             >
-              Learn More
+              View Experience
             </a>
           </div>
         </div>

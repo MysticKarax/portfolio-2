@@ -12,179 +12,180 @@
 
     <div class="container mx-auto px-4 relative z-10">
       <!-- Section title -->
-      <div
-        class="text-center mb-16"
-        v-motion
-        :initial="{ opacity: 0, y: 20 }"
-        :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-      >
-        <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">My Skillset</h2>
-        <div class="w-20 h-1 bg-accent-primary mx-auto mb-6"></div>
-        <p class="max-w-2xl mx-auto text-text-secondary text-lg">
+      <div class="text-center mb-16 max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll" 
+            data-animation="fade-up">
+          My Skillset
+        </h2>
+        <div class="w-24 h-1 bg-accent-primary mx-auto rounded-full mb-6 animate-on-scroll"
+             data-animation="scale-x" 
+             data-delay="200"></div>
+        <p class="text-lg text-accent-tertiary animate-on-scroll" 
+           data-animation="fade-up" 
+           data-delay="300">
           A web developer with passion for solving complex problems through elegant interfaces
         </p>
       </div>
 
       <!-- Skills grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-        <!-- Graphic Design Skill -->
-        <div
-          class="bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-lg hover:shadow-accent-primary/5 hover:border-accent-primary/20 group"
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
-          :enter="{ opacity: 1, y: 0, transition: { delay: 300, duration: 600 } }"
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Web Design Skill -->
+        <div 
+          class="skill-card group bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:border-accent-primary/50 animate-on-scroll"
+          data-animation="fade-up"
+          data-delay="100"
         >
           <!-- Icon -->
-          <div
-            class="w-14 h-14 rounded-lg flex items-center justify-center mb-6 bg-accent-primary/10 text-accent-primary transition-all duration-300 group-hover:bg-accent-primary group-hover:text-white"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-7 w-7"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-              />
-            </svg>
+          <div class="skill-icon-wrapper mb-6">
+            <div class="h-16 w-16 rounded-lg bg-accent-primary/10 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-all duration-300">
+              <PhotoIcon class="h-8 w-8" />
+            </div>
           </div>
 
           <!-- Title -->
-          <h3
-            class="text-xl font-semibold mb-3 text-text-primary transition-colors duration-300 group-hover:text-accent-primary"
-          >
+          <h3 class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300">
             Web Design
           </h3>
 
           <!-- Description -->
-          <p class="text-text-secondary text-base leading-relaxed">
+          <p class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300">
             Creating visual content that communicates messages effectively
           </p>
+          
+          <!-- Skill level indicator -->
+          <div class="mt-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs text-accent-tertiary">Skill Level</span>
+              <span class="text-xs text-accent-primary font-semibold">Advanced</span>
+            </div>
+            <div class="w-full bg-accent-tertiary/20 h-2 rounded-full overflow-hidden">
+              <div class="bg-accent-primary h-full rounded-full" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <!-- Skill details - Hidden and shown on hover -->
+          <div class="skill-details mt-6 pt-6 border-t border-accent-tertiary/20 opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-96 transition-all duration-500">
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Brand Identity</span>
+              </li>
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Visual Communication</span>
+              </li>
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Digital Illustration</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <!-- Interface Design Skill -->
-        <div
-          class="bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-lg hover:shadow-accent-primary/5 hover:border-accent-primary/20 group"
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
-          :enter="{ opacity: 1, y: 0, transition: { delay: 500, duration: 600 } }"
+        <!-- User Interface Skill -->
+        <div 
+          class="skill-card group bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:border-accent-primary/50 animate-on-scroll"
+          data-animation="fade-up"
+          data-delay="300"
         >
           <!-- Icon -->
-          <div
-            class="w-14 h-14 rounded-lg bg-accent-primary/10 flex items-center justify-center mb-6 text-accent-primary transition-all duration-300 group-hover:bg-accent-primary group-hover:text-white"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-7 w-7"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>
+          <div class="skill-icon-wrapper mb-6">
+            <div class="h-16 w-16 rounded-lg bg-accent-primary/10 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-all duration-300">
+              <DeviceTabletIcon class="h-8 w-8" />
+            </div>
           </div>
 
           <!-- Title -->
-          <h3
-            class="text-xl font-semibold mb-3 text-text-primary transition-colors duration-300 group-hover:text-accent-primary"
-          >
+          <h3 class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300">
             User Interface
           </h3>
 
           <!-- Description -->
-          <p class="text-text-secondary text-base leading-relaxed">
+          <p class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300">
             Building intuitive interfaces for digital products
           </p>
+          
+          <!-- Skill level indicator -->
+          <div class="mt-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs text-accent-tertiary">Skill Level</span>
+              <span class="text-xs text-accent-primary font-semibold">Expert</span>
+            </div>
+            <div class="w-full bg-accent-tertiary/20 h-2 rounded-full overflow-hidden">
+              <div class="bg-accent-primary h-full rounded-full" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <!-- Skill details - Hidden and shown on hover -->
+          <div class="skill-details mt-6 pt-6 border-t border-accent-tertiary/20 opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-96 transition-all duration-500">
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Responsive Web Design</span>
+              </li>
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Mobile App Interface</span>
+              </li>
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Design Systems</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- User Experience Skill -->
-        <div
-          class="bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-lg hover:shadow-accent-primary/5 hover:border-accent-primary/20 group md:col-span-2 lg:col-span-1"
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
-          :enter="{ opacity: 1, y: 0, transition: { delay: 700, duration: 600 } }"
+        <div 
+          class="skill-card group bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:border-accent-primary/50 animate-on-scroll md:col-span-2 lg:col-span-1"
+          data-animation="fade-up"
+          data-delay="500"
         >
           <!-- Icon -->
-          <div
-            class="w-14 h-14 rounded-lg bg-accent-primary/10 flex items-center justify-center mb-6 text-accent-primary transition-all duration-300 group-hover:bg-accent-primary group-hover:text-white"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-7 w-7"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
-              />
-            </svg>
+          <div class="skill-icon-wrapper mb-6">
+            <div class="h-16 w-16 rounded-lg bg-accent-primary/10 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-all duration-300">
+              <UserGroupIcon class="h-8 w-8" />
+            </div>
           </div>
 
           <!-- Title -->
-          <h3
-            class="text-xl font-semibold mb-3 text-text-primary transition-colors duration-300 group-hover:text-accent-primary"
-          >
+          <h3 class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300">
             User Experience
           </h3>
 
           <!-- Description -->
-          <p class="text-text-secondary text-base leading-relaxed">
+          <p class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300">
             Designing seamless and enjoyable user journeys
           </p>
-        </div>
-      </div>
+          
+          <!-- Skill level indicator -->
+          <div class="mt-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-xs text-accent-tertiary">Skill Level</span>
+              <span class="text-xs text-accent-primary font-semibold">Advanced</span>
+            </div>
+            <div class="w-full bg-accent-tertiary/20 h-2 rounded-full overflow-hidden">
+              <div class="bg-accent-primary h-full rounded-full" style="width: 85%"></div>
+            </div>
+          </div>
 
-      <!-- Additional skills or stats section (optional) -->
-      <div
-        class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
-        v-motion
-        :initial="{ opacity: 0, y: 20 }"
-        :enter="{ opacity: 1, y: 0, transition: { delay: 900, duration: 600 } }"
-      >
-        <!-- Skill stat 1 -->
-        <div
-          class="text-center p-5 rounded-lg bg-background-alt/20 dark:bg-background/40 border border-accent-tertiary/10 hover:shadow-accent-primary/5 hover:border-accent-primary/20"
-        >
-          <div class="text-3xl font-bold text-accent-primary mb-1">5+</div>
-          <div class="text-sm text-text-secondary">Years of Experience</div>
-        </div>
-
-        <!-- Skill stat 2 -->
-        <div
-          class="text-center p-5 rounded-lg bg-background-alt/20 dark:bg-background/40 border border-accent-tertiary/10 hover:shadow-accent-primary/5 hover:border-accent-primary/20"
-        >
-          <div class="text-3xl font-bold text-accent-primary mb-1">50+</div>
-          <div class="text-sm text-text-secondary">Projects Completed</div>
-        </div>
-
-        <!-- Skill stat 3 -->
-        <div
-          class="text-center p-5 rounded-lg bg-background-alt/20 dark:bg-background/40 border border-accent-tertiary/10 hover:shadow-accent-primary/5 hover:border-accent-primary/20"
-        >
-          <div class="text-3xl font-bold text-accent-primary mb-1">20+</div>
-          <div class="text-sm text-text-secondary">Happy Clients</div>
-        </div>
-
-        <!-- Skill stat 4 -->
-        <div
-          class="text-center p-5 rounded-lg bg-background-alt/20 dark:bg-background/40 border border-accent-tertiary/10 hover:shadow-accent-primary/5 hover:border-accent-primary/20"
-        >
-          <div class="text-3xl font-bold text-accent-primary mb-1">100%</div>
-          <div class="text-sm text-text-secondary">Satisfaction</div>
+          <!-- Skill details - Hidden and shown on hover -->
+          <div class="skill-details mt-6 pt-6 border-t border-accent-tertiary/20 opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-96 transition-all duration-500">
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>User Research</span>
+              </li>
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Usability Testing</span>
+              </li>
+              <li class="flex items-start">
+                <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
+                <span>Information Architecture</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -192,44 +193,73 @@
 </template>
 
 <script setup>
-// i18n removed - using direct English text
+import { onMounted } from 'vue'
+import { CheckIcon, PhotoIcon, DeviceTabletIcon, UserGroupIcon } from '@heroicons/vue/24/outline'
 
-// Directive for animations (same as Hero component)
-const vMotion = {
-  mounted(el, binding) {
-    // Check if binding.value exists before accessing its properties
-    if (!binding?.value) return;
-
-    // Add initial state if it exists
-    if (binding.value.initial) {
-      Object.entries(binding.value.initial).forEach(([key, value]) => {
-        if (key === 'opacity') {
-          el.style.opacity = value;
-        } else if (key === 'y') {
-          el.style.transform = `translateY(${value}px)`;
-        }
-      });
-    }
-
-    // Add enter animation after a short delay
-    setTimeout(() => {
-      el.style.transition = `all ${binding.value.enter?.transition?.duration || 500}ms ease`;
-
-      if (binding.value.enter) {
-        Object.entries(binding.value.enter).forEach(([key, value]) => {
-          if (key === 'opacity') {
-            el.style.opacity = value;
-          } else if (key === 'y') {
-            el.style.transform = `translateY(${value}px)`;
-          }
-        });
+// Animation on scroll functionality
+onMounted(() => {
+  const animatedElements = document.querySelectorAll('.animate-on-scroll')
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target
+        const animation = el.dataset.animation || 'fade-up'
+        const delay = el.dataset.delay || 0
+        
+        setTimeout(() => {
+          el.classList.add(`animate-${animation}`)
+          el.style.opacity = 1
+        }, delay)
+        
+        // Unobserve after animation
+        observer.unobserve(el)
       }
-    }, binding.value?.enter?.transition?.delay || 0);
-  },
-};
+    })
+  }, { threshold: 0.1 })
+  
+  animatedElements.forEach(el => {
+    el.style.opacity = 0
+    observer.observe(el)
+  })
+})
 </script>
 
 <style scoped>
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
+.animate-scale-x {
+  animation: scaleX 0.7s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleX {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
 .leading-relaxed {
   line-height: 1.6;
 }
