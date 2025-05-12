@@ -58,14 +58,12 @@
             <div
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
             >
-              <a
-                href="https://admin.plccompany.com.mx/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                @click="isModalOpen = true"
                 class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary hover:text-white text-white transition-colors duration-300"
               >
                 Go To Project
-              </a>
+              </button>
             </div>
           </div>
           <!-- Project Info (visible without hover) -->
@@ -301,14 +299,12 @@
             <div
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
             >
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                @click="isModalOpen = true"
                 class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary hover:text-white text-white transition-colors duration-300"
               >
                 Go To Project
-              </a>
+              </button>
             </div>
           </div>
           <!-- Project Info (visible without hover) -->
@@ -397,14 +393,24 @@
       </div>
     </div>
   </section>
+
+  <ModalWindow
+    v-model="isModalOpen"
+    title="Project Not Available"
+    message="Try Again Later"
+    buttonText="Accept"
+    @close="isModalOpen = false"
+  />
 </template>
 
 <script setup>
 import { onMounted, ref } from 'vue';
 import LoadingSpinner from '@/components/ui/LoadingSpinner.vue';
+import ModalWindow from '@/components/ui/ModalWindow.vue';
 
 // Loading state management
 const loadingImages = ref({});
+const isModalOpen = ref(false);
 
 // Initialize loading states
 onMounted(() => {
