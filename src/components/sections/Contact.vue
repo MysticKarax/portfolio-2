@@ -1,25 +1,34 @@
 <template>
-  <section id="contact" class="py-20 md:py-28 bg-accent-primary/10 relative overflow-hidden">
+  <section id="contact" class="py-20 md:py-28 bg-accent-primary/10 relative overflow-hidden"
+    v-intersection-observer
+    :class="{ 'section-visible': isVisible }">
     <!-- Background elements -->
     <div class="absolute inset-0 z-0 opacity-10">
-      <div class="absolute top-0 right-0 w-96 h-96 rounded-full bg-accent-primary blur-3xl"></div>
+      <div 
+        class="absolute top-0 right-0 w-96 h-96 rounded-full bg-accent-primary blur-3xl animate-blob"
+        :class="{ 'opacity-100': isVisible }"></div>
       <div
-        class="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-accent-secondary blur-3xl"
+        class="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-accent-secondary blur-3xl animate-blob-delayed"
+        :class="{ 'opacity-100': isVisible }"
       ></div>
     </div>
 
     <!-- Decorative elements -->
     <div
-      class="absolute top-12 left-16 w-20 h-20 border-2 border-accent-primary/30 rounded-full hidden lg:block"
+      class="absolute top-12 left-16 w-20 h-20 border-2 border-accent-primary/30 rounded-full hidden lg:block floating-element"
+      :class="{ 'animate-float': isVisible }"
     ></div>
     <div
-      class="absolute bottom-16 right-24 w-16 h-16 border-2 border-accent-primary/30 rounded-lg rotate-45 hidden lg:block"
+      class="absolute bottom-16 right-24 w-16 h-16 border-2 border-accent-primary/30 rounded-lg rotate-45 hidden lg:block floating-element-reverse"
+      :class="{ 'animate-float-reverse': isVisible }"
     ></div>
     <div
-      class="absolute top-28 right-[10%] w-6 h-6 bg-accent-primary/30 rounded-full hidden lg:block"
+      class="absolute top-28 right-[10%] w-6 h-6 bg-accent-primary/30 rounded-full hidden lg:block floating-element"
+      :class="{ 'animate-float': isVisible }"
     ></div>
     <div
-      class="absolute bottom-28 left-[10%] w-8 h-8 bg-accent-primary/30 rounded-lg rotate-12 hidden lg:block"
+      class="absolute bottom-28 left-[10%] w-8 h-8 bg-accent-primary/30 rounded-lg rotate-12 hidden lg:block floating-element-reverse"
+      :class="{ 'animate-float-reverse': isVisible }"
     ></div>
 
     <div class="container mx-auto px-4 relative z-10">
@@ -33,7 +42,7 @@
         <div
           class="inline-flex items-center px-4 py-2 rounded-full bg-background/20 dark:bg-background/40 backdrop-blur-sm mb-6"
         >
-          <span class="h-2.5 w-2.5 rounded-full bg-available mr-2"></span>
+          <span class="h-2.5 w-2.5 rounded-full bg-available mr-2 pulse-dot"></span>
           <span class="text-text-primary text-sm font-medium">Available</span>
         </div>
 
@@ -99,7 +108,28 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
 // i18n removed - using direct English text
+const isVisible = ref(false)
+
+// Intersection Observer directive
+const vIntersectionObserver = {
+  mounted(el) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          isVisible.value = true
+          observer.disconnect()
+        }
+      },
+      {
+        threshold: 0.2
+      }
+    )
+    observer.observe(el)
+  }
+}
 
 // Animation directive (same as other components)
 const vMotion = {
@@ -138,5 +168,100 @@ const vMotion = {
 </script>
 
 <style scoped>
-/* Optional additional styling */
+/* Section fade in */
+.section-visible {
+  animation: fadeInSection 1s ease-out forwards;
+}
+
+@keyframes fadeInSection {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+    backdrop-filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    backdrop-filter: blur(0);
+  }
+}
+
+/* Background blobs */
+.animate-blob {
+  opacity: 0;
+  animation: blobFloat 8s ease-in-out infinite;
+  transition: opacity 1s ease-out;
+}
+
+.animate-blob-delayed {
+  opacity: 0;
+  animation: blobFloat 8s ease-in-out infinite;
+  animation-delay: 4s;
+  transition: opacity 1s ease-out;
+}
+
+@keyframes blobFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(20px, -20px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+/* Floating decorative elements */
+.floating-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.floating-element-reverse {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-float {
+  opacity: 1;
+  transform: translateY(0);
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  opacity: 1;
+  transform: translateY(0);
+  animation: floatReverse 7s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes floatReverse {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(15px); }
+}
+
+/* Availability dot pulse */
+.pulse-dot {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animate-blob,
+  .animate-blob-delayed,
+  .floating-element,
+  .floating-element-reverse,
+  .animate-float,
+  .animate-float-reverse,
+  .pulse-dot {
+    animation: none !important;
+    transition: opacity 0.3s ease-out !important;
+  }
+}
 </style>
