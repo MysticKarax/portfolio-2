@@ -1,12 +1,19 @@
 <template>
-  <section id="process" class="py-16 md:py-24 relative overflow-hidden">
+  <section
+    id="process"
+    class="py-16 md:py-24 relative overflow-hidden"
+    v-intersection-observer
+    :class="{ 'section-visible': isVisible }"
+  >
     <!-- Background elements -->
     <div class="absolute inset-0 z-0 opacity-5">
       <div
-        class="absolute top-[30%] right-[15%] w-80 h-80 rounded-full bg-accent-secondary blur-3xl"
+        class="absolute top-[30%] right-[15%] w-80 h-80 rounded-full bg-accent-secondary blur-3xl background-blob"
+        :class="{ 'animate-blob': isVisible }"
       ></div>
       <div
-        class="absolute bottom-[20%] left-[10%] w-72 h-72 rounded-full bg-accent-primary blur-3xl"
+        class="absolute bottom-[20%] left-[10%] w-72 h-72 rounded-full bg-accent-primary blur-3xl background-blob"
+        :class="{ 'animate-blob-delayed': isVisible }"
       ></div>
     </div>
 
@@ -29,7 +36,10 @@
       <div class="hidden md:block">
         <div class="relative">
           <!-- Connection line -->
-          <div class="absolute top-[70px] left-[50px] right-[50px] h-1 bg-accent-tertiary/20"></div>
+          <div
+            class="absolute top-[24px] left-[50px] right-[50px] h-1 bg-accent-tertiary/20 connection-line"
+            :class="{ 'animate-line': isVisible }"
+          ></div>
 
           <!-- Process steps -->
           <div class="grid grid-cols-6 gap-4">
@@ -42,7 +52,7 @@
             >
               <div class="flex flex-col items-center">
                 <div
-                  class="w-12 h-12 rounded-full flex items-center justify-center bg-accent-primary text-white text-xl font-bold mb-3 z-10 shadow-lg shadow-accent-primary/20"
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-accent-primary text-white text-xl font-bold mb-3 z-10 shadow-lg shadow-accent-primary/20 step-number"
                 >
                   1
                 </div>
@@ -84,7 +94,7 @@
             >
               <div class="flex flex-col items-center">
                 <div
-                  class="w-12 h-12 rounded-full flex items-center justify-center bg-accent-primary text-white text-xl font-bold mb-3 z-10 shadow-lg shadow-accent-primary/20"
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-accent-primary text-white text-xl font-bold mb-3 z-10 shadow-lg shadow-accent-primary/20 step-number"
                 >
                   2
                 </div>
@@ -126,7 +136,7 @@
             >
               <div class="flex flex-col items-center">
                 <div
-                  class="w-12 h-12 rounded-full flex items-center justify-center bg-accent-primary text-white text-xl font-bold mb-3 z-10 shadow-lg shadow-accent-primary/20"
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-accent-primary text-white text-xl font-bold mb-3 z-10 shadow-lg shadow-accent-primary/20 step-number"
                 >
                   3
                 </div>
@@ -168,7 +178,7 @@
             >
               <div class="flex flex-col items-center">
                 <div
-                  class="w-12 h-12 rounded-full flex items-center justify-center bg-accent-primary text-white text-xl font-bold mb-3 z-10 shadow-lg shadow-accent-primary/20"
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-accent-primary text-white text-xl font-bold mb-3 z-10 shadow-lg shadow-accent-primary/20 step-number"
                 >
                   4
                 </div>
@@ -210,7 +220,7 @@
             >
               <div class="flex flex-col items-center">
                 <div
-                  class="w-12 h-12 rounded-full flex items-center justify-center bg-accent-primary text-white text-xl font-bold mb-3 z-10 shadow-lg shadow-accent-primary/20"
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-accent-primary text-white text-xl font-bold mb-3 z-10 shadow-lg shadow-accent-primary/20 step-number"
                 >
                   5
                 </div>
@@ -252,7 +262,7 @@
             >
               <div class="flex flex-col items-center">
                 <div
-                  class="w-12 h-12 rounded-full flex items-center justify-center bg-accent-primary text-white text-xl font-bold mb-3 z-10 shadow-lg shadow-accent-primary/20"
+                  class="w-12 h-12 rounded-full flex items-center justify-center bg-accent-primary text-white text-xl font-bold mb-3 z-10 shadow-lg shadow-accent-primary/20 step-number"
                 >
                   6
                 </div>
@@ -292,7 +302,10 @@
       <div class="md:hidden">
         <div class="relative pl-10">
           <!-- Vertical connection line -->
-          <div class="absolute top-0 bottom-0 left-4 w-1 bg-accent-tertiary/20"></div>
+          <div
+            class="absolute top-0 bottom-0 left-4 w-1 bg-accent-tertiary/20 vertical-connection-line"
+            :class="{ 'animate-vertical-line': isVisible }"
+          ></div>
 
           <!-- Step 1: Pre-Process -->
           <div
@@ -302,7 +315,7 @@
             :enter="{ opacity: 1, x: 0, transition: { delay: 200, duration: 600 } }"
           >
             <div
-              class="absolute top-0 left-[-30px] w-8 h-8 rounded-full flex items-center justify-center bg-accent-primary text-white text-base font-bold z-10 shadow-md shadow-accent-primary/20"
+              class="absolute top-0 left-[-30px] w-8 h-8 rounded-full flex items-center justify-center bg-accent-primary text-white text-base font-bold z-10 shadow-md shadow-accent-primary/20 mobile-step-number"
             >
               1
             </div>
@@ -340,7 +353,7 @@
             :enter="{ opacity: 1, x: 0, transition: { delay: 400, duration: 600 } }"
           >
             <div
-              class="absolute top-0 left-[-30px] w-8 h-8 rounded-full flex items-center justify-center bg-accent-primary text-white text-base font-bold z-10 shadow-md shadow-accent-primary/20"
+              class="absolute top-0 left-[-30px] w-8 h-8 rounded-full flex items-center justify-center bg-accent-primary text-white text-base font-bold z-10 shadow-md shadow-accent-primary/20 mobile-step-number"
             >
               2
             </div>
@@ -376,7 +389,7 @@
             :enter="{ opacity: 1, x: 0, transition: { delay: 600, duration: 600 } }"
           >
             <div
-              class="absolute top-0 left-[-30px] w-8 h-8 rounded-full flex items-center justify-center bg-accent-primary text-white text-base font-bold z-10 shadow-md shadow-accent-primary/20"
+              class="absolute top-0 left-[-30px] w-8 h-8 rounded-full flex items-center justify-center bg-accent-primary text-white text-base font-bold z-10 shadow-md shadow-accent-primary/20 mobile-step-number"
             >
               3
             </div>
@@ -414,7 +427,7 @@
             :enter="{ opacity: 1, x: 0, transition: { delay: 800, duration: 600 } }"
           >
             <div
-              class="absolute top-0 left-[-30px] w-8 h-8 rounded-full flex items-center justify-center bg-accent-primary text-white text-base font-bold z-10 shadow-md shadow-accent-primary/20"
+              class="absolute top-0 left-[-30px] w-8 h-8 rounded-full flex items-center justify-center bg-accent-primary text-white text-base font-bold z-10 shadow-md shadow-accent-primary/20 mobile-step-number"
             >
               4
             </div>
@@ -452,7 +465,7 @@
             :enter="{ opacity: 1, x: 0, transition: { delay: 1000, duration: 600 } }"
           >
             <div
-              class="absolute top-0 left-[-30px] w-8 h-8 rounded-full flex items-center justify-center bg-accent-primary text-white text-base font-bold z-10 shadow-md shadow-accent-primary/20"
+              class="absolute top-0 left-[-30px] w-8 h-8 rounded-full flex items-center justify-center bg-accent-primary text-white text-base font-bold z-10 shadow-md shadow-accent-primary/20 mobile-step-number"
             >
               5
             </div>
@@ -490,7 +503,7 @@
             :enter="{ opacity: 1, x: 0, transition: { delay: 1200, duration: 600 } }"
           >
             <div
-              class="absolute top-0 left-[-30px] w-8 h-8 rounded-full flex items-center justify-center bg-accent-primary text-white text-base font-bold z-10 shadow-md shadow-accent-primary/20"
+              class="absolute top-0 left-[-30px] w-8 h-8 rounded-full flex items-center justify-center bg-accent-primary text-white text-base font-bold z-10 shadow-md shadow-accent-primary/20 mobile-step-number"
             >
               6
             </div>
@@ -530,9 +543,9 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Card 1: My Approach -->
           <div
-            class="bg-background-alt/40 dark:bg-background/70 p-6 rounded-xl border border-accent-tertiary/10 shadow-lg"
+            class="bg-background-alt/40 dark:bg-background/70 p-6 rounded-xl border border-accent-tertiary/10 shadow-lg process-card"
           >
-            <div class="text-accent-primary mb-4">
+            <div class="text-accent-primary mb-4 icon-pulse">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-10 w-10"
@@ -563,9 +576,9 @@
 
           <!-- Card 2: Collaboration -->
           <div
-            class="bg-background-alt/40 dark:bg-background/70 p-6 rounded-xl border border-accent-tertiary/10 shadow-lg"
+            class="bg-background-alt/40 dark:bg-background/70 p-6 rounded-xl border border-accent-tertiary/10 shadow-lg process-card"
           >
-            <div class="text-accent-primary mb-4">
+            <div class="text-accent-primary mb-4 icon-pulse">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-10 w-10"
@@ -601,6 +614,34 @@
 
 <script setup>
 // i18n removed - using direct English text
+import { ref, onMounted } from 'vue';
+
+// Intersection Observer state
+const isVisible = ref(false);
+
+// Intersection Observer directive
+const vIntersectionObserver = {
+  mounted(el) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // When section enters viewport
+        if (entries[0].isIntersecting) {
+          isVisible.value = true;
+          // Once triggered, disconnect observer
+          observer.disconnect();
+        }
+      },
+      {
+        root: null, // Use viewport
+        threshold: 0.2, // Trigger when 20% visible
+        rootMargin: '0px',
+      },
+    );
+
+    // Observe the element
+    observer.observe(el);
+  },
+};
 
 // Animation directive (same as other components)
 const vMotion = {
@@ -639,9 +680,33 @@ const vMotion = {
     }, binding.value.enter?.transition?.delay || 0);
   },
 };
+
+// Make directives accessible in template
+const directives = {
+  'intersection-observer': vIntersectionObserver,
+  motion: vMotion,
+};
 </script>
 
 <style scoped>
+/* Section transitions */
+.section-visible {
+  animation: fadeInSection 1.2s ease-out forwards;
+}
+
+@keyframes fadeInSection {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+    backdrop-filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    backdrop-filter: blur(0);
+  }
+}
+
 /* Process step styles */
 .process-step-desktop {
   transition: all 0.3s ease;
@@ -650,6 +715,129 @@ const vMotion = {
 .process-step-mobile {
   position: relative;
   transition: all 0.3s ease;
+}
+
+/* Step number floating effect */
+.step-number {
+  animation: floatUpDown 3s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.step-number:hover {
+  box-shadow: 0 0 15px 5px rgba(var(--accent-primary-rgb), 0.4);
+  transform: scale(1.1);
+}
+
+.mobile-step-number {
+  animation: floatUpDown 3s ease-in-out infinite;
+  animation-delay: calc(var(--index, 0) * 0.2s);
+  transition: all 0.3s ease;
+}
+
+.mobile-step-number:hover {
+  box-shadow: 0 0 12px 4px rgba(var(--accent-primary-rgb), 0.4);
+  transform: scale(1.1);
+}
+
+@keyframes floatUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+/* Connection line animations */
+.connection-line {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--accent-primary);
+  animation: drawLine 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes drawLine {
+  0% {
+    width: 0;
+    opacity: 0.3;
+  }
+  100% {
+    width: 100%;
+    opacity: 0.5;
+  }
+}
+
+.vertical-connection-line {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-vertical-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color: var(--accent-primary);
+  animation: drawVerticalLine 1.8s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes drawVerticalLine {
+  0% {
+    height: 0;
+    opacity: 0.3;
+  }
+  100% {
+    height: 100%;
+    opacity: 0.5;
+  }
+}
+
+/* Background blob animations */
+.background-blob {
+  opacity: 0;
+  transform: scale(0.9);
+  transition:
+    transform 1.5s ease-out,
+    opacity 1.5s ease-out;
+}
+
+.animate-blob {
+  opacity: 0.5;
+  transform: scale(1);
+  animation: pulseBlob 8s ease-in-out infinite;
+}
+
+.animate-blob-delayed {
+  opacity: 0.5;
+  transform: scale(1);
+  animation: pulseBlob 8s ease-in-out infinite;
+  animation-delay: 4s;
+}
+
+@keyframes pulseBlob {
+  0%,
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+  33% {
+    transform: scale(1.05) translate(5px, -5px);
+  }
+  66% {
+    transform: scale(0.95) translate(-5px, 5px);
+  }
 }
 
 /* Animation and layout utilities */
@@ -669,14 +857,55 @@ const vMotion = {
   transform: translateY(-5px);
 }
 
-/* Card hover effects */
-.process-card {
+/* Icon pulse animation */
+.icon-pulse svg {
   transition: all 0.3s ease;
 }
 
+.icon-pulse:hover svg {
+  transform: scale(1.1);
+  animation: pulsateIcon 1.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 5px rgba(var(--accent-primary-rgb), 0.5));
+}
+
+@keyframes pulsateIcon {
+  0%,
+  100% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Card hover effects */
+.process-card {
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+}
+
 .process-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  border-color: rgba(var(--accent-primary-rgb), 0.3);
+}
+
+.process-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  opacity: 0;
+  box-shadow: 0 15px 35px rgba(var(--accent-primary-rgb), 0.2);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: -1;
+}
+
+.process-card:hover::after {
+  opacity: 1;
 }
 
 /* Connection line animations */
@@ -691,6 +920,24 @@ const vMotion = {
 @media (max-width: 767px) {
   .process-step-mobile p {
     font-size: 0.875rem;
+  }
+}
+
+/* Reduced motion preference support */
+@media (prefers-reduced-motion: reduce) {
+  .section-visible,
+  .step-number,
+  .mobile-step-number,
+  .animate-line::after,
+  .animate-vertical-line::after,
+  .background-blob,
+  .animate-blob,
+  .animate-blob-delayed,
+  .icon-pulse:hover svg,
+  .process-card:hover {
+    animation: none !important;
+    transition: opacity 0.1s linear !important;
+    transform: none !important;
   }
 }
 </style>
