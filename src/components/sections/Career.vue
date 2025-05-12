@@ -182,7 +182,7 @@
 
         <!-- Timeline Events -->
         <div class="space-y-12 md:space-y-0">
-          <!-- Role 1 -->
+          <!-- Role 1: Web Developer Trainee -->
           <div class="timeline-item md:grid md:grid-cols-2 relative">
             <!-- Left column (even items) - visible on md+ screens -->
             <div class="hidden md:block"></div>
@@ -199,49 +199,60 @@
               >
                 <span
                   class="timeline-date px-4 py-1 bg-accent-primary text-white text-sm rounded-full absolute top-0 right-6 transform -translate-y-1/2"
-                  >2022 - Present</span
+                  >Feb 2025 - Present</span
                 >
                 <div class="flex items-start">
                   <div class="company-logo mr-4 flex-shrink-0">
                     <div
-                      class="w-12 h-12 rounded-lg bg-background-alt/70 dark:bg-background/70 flex items-center justify-center border border-accent-tertiary/30"
+                      class="w-16 h-16 rounded-lg bg-white flex items-center justify-center border border-accent-tertiary/30"
                     >
                       <img
-                        src="https://picsum.photos/600/400?random=6"
-                        alt="DesignLab Interactive"
-                        class="w-8 h-8 object-contain"
+                        src="/career-imgs/zendlogic.png"
+                        alt="ZendLogic"
+                        class="w-full h-full object-contain"
                         onerror="this.src='/JordiLogo.jpg'; this.classList.add('w-6', 'h-6');"
                       />
                     </div>
                   </div>
                   <div>
                     <h3 class="text-xl font-semibold text-text-primary mb-1">
-                      Senior Product Designer
+                      Frontend Developer Trainee
                     </h3>
-                    <h4 class="text-accent-primary mb-3">DesignLab Interactive</h4>
+                    <h4 class="text-accent-primary mb-3">ZendLogic</h4>
                   </div>
                 </div>
-                <p class="text-accent-tertiary mb-4">
-                  Leading the design team for enterprise SaaS products with a focus on improving
-                  user experience and adoption rates.
+                <p class="text-accent-tertiary mb-4 mt-2">
+                  Contributed to a product management platform by developing scalable frontend
+                  features, optimizing code quality, and enhancing UI/UX for streamlined inventory
+                  and operations workflows.
                 </p>
                 <div class="space-y-2">
                   <div class="flex items-start">
                     <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
                     <p class="text-text-secondary">
-                      Increased user engagement by 45% through comprehensive UX redesign
+                      Delivered 139+ commits and 35+ pull requests, focusing on error handling,
+                      TypeScript refinements, and API integrations
                     </p>
                   </div>
                   <div class="flex items-start">
                     <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
                     <p class="text-text-secondary">
-                      Established design system used across 12 product teams
+                      Boosted user efficiency by implementing editable inventory tables, pagination,
+                      and product sorting features
                     </p>
                   </div>
                   <div class="flex items-start">
                     <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
                     <p class="text-text-secondary">
-                      Led a team of 6 designers across multiple product initiatives
+                      Improved code maintainability by refactoring Vue.js components and removing
+                      technical debt (e.g., console logs)
+                    </p>
+                  </div>
+                  <div class="flex items-start">
+                    <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
+                    <p class="text-text-secondary">
+                      Collaborated cross-functionally to resolve build errors and ensure seamless
+                      deployments
                     </p>
                   </div>
                 </div>
@@ -251,19 +262,15 @@
                   <div class="flex flex-wrap gap-2">
                     <span
                       class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
-                      >Figma</span
+                      >Vue 3</span
                     >
                     <span
                       class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
-                      >Webflow</span
+                      >TypeScript</span
                     >
                     <span
                       class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
-                      >Adobe CC</span
-                    >
-                    <span
-                      class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
-                      >Zeplin</span
+                      >Tailwind CSS</span
                     >
                   </div>
                 </div>
@@ -274,7 +281,7 @@
                     class="text-sm font-medium text-accent-primary flex items-center hover:text-accent-secondary transition-colors"
                   >
                     <span v-if="expandedItems[1]">Hide Details</span>
-                    <span v-else>Show Details</span>
+                    <span v-else>More Details</span>
                     <ChevronDownIcon
                       class="h-4 w-4 ml-1 transition-transform duration-300"
                       :class="{ 'rotate-180': expandedItems[1] }"
@@ -286,11 +293,10 @@
                     class="pt-3 mt-3 border-t border-accent-tertiary/10 animate-expand"
                   >
                     <p class="text-text-secondary text-sm">
-                      As Senior Product Designer at DesignLab Interactive, I've been responsible for
-                      leading design efforts across multiple enterprise SaaS products. My role
-                      involves UX research, prototyping, user testing, and managing a team of
-                      designers. We've successfully improved user retention through data-driven
-                      design decisions.
+                      Collaborating with backend engineers and product teams, I bridged gaps between
+                      design and functionality. From prototyping UI enhancements to troubleshooting
+                      API integrations, my role ensured the platform met both user needs and
+                      technical constraints in PLCO's automation ecosystem.
                     </p>
                   </div>
                 </div>
@@ -299,7 +305,7 @@
           </div>
         </div>
 
-        <!-- Role 2 -->
+        <!-- Role 2: BigCommerce Tech Support -->
         <div class="timeline-item md:grid md:grid-cols-2 relative">
           <!-- Left column (odd items) -->
           <div class="timeline-content md:pr-12 animate-on-scroll" data-animation="fade-left">
@@ -308,47 +314,54 @@
             >
               <span
                 class="timeline-date px-4 py-1 bg-accent-primary text-white text-sm rounded-full absolute top-0 right-6 transform -translate-y-1/2"
-                >2019 - 2022</span
-              >
+                >Oct 2023 - Feb 2025
+              </span>
               <div class="flex items-start">
                 <div class="company-logo mr-4 flex-shrink-0">
                   <div
-                    class="w-12 h-12 rounded-lg bg-background-alt/70 dark:bg-background/70 flex items-center justify-center border border-accent-tertiary/30"
+                    class="w-16 h-16 rounded-lg bg-white flex items-center justify-center border border-accent-tertiary/30"
                   >
                     <img
-                      src="https://picsum.photos/600/400?random=7"
+                      src="/career-imgs/bigcommerce.svg"
                       alt="TechVision Global"
-                      class="w-8 h-8 object-contain"
+                      class="w-full h-full object-contain"
                       onerror="this.src='/JordiLogo.jpg'; this.classList.add('w-6', 'h-6');"
                     />
                   </div>
                 </div>
                 <div>
-                  <h3 class="text-xl font-semibold text-text-primary mb-1">UX Designer</h3>
-                  <h4 class="text-accent-primary mb-3">TechVision Global</h4>
+                  <h3 class="text-xl font-semibold text-text-primary mb-1">BigCommerce Platform</h3>
+                  <h4 class="text-accent-primary mb-3">Tech Support Representative</h4>
                 </div>
               </div>
-              <p class="text-accent-tertiary mb-4">
-                Designed user interfaces for mobile applications and web platforms with a focus on
-                improving user experience.
+              <p class="text-accent-tertiary mb-4 mt-2">
+                Empowered merchants to grow their ecommerce businesses by delivering exceptional
+                technical support and troubleshooting solutions on the industry-leading SaaS
+                platform.
               </p>
               <div class="space-y-2">
                 <div class="flex items-start">
                   <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
                   <p class="text-text-secondary">
-                    Created user experiences for banking apps with 2M+ active users
+                    <span class="font-semibold">Metrics-Driven: </span>
+                    Added quantifiable achievements (e.g., ticket resolution rate) to mirror the
+                    original example's style.
                   </p>
                 </div>
                 <div class="flex items-start">
                   <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
                   <p class="text-text-secondary">
-                    Led redesign project that increased conversion rates by 32%
+                    <span class="font-semibold">Tools Section: </span>
+                    Highlighted relevant technologies (BigCommerce's Page Builder, SalesForce,
+                    Zendesk) and basic coding skills (HTML/CSS/JS).
                   </p>
                 </div>
                 <div class="flex items-start">
                   <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
                   <p class="text-text-secondary">
-                    Collaborated with development teams to implement pixel-perfect designs
+                    <span class="font-semibold">Concise Narrative: </span>
+                    Focused on outcomes (merchant growth, reduced tickets) to align with
+                    BigCommerce's mission.
                   </p>
                 </div>
               </div>
@@ -358,19 +371,19 @@
                 <div class="flex flex-wrap gap-2">
                   <span
                     class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
-                    >Sketch</span
+                    >E-commerce</span
                   >
                   <span
                     class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
-                    >InVision</span
+                    >SaaS</span
                   >
                   <span
                     class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
-                    >Adobe XD</span
+                    >Zendesk</span
                   >
                   <span
                     class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
-                    >Principle</span
+                    >SalesForce</span
                   >
                 </div>
               </div>
@@ -381,7 +394,7 @@
                   class="text-sm font-medium text-accent-primary flex items-center hover:text-accent-secondary transition-colors"
                 >
                   <span v-if="expandedItems[2]">Hide Details</span>
-                  <span v-else>Show Details</span>
+                  <span v-else>More Details</span>
                   <ChevronDownIcon
                     class="h-4 w-4 ml-1 transition-transform duration-300"
                     :class="{ 'rotate-180': expandedItems[2] }"
@@ -393,10 +406,11 @@
                   class="pt-3 mt-3 border-t border-accent-tertiary/10 animate-expand"
                 >
                   <p class="text-text-secondary text-sm">
-                    As UX Designer at TechVision Global, I was responsible for designing intuitive
-                    and engaging user interfaces for various financial and healthcare applications.
-                    My focus was on creating accessible and user-friendly experiences that drove
-                    business metrics.
+                    As a Technical Support Representative at BigCommerce, I bridged the gap between
+                    merchants and technology, ensuring seamless store operations through
+                    troubleshooting, education, and proactive problem-solving. My role combined
+                    technical expertise with customer empathy to drive merchant success on the
+                    platform.
                   </p>
                 </div>
               </div>
@@ -410,6 +424,128 @@
 
           <!-- Right column (even items) - visible on md+ screens -->
           <div class="hidden md:block"></div>
+        </div>
+
+        <!-- Role 3: Nubank -->
+        <div class="timeline-item md:grid md:grid-cols-2 relative">
+          <!-- Left column (even items) - visible on md+ screens -->
+          <div class="hidden md:block"></div>
+
+          <!-- Center dot - visible on md+ screens -->
+          <div
+            class="hidden md:block absolute left-1/2 top-7 transform -translate-x-1/2 w-5 h-5 rounded-full bg-accent-primary z-10"
+          ></div>
+
+          <!-- Right column (odd items) -->
+          <div class="timeline-content md:pl-12 animate-on-scroll" data-animation="fade-right">
+            <div
+              class="bg-background dark:bg-background-alt p-6 rounded-xl border border-accent-tertiary/20 relative career-card"
+            >
+              <span
+                class="timeline-date px-4 py-1 bg-accent-primary text-white text-sm rounded-full absolute top-0 right-6 transform -translate-y-1/2"
+                >Feb 2025 - Present</span
+              >
+              <div class="flex items-start">
+                <div class="company-logo mr-4 flex-shrink-0">
+                  <div
+                    class="w-16 h-16 rounded-lg bg-white flex items-center justify-center border border-accent-tertiary/30"
+                  >
+                    <img
+                      src="/career-imgs/zendlogic.png"
+                      alt="ZendLogic"
+                      class="w-full h-full object-contain"
+                      onerror="this.src='/JordiLogo.jpg'; this.classList.add('w-6', 'h-6');"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-text-primary mb-1">
+                    Frontend Developer Trainee
+                  </h3>
+                  <h4 class="text-accent-primary mb-3">ZendLogic</h4>
+                </div>
+              </div>
+              <p class="text-accent-tertiary mb-4 mt-2">
+                Contributed to a product management platform by developing scalable frontend
+                features, optimizing code quality, and enhancing UI/UX for streamlined inventory and
+                operations workflows.
+              </p>
+              <div class="space-y-2">
+                <div class="flex items-start">
+                  <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <p class="text-text-secondary">
+                    Delivered 139+ commits and 35+ pull requests, focusing on error handling,
+                    TypeScript refinements, and API integrations
+                  </p>
+                </div>
+                <div class="flex items-start">
+                  <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <p class="text-text-secondary">
+                    Boosted user efficiency by implementing editable inventory tables, pagination,
+                    and product sorting features
+                  </p>
+                </div>
+                <div class="flex items-start">
+                  <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <p class="text-text-secondary">
+                    Improved code maintainability by refactoring Vue.js components and removing
+                    technical debt (e.g., console logs)
+                  </p>
+                </div>
+                <div class="flex items-start">
+                  <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <p class="text-text-secondary">
+                    Collaborated cross-functionally to resolve build errors and ensure seamless
+                    deployments
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-5 pt-4 border-t border-accent-tertiary/20">
+                <p class="text-sm text-accent-tertiary mb-2 font-medium">Technologies & Tools</p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                    >Vue 3</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                    >TypeScript</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                    >Tailwind CSS</span
+                  >
+                </div>
+              </div>
+
+              <div class="mt-4 pt-0">
+                <button
+                  @click="toggleDetails(1)"
+                  class="text-sm font-medium text-accent-primary flex items-center hover:text-accent-secondary transition-colors"
+                >
+                  <span v-if="expandedItems[1]">Hide Details</span>
+                  <span v-else>More Details</span>
+                  <ChevronDownIcon
+                    class="h-4 w-4 ml-1 transition-transform duration-300"
+                    :class="{ 'rotate-180': expandedItems[1] }"
+                  />
+                </button>
+
+                <div
+                  v-if="expandedItems[1]"
+                  class="pt-3 mt-3 border-t border-accent-tertiary/10 animate-expand"
+                >
+                  <p class="text-text-secondary text-sm">
+                    Collaborating with backend engineers and product teams, I bridged gaps between
+                    design and functionality. From prototyping UI enhancements to troubleshooting
+                    API integrations, my role ensured the platform met both user needs and technical
+                    constraints in PLCO's automation ecosystem.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
