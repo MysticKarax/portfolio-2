@@ -13,16 +13,19 @@
     <div class="container mx-auto px-4 relative z-10">
       <!-- Section title -->
       <div class="text-center mb-16 max-w-3xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll" 
-            data-animation="fade-up">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll" data-animation="fade-up">
           My Skillset
         </h2>
-        <div class="w-24 h-1 bg-accent-primary mx-auto rounded-full mb-6 animate-on-scroll"
-             data-animation="scale-x" 
-             data-delay="200"></div>
-        <p class="text-lg text-accent-tertiary animate-on-scroll" 
-           data-animation="fade-up" 
-           data-delay="300">
+        <div
+          class="w-24 h-1 bg-accent-primary mx-auto rounded-full mb-6 animate-on-scroll"
+          data-animation="scale-x"
+          data-delay="200"
+        ></div>
+        <p
+          class="text-lg text-accent-tertiary animate-on-scroll"
+          data-animation="fade-up"
+          data-delay="300"
+        >
           A web developer with passion for solving complex problems through elegant interfaces
         </p>
       </div>
@@ -30,41 +33,38 @@
       <!-- Skills grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Web Design Skill -->
-        <div 
+        <div
           class="skill-card group bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:border-accent-primary/50 animate-on-scroll"
           data-animation="fade-up"
           data-delay="100"
         >
           <!-- Icon -->
           <div class="skill-icon-wrapper mb-6">
-            <div class="h-16 w-16 rounded-lg bg-accent-primary/10 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-all duration-300">
+            <div
+              class="h-16 w-16 rounded-lg bg-accent-primary/10 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-all duration-300"
+            >
               <PhotoIcon class="h-8 w-8" />
             </div>
           </div>
 
           <!-- Title -->
-          <h3 class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300">
+          <h3
+            class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300"
+          >
             Web Design
           </h3>
 
           <!-- Description -->
-          <p class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300">
+          <p
+            class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300"
+          >
             Creating visual content that communicates messages effectively
           </p>
-          
-          <!-- Skill level indicator -->
-          <div class="mt-4">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-xs text-accent-tertiary">Skill Level</span>
-              <span class="text-xs text-accent-primary font-semibold">Advanced</span>
-            </div>
-            <div class="w-full bg-accent-tertiary/20 h-2 rounded-full overflow-hidden">
-              <div class="bg-accent-primary h-full rounded-full" style="width: 90%"></div>
-            </div>
-          </div>
 
           <!-- Skill details - Hidden and shown on hover -->
-          <div class="skill-details mt-6 pt-6 border-t border-accent-tertiary/20 opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-96 transition-all duration-500">
+          <div
+            class="skill-details mt-6 pt-6 border-t border-accent-tertiary/20 opacity-100 max-h-96 overflow-hidden transition-all duration-500"
+          >
             <ul class="space-y-2">
               <li class="flex items-start">
                 <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
@@ -83,41 +83,38 @@
         </div>
 
         <!-- User Interface Skill -->
-        <div 
+        <div
           class="skill-card group bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:border-accent-primary/50 animate-on-scroll"
           data-animation="fade-up"
           data-delay="300"
         >
           <!-- Icon -->
           <div class="skill-icon-wrapper mb-6">
-            <div class="h-16 w-16 rounded-lg bg-accent-primary/10 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-all duration-300">
+            <div
+              class="h-16 w-16 rounded-lg bg-accent-primary/10 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-all duration-300"
+            >
               <DeviceTabletIcon class="h-8 w-8" />
             </div>
           </div>
 
           <!-- Title -->
-          <h3 class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300">
+          <h3
+            class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300"
+          >
             User Interface
           </h3>
 
           <!-- Description -->
-          <p class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300">
+          <p
+            class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300"
+          >
             Building intuitive interfaces for digital products
           </p>
-          
-          <!-- Skill level indicator -->
-          <div class="mt-4">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-xs text-accent-tertiary">Skill Level</span>
-              <span class="text-xs text-accent-primary font-semibold">Expert</span>
-            </div>
-            <div class="w-full bg-accent-tertiary/20 h-2 rounded-full overflow-hidden">
-              <div class="bg-accent-primary h-full rounded-full" style="width: 95%"></div>
-            </div>
-          </div>
 
           <!-- Skill details - Hidden and shown on hover -->
-          <div class="skill-details mt-6 pt-6 border-t border-accent-tertiary/20 opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-96 transition-all duration-500">
+          <div
+            class="skill-details mt-6 pt-6 border-t border-accent-tertiary/20 opacity-100 max-h-96 overflow-hidden transition-all duration-500"
+          >
             <ul class="space-y-2">
               <li class="flex items-start">
                 <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
@@ -136,41 +133,38 @@
         </div>
 
         <!-- User Experience Skill -->
-        <div 
+        <div
           class="skill-card group bg-background-alt/40 dark:bg-background/70 rounded-xl p-8 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:border-accent-primary/50 animate-on-scroll md:col-span-2 lg:col-span-1"
           data-animation="fade-up"
           data-delay="500"
         >
           <!-- Icon -->
           <div class="skill-icon-wrapper mb-6">
-            <div class="h-16 w-16 rounded-lg bg-accent-primary/10 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-all duration-300">
+            <div
+              class="h-16 w-16 rounded-lg bg-accent-primary/10 flex items-center justify-center text-accent-primary group-hover:bg-accent-primary group-hover:text-white transition-all duration-300"
+            >
               <UserGroupIcon class="h-8 w-8" />
             </div>
           </div>
 
           <!-- Title -->
-          <h3 class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300">
+          <h3
+            class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300"
+          >
             User Experience
           </h3>
 
           <!-- Description -->
-          <p class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300">
+          <p
+            class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300"
+          >
             Designing seamless and enjoyable user journeys
           </p>
-          
-          <!-- Skill level indicator -->
-          <div class="mt-4">
-            <div class="flex items-center justify-between mb-1">
-              <span class="text-xs text-accent-tertiary">Skill Level</span>
-              <span class="text-xs text-accent-primary font-semibold">Advanced</span>
-            </div>
-            <div class="w-full bg-accent-tertiary/20 h-2 rounded-full overflow-hidden">
-              <div class="bg-accent-primary h-full rounded-full" style="width: 85%"></div>
-            </div>
-          </div>
 
           <!-- Skill details - Hidden and shown on hover -->
-          <div class="skill-details mt-6 pt-6 border-t border-accent-tertiary/20 opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-96 transition-all duration-500">
+          <div
+            class="skill-details mt-6 pt-6 border-t border-accent-tertiary/20 opacity-100 max-h-96 overflow-hidden transition-all duration-500"
+          >
             <ul class="space-y-2">
               <li class="flex items-start">
                 <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
@@ -193,36 +187,39 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import { CheckIcon, PhotoIcon, DeviceTabletIcon, UserGroupIcon } from '@heroicons/vue/24/outline'
+import { onMounted } from 'vue';
+import { CheckIcon, PhotoIcon, DeviceTabletIcon, UserGroupIcon } from '@heroicons/vue/24/outline';
 
 // Animation on scroll functionality
 onMounted(() => {
-  const animatedElements = document.querySelectorAll('.animate-on-scroll')
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target
-        const animation = el.dataset.animation || 'fade-up'
-        const delay = el.dataset.delay || 0
-        
-        setTimeout(() => {
-          el.classList.add(`animate-${animation}`)
-          el.style.opacity = 1
-        }, delay)
-        
-        // Unobserve after animation
-        observer.unobserve(el)
-      }
-    })
-  }, { threshold: 0.1 })
-  
-  animatedElements.forEach(el => {
-    el.style.opacity = 0
-    observer.observe(el)
-  })
-})
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const animation = el.dataset.animation || 'fade-up';
+          const delay = el.dataset.delay || 0;
+
+          setTimeout(() => {
+            el.classList.add(`animate-${animation}`);
+            el.style.opacity = 1;
+          }, delay);
+
+          // Unobserve after animation
+          observer.unobserve(el);
+        }
+      });
+    },
+    { threshold: 0.1 },
+  );
+
+  animatedElements.forEach((el) => {
+    el.style.opacity = 0;
+    observer.observe(el);
+  });
+});
 </script>
 
 <style scoped>
