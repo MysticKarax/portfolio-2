@@ -237,13 +237,6 @@
                   <div class="flex items-start">
                     <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
                     <p class="text-text-secondary">
-                      Boosted user efficiency by implementing editable inventory tables, pagination,
-                      and product sorting features
-                    </p>
-                  </div>
-                  <div class="flex items-start">
-                    <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
-                    <p class="text-text-secondary">
                       Improved code maintainability by refactoring Vue.js components and removing
                       technical debt (e.g., console logs)
                     </p>
@@ -258,8 +251,14 @@
                 </div>
 
                 <div class="mt-5 pt-4 border-t border-accent-tertiary/20">
-                  <p class="text-sm text-accent-tertiary mb-2 font-medium">Technologies & Tools</p>
+                  <p class="text-sm text-accent-tertiary mb-2 font-medium">
+                    Work Mode, Technologies & Tools
+                  </p>
                   <div class="flex flex-wrap gap-2">
+                    <span
+                      class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                      >Remote</span
+                    >
                     <span
                       class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
                       >Vue 3</span
@@ -296,7 +295,7 @@
                       Collaborating with backend engineers and product teams, I bridged gaps between
                       design and functionality. From prototyping UI enhancements to troubleshooting
                       API integrations, my role ensured the platform met both user needs and
-                      technical constraints in PLCO's automation ecosystem.
+                      technical constraints in PLCO's automation ecosystem
                     </p>
                   </div>
                 </div>
@@ -337,7 +336,7 @@
               <p class="text-accent-tertiary mb-4 mt-2">
                 Empowered merchants to grow their ecommerce businesses by delivering exceptional
                 technical support and troubleshooting solutions on the industry-leading SaaS
-                platform.
+                platform
               </p>
               <div class="space-y-2">
                 <div class="flex items-start">
@@ -345,7 +344,7 @@
                   <p class="text-text-secondary">
                     <span class="font-semibold">Metrics-Driven: </span>
                     Added quantifiable achievements (e.g., ticket resolution rate) to mirror the
-                    original example's style.
+                    original example's style
                   </p>
                 </div>
                 <div class="flex items-start">
@@ -353,7 +352,7 @@
                   <p class="text-text-secondary">
                     <span class="font-semibold">Tools Section: </span>
                     Highlighted relevant technologies (BigCommerce's Page Builder, SalesForce,
-                    Zendesk) and basic coding skills (HTML/CSS/JS).
+                    Zendesk) and basic coding skills (HTML/CSS/JS)
                   </p>
                 </div>
                 <div class="flex items-start">
@@ -361,14 +360,20 @@
                   <p class="text-text-secondary">
                     <span class="font-semibold">Concise Narrative: </span>
                     Focused on outcomes (merchant growth, reduced tickets) to align with
-                    BigCommerce's mission.
+                    BigCommerce's mission
                   </p>
                 </div>
               </div>
 
               <div class="mt-5 pt-4 border-t border-accent-tertiary/20">
-                <p class="text-sm text-accent-tertiary mb-2 font-medium">Technologies & Tools</p>
+                <p class="text-sm text-accent-tertiary mb-2 font-medium">
+                  Work Mode, Technologies & Tools
+                </p>
                 <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                    >Remote</span
+                  >
                   <span
                     class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
                     >E-commerce</span
@@ -376,10 +381,6 @@
                   <span
                     class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
                     >SaaS</span
-                  >
-                  <span
-                    class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
-                    >Zendesk</span
                   >
                   <span
                     class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
@@ -410,7 +411,7 @@
                     merchants and technology, ensuring seamless store operations through
                     troubleshooting, education, and proactive problem-solving. My role combined
                     technical expertise with customer empathy to drive merchant success on the
-                    platform.
+                    platform
                   </p>
                 </div>
               </div>
@@ -443,7 +444,7 @@
             >
               <span
                 class="timeline-date px-4 py-1 bg-accent-primary text-white text-sm rounded-full absolute top-0 right-6 transform -translate-y-1/2"
-                >Feb 2025 - Present</span
+                >Jun 2022 - May 2023</span
               >
               <div class="flex items-start">
                 <div class="company-logo mr-4 flex-shrink-0">
@@ -451,7 +452,7 @@
                     class="w-16 h-16 rounded-lg bg-white flex items-center justify-center border border-accent-tertiary/30"
                   >
                     <img
-                      src="/career-imgs/zendlogic.png"
+                      src="/career-imgs/nubank.svg"
                       alt="ZendLogic"
                       class="w-full h-full object-contain"
                       onerror="this.src='/JordiLogo.jpg'; this.classList.add('w-6', 'h-6');"
@@ -460,62 +461,63 @@
                 </div>
                 <div>
                   <h3 class="text-xl font-semibold text-text-primary mb-1">
-                    Frontend Developer Trainee
+                    Product Acquisition Agent (Xpeer)
                   </h3>
-                  <h4 class="text-accent-primary mb-3">ZendLogic</h4>
+                  <h4 class="text-accent-primary mb-3">Nubank</h4>
                 </div>
               </div>
               <p class="text-accent-tertiary mb-4 mt-2">
-                Contributed to a product management platform by developing scalable frontend
-                features, optimizing code quality, and enhancing UI/UX for streamlined inventory and
-                operations workflows.
+                Drove fanatical customer loyalty by building meaningful relationships and delivering
+                standout support experiences in Nu's digital-first banking ecosystem
               </p>
               <div class="space-y-2">
                 <div class="flex items-start">
                   <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
                   <p class="text-text-secondary">
-                    Delivered 139+ commits and 35+ pull requests, focusing on error handling,
-                    TypeScript refinements, and API integrations
+                    <span class="font-semibold">Boosted Customer Advocacy: </span>Personalized
+                    high-touch support for 500+ clients, resolving pain points with tailored
+                    solutions that strengthened trust
                   </p>
                 </div>
                 <div class="flex items-start">
                   <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
                   <p class="text-text-secondary">
-                    Boosted user efficiency by implementing editable inventory tables, pagination,
-                    and product sorting features
+                    <span class="font-semibold">Regulatory Collaboration: </span>Partnered with
+                    legal teams to streamline compliance workflows, ensuring seamless adherence to
+                    Brazil's banking regulations
                   </p>
                 </div>
                 <div class="flex items-start">
                   <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
                   <p class="text-text-secondary">
-                    Improved code maintainability by refactoring Vue.js components and removing
-                    technical debt (e.g., console logs)
-                  </p>
-                </div>
-                <div class="flex items-start">
-                  <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
-                  <p class="text-text-secondary">
-                    Collaborated cross-functionally to resolve build errors and ensure seamless
-                    deployments
+                    <span class="font-semibold">Community Growth: </span>Cultivated a 200-member
+                    client ambassador program (Xpeer) through proactive engagement and exclusive
+                    onboarding
                   </p>
                 </div>
               </div>
 
               <div class="mt-5 pt-4 border-t border-accent-tertiary/20">
-                <p class="text-sm text-accent-tertiary mb-2 font-medium">Technologies & Tools</p>
+                <p class="text-sm text-accent-tertiary mb-2 font-medium">
+                  Work Mode, Technologies & Tools
+                </p>
                 <div class="flex flex-wrap gap-2">
                   <span
                     class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
-                    >Vue 3</span
+                    >Remote</span
                   >
                   <span
                     class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
-                    >TypeScript</span
+                    >Zendesk</span
                   >
                   <span
                     class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
-                    >Tailwind CSS</span
+                    >Slack</span
                   >
+                  <span
+                    class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                    >Twilio
+                  </span>
                 </div>
               </div>
 
@@ -537,16 +539,213 @@
                   class="pt-3 mt-3 border-t border-accent-tertiary/10 animate-expand"
                 >
                   <p class="text-text-secondary text-sm">
-                    Collaborating with backend engineers and product teams, I bridged gaps between
-                    design and functionality. From prototyping UI enhancements to troubleshooting
-                    API integrations, my role ensured the platform met both user needs and technical
-                    constraints in PLCO's automation ecosystem.
+                    As part of Nubank's Xpeer team, I fused empathy with data to turn customer
+                    interactions into long-term loyalty. By diagnosing systemic issues and
+                    advocating for product tweaks—from UX flows to regulatory compliance—I helped
+                    scale Nubank's reputation as Latin America's most loved bank
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Role 4: iNet Academy -->
+        <div class="timeline-item md:grid md:grid-cols-2 relative">
+          <!-- Left column (odd items) -->
+          <div class="timeline-content md:pr-12 animate-on-scroll" data-animation="fade-left">
+            <div
+              class="bg-background dark:bg-background-alt p-6 rounded-xl border border-accent-tertiary/20 relative career-card"
+            >
+              <span
+                class="timeline-date px-4 py-1 bg-accent-primary text-white text-sm rounded-full absolute top-0 right-6 transform -translate-y-1/2"
+                >May 2021 - May 2022
+              </span>
+              <div class="flex items-start">
+                <div class="company-logo mr-4 flex-shrink-0">
+                  <div
+                    class="w-16 h-16 rounded-lg bg-white flex items-center justify-center border border-accent-tertiary/30"
+                  >
+                    <img
+                      src="/career-imgs/inet.jpg"
+                      alt="iNet Academy"
+                      class="w-full h-full object-contain"
+                      onerror="this.src='/JordiLogo.jpg'; this.classList.add('w-6', 'h-6');"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-text-primary mb-1">iNet Academy</h3>
+                  <h4 class="text-accent-primary mb-3">Desktop Support Technician</h4>
+                </div>
+              </div>
+              <p class="text-accent-tertiary mb-4 mt-2">
+                Spearheaded Linux migrations and IT infrastructure optimizations, delivering
+                cost-effective solutions and seamless system performance for clients
+              </p>
+              <div class="space-y-2">
+                <div class="flex items-start">
+                  <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <p class="text-text-secondary">
+                    <span class="font-semibold">Led Windows-to-Ubuntu Migration: </span>
+                    Eliminated licensing costs by 100% for 50+ workstations while improving system
+                    efficiency and security
+                  </p>
+                </div>
+                <div class="flex items-start">
+                  <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <p class="text-text-secondary">
+                    <span class="font-semibold">Custom Hardware Solutions: </span>
+                    Built and deployed 30+ Linux-based PCs tailored to client needs, ensuring
+                    optimal performance and compatibility
+                  </p>
+                </div>
+                <div class="flex items-start">
+                  <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <p class="text-text-secondary">
+                    <span class="font-semibold">Technical Documentation: </span>
+                    Authored 15+ knowledge base articles and user guides, reducing repeat support
+                    tickets by 25%
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-5 pt-4 border-t border-accent-tertiary/20">
+                <p class="text-sm text-accent-tertiary mb-2 font-medium">
+                  Work Mode, Technologies & Tools
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                    >Hybrid</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                    >Linux</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                    >Bash Scripting</span
+                  >
+                  <span
+                    class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                    >Hardware Assembly</span
+                  >
+                </div>
+              </div>
+
+              <div class="mt-4 pt-0">
+                <button
+                  @click="toggleDetails(2)"
+                  class="text-sm font-medium text-accent-primary flex items-center hover:text-accent-secondary transition-colors"
+                >
+                  <span v-if="expandedItems[2]">Hide Details</span>
+                  <span v-else>More Details</span>
+                  <ChevronDownIcon
+                    class="h-4 w-4 ml-1 transition-transform duration-300"
+                    :class="{ 'rotate-180': expandedItems[2] }"
+                  />
+                </button>
+
+                <div
+                  v-if="expandedItems[2]"
+                  class="pt-3 mt-3 border-t border-accent-tertiary/10 animate-expand"
+                >
+                  <p class="text-text-secondary text-sm">
+                    I bridged the gap between legacy systems and modern Linux infrastructure. From
+                    hands-on PC builds to training teams on open-source tools, my work empowered
+                    clients to embrace scalable, cost-efficient technology without compromising
+                    performance
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Role 5: Call Centers -->
+        <div class="timeline-item md:grid md:grid-cols-2 relative">
+          <!-- Left column (even items) - visible on md+ screens -->
+          <div class="hidden md:block"></div>
+
+          <!-- Center dot - visible on md+ screens -->
+          <div
+            class="hidden md:block absolute left-1/2 top-7 transform -translate-x-1/2 w-5 h-5 rounded-full bg-accent-primary z-10"
+          ></div>
+
+          <!-- Right column (odd items) -->
+          <div class="timeline-content md:pl-12 animate-on-scroll" data-animation="fade-right">
+            <div
+              class="bg-background dark:bg-background-alt p-6 rounded-xl border border-accent-tertiary/20 relative career-card"
+            >
+              <span
+                class="timeline-date px-4 py-1 bg-accent-primary text-white text-sm rounded-full absolute top-0 right-6 transform -translate-y-1/2"
+                >Mar 2017 - Apr 2021</span
+              >
+              <div class="flex items-start">
+                <div class="company-logo mr-4 flex-shrink-0">
+                  <div
+                    class="w-16 h-16 rounded-lg bg-white flex items-center justify-center border border-accent-tertiary/30"
+                  >
+                    <img
+                      src="/career-imgs/callcenters.png"
+                      alt="Call Centers"
+                      class="w-full h-full object-contain"
+                      onerror="this.src='/JordiLogo.jpg'; this.classList.add('w-6', 'h-6');"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-text-primary mb-1">
+                    Customer Support Specialist
+                  </h3>
+                  <h4 class="text-accent-primary mb-3">
+                    3+ Years of Customer-Centric Technical Support
+                  </h4>
+                </div>
+              </div>
+              <p class="text-accent-tertiary mb-4 mt-2">
+                Delivered high-quality technical assistance across multiple call centers, resolving
+                complex issues while maintaining exceptional service standards and driving customer
+                satisfaction
+              </p>
+              <div class="space-y-2">
+                <div class="flex items-start">
+                  <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <p class="text-text-secondary">
+                    <span class="font-semibold"> Issue Resolution: </span>Addressed thousands of
+                    support tickets with a 92% first-contact resolution rate
+                  </p>
+                </div>
+                <div class="flex items-start">
+                  <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <p class="text-text-secondary">
+                    <span class="font-semibold">Customer Satisfaction: </span>Delivered high-quality
+                    technical assistance across multiple call centers, resolving complex issues
+                    while maintaining exceptional service standards and driving customer
+                    satisfaction
+                  </p>
+                </div>
+                <div class="flex items-start">
+                  <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
+                  <p class="text-text-secondary">
+                    <span class="font-semibold">Customer Retention: </span>De-escalated hundreds of
+                    high-priority cases, preserving client relationships and reducing churn
+                  </p>
+                </div>
+                <div class="mt-5 pt-4 border-t border-accent-tertiary/20">
+                  <p class="text-sm text-accent-tertiary mb-2 font-medium">Work Mode:</p>
+                  <div class="flex flex-wrap gap-2">
+                    <span
+                      class="px-3 py-1 text-xs bg-accent-primary/10 text-accent-primary rounded-full"
+                      >On-Site</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- MORE ROLES HERE -->
       </div>
     </div>
   </section>
