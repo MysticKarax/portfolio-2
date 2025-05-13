@@ -225,7 +225,7 @@
                       class="w-16 h-16 rounded-lg bg-white flex items-center justify-center border border-accent-tertiary/30"
                     >
                       <img
-                        src="/career-imgs/zendlogic.png"
+                        src="/career-imgs/zendlogic.webp"
                         alt="ZendLogic"
                         class="w-full h-full object-contain"
                         onerror="this.src='/JordiLogo.jpg'; this.classList.add('w-6', 'h-6');"
@@ -584,7 +584,7 @@
                     class="w-16 h-16 rounded-lg bg-white flex items-center justify-center border border-accent-tertiary/30"
                   >
                     <img
-                      src="/career-imgs/inet.jpg"
+                      src="/career-imgs/inet.webp"
                       alt="iNet Academy"
                       class="w-full h-full object-contain"
                       onerror="this.src='/JordiLogo.jpg'; this.classList.add('w-6', 'h-6');"
@@ -710,7 +710,7 @@
                     class="w-16 h-16 rounded-lg bg-white flex items-center justify-center border border-accent-tertiary/30"
                   >
                     <img
-                      src="/career-imgs/callcenters.png"
+                      src="/career-imgs/callcenters.webp"
                       alt="Call Centers"
                       class="w-full h-full object-contain"
                       onerror="this.src='/JordiLogo.jpg'; this.classList.add('w-6', 'h-6');"

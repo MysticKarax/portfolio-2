@@ -55,7 +55,7 @@
             <!-- Profile image -->
             <div class="relative rounded-xl overflow-hidden border-2 border-accent-tertiary/10">
               <img
-                src="/yo-2.png"
+                src="/yo-2.webp"
                 alt="Jordi - Product Designer"
                 class="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-105 about-img"
               />
@@ -144,9 +144,15 @@
                       />
                     </svg>
                   </div>
-                  <h4 class="font-medium text-text-primary transition-colors duration-300 group-hover:text-accent-primary">Human-Centered</h4>
+                  <h4
+                    class="font-medium text-text-primary transition-colors duration-300 group-hover:text-accent-primary"
+                  >
+                    Human-Centered
+                  </h4>
                 </div>
-                <p class="text-text-secondary text-sm transition-colors duration-300 group-hover:text-text-primary">
+                <p
+                  class="text-text-secondary text-sm transition-colors duration-300 group-hover:text-text-primary"
+                >
                   Building with empathy, aiming to enhance real lives and relationships through
                   thoughtful digital experiences that foster connection and trust
                 </p>
@@ -175,9 +181,15 @@
                       />
                     </svg>
                   </div>
-                  <h4 class="font-medium text-text-primary transition-colors duration-300 group-hover:text-accent-primary">Purpose-Driven</h4>
+                  <h4
+                    class="font-medium text-text-primary transition-colors duration-300 group-hover:text-accent-primary"
+                  >
+                    Purpose-Driven
+                  </h4>
                 </div>
-                <p class="text-text-secondary text-sm transition-colors duration-300 group-hover:text-text-primary">
+                <p
+                  class="text-text-secondary text-sm transition-colors duration-300 group-hover:text-text-primary"
+                >
                   Guiding every decision with a clear purpose, ensuring that every line of code and
                   every feature serves a greater good — one project at a time
                 </p>
@@ -206,9 +218,15 @@
                       />
                     </svg>
                   </div>
-                  <h4 class="font-medium text-text-primary transition-colors duration-300 group-hover:text-accent-primary">Simplicity & Clarity</h4>
+                  <h4
+                    class="font-medium text-text-primary transition-colors duration-300 group-hover:text-accent-primary"
+                  >
+                    Simplicity & Clarity
+                  </h4>
                 </div>
-                <p class="text-text-secondary text-sm transition-colors duration-300 group-hover:text-text-primary">
+                <p
+                  class="text-text-secondary text-sm transition-colors duration-300 group-hover:text-text-primary"
+                >
                   Striving for simplicity and clarity in every design, ensuring that the user can
                   understand and interact with the system with ease.
                 </p>
@@ -237,9 +255,15 @@
                       />
                     </svg>
                   </div>
-                  <h4 class="font-medium text-text-primary transition-colors duration-300 group-hover:text-accent-primary">Curiosity-First</h4>
+                  <h4
+                    class="font-medium text-text-primary transition-colors duration-300 group-hover:text-accent-primary"
+                  >
+                    Curiosity-First
+                  </h4>
                 </div>
-                <p class="text-text-secondary text-sm transition-colors duration-300 group-hover:text-text-primary">
+                <p
+                  class="text-text-secondary text-sm transition-colors duration-300 group-hover:text-text-primary"
+                >
                   Driven by the desire to understand how everything works — from the smallest
                   function to the vast systems behind our universe.
                 </p>

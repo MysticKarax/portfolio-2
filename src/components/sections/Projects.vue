@@ -40,7 +40,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="/projects-imgs/plcco-fe.png"
+              src="/projects-imgs/plcco-fe.webp"
               alt="PLCO Frontend"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
@@ -101,7 +101,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="/projects-imgs/bankist.png"
+              src="/projects-imgs/bankist.webp"
               alt="💳 Bankist - Digital Bank Frontend"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
@@ -164,7 +164,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="/projects-imgs/weather-app.png"
+              src="/projects-imgs/weather-app.webp"
               alt="Weather Dashboard"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
@@ -223,7 +223,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="/projects-imgs/travel-destinations.png"
+              src="/projects-imgs/travel-destinations.webp"
               alt="Travel Destinations SPA - Vue 3 & Vue Router"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
@@ -281,7 +281,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="/projects-imgs/voltnest.jpg"
+              src="/projects-imgs/voltnest.webp"
               alt="AR Shopping Experience"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
@@ -338,7 +338,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="/projects-imgs/silver-wolf-dice-game.png"
+              src="/projects-imgs/silver-wolf-dice-game.webp"
               alt="Travel Booking Platform"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
@@ -398,7 +398,7 @@
     v-model="isModalOpen"
     title="VoltNest - EV Charging Platform"
     message="Since this project is still in progress, here's a demo video about it"
-    video-src="/projects-videos/voltnest.mp4"
+    video-src="/projects-videos/voltnest-demo.mp4"
     button-text="Close"
     @close="isModalOpen = false"
   />

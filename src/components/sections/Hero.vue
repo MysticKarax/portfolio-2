@@ -82,7 +82,7 @@
             <!-- Hero image with shadow and rounded corners -->
             <div class="relative">
               <img
-                src="/yo-1.png"
+                src="/yo-1.webp"
                 alt="Hero illustration"
                 class="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-2xl shadow-xl hero-img"
                 loading="lazy"
