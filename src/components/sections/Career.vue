@@ -331,7 +331,7 @@
             >
               <span
                 class="timeline-date px-4 py-1 bg-accent-primary text-white text-sm rounded-full absolute top-0 right-6 transform -translate-y-1/2"
-                >Oct 2023 - Feb 2025
+                >Oct 2023 - Jan 2025
               </span>
               <div class="flex items-start">
                 <div class="company-logo mr-4 flex-shrink-0">
@@ -425,11 +425,10 @@
                   class="pt-3 mt-3 border-t border-accent-tertiary/10 animate-expand"
                 >
                   <p class="text-text-secondary text-sm">
-                    As a Technical Support Representative at BigCommerce, I bridged the gap between
-                    merchants and technology, ensuring seamless store operations through
-                    troubleshooting, education, and proactive problem-solving. My role combined
-                    technical expertise with customer empathy to drive merchant success on the
-                    platform
+                    I bridged the gap between merchants and technology, ensuring seamless store
+                    operations through troubleshooting, education, and proactive problem-solving. My
+                    role combined technical expertise with customer empathy to drive merchant
+                    success on the platform
                   </p>
                 </div>
               </div>
@@ -493,7 +492,7 @@
                   <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
                   <p class="text-text-secondary">
                     <span class="font-semibold">Boosted Customer Advocacy: </span>Personalized
-                    high-touch support for 500+ clients, resolving pain points with tailored
+                    high-touch support for thousands of clients, resolving pain points with tailored
                     solutions that strengthened trust
                   </p>
                 </div>
@@ -502,7 +501,7 @@
                   <p class="text-text-secondary">
                     <span class="font-semibold">Regulatory Collaboration: </span>Partnered with
                     legal teams to streamline compliance workflows, ensuring seamless adherence to
-                    Brazil's banking regulations
+                    Mexico's banking regulations
                   </p>
                 </div>
                 <div class="flex items-start">
@@ -557,10 +556,10 @@
                   class="pt-3 mt-3 border-t border-accent-tertiary/10 animate-expand"
                 >
                   <p class="text-text-secondary text-sm">
-                    As part of Nubank's Xpeer team, I fused empathy with data to turn customer
-                    interactions into long-term loyalty. By diagnosing systemic issues and
-                    advocating for product tweaks—from UX flows to regulatory compliance—I helped
-                    scale Nubank's reputation as Latin America's most loved bank
+                    I fused empathy with data to turn customer interactions into long-term loyalty.
+                    By diagnosing systemic issues and advocating for product tweaks—from UX flows to
+                    regulatory compliance—I helped scale Nubank's reputation as Latin America's most
+                    loved bank
                   </p>
                 </div>
               </div>

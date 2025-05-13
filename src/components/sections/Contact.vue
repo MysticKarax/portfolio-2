@@ -1,12 +1,16 @@
 <template>
-  <section id="contact" class="py-20 md:py-28 bg-accent-primary/10 relative overflow-hidden"
+  <section
+    id="contact"
+    class="py-20 md:py-28 bg-accent-primary/10 relative overflow-hidden"
     v-intersection-observer
-    :class="{ 'section-visible': isVisible }">
+    :class="{ 'section-visible': isVisible }"
+  >
     <!-- Background elements -->
     <div class="absolute inset-0 z-0 opacity-10">
-      <div 
+      <div
         class="absolute top-0 right-0 w-96 h-96 rounded-full bg-accent-primary blur-3xl animate-blob"
-        :class="{ 'opacity-100': isVisible }"></div>
+        :class="{ 'opacity-100': isVisible }"
+      ></div>
       <div
         class="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-accent-secondary blur-3xl animate-blob-delayed"
         :class="{ 'opacity-100': isVisible }"
@@ -79,6 +83,8 @@
           <!-- LinkedIn -->
           <a
             href="https://www.linkedin.com/in/jordidev-mx"
+            target="_blank"
+            rel="noopener noreferrer"
             class="w-12 h-12 rounded-full flex items-center justify-center bg-background/20 dark:bg-background/40 backdrop-blur-sm text-text-primary hover:text-accent-primary hover:bg-background/40 dark:hover:bg-background/60 transition-all duration-300 transform hover:-translate-y-1"
             aria-label="LinkedIn"
           >
@@ -92,6 +98,8 @@
           <!-- GitHub -->
           <a
             href="https://github.com/MysticKarax"
+            target="_blank"
+            rel="noopener noreferrer"
             class="w-12 h-12 rounded-full flex items-center justify-center bg-background/20 dark:bg-background/40 backdrop-blur-sm text-text-primary hover:text-accent-primary hover:bg-background/40 dark:hover:bg-background/60 transition-all duration-300 transform hover:-translate-y-1"
             aria-label="GitHub"
           >
@@ -108,10 +116,10 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 // i18n removed - using direct English text
-const isVisible = ref(false)
+const isVisible = ref(false);
 
 // Intersection Observer directive
 const vIntersectionObserver = {
@@ -119,17 +127,17 @@ const vIntersectionObserver = {
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
-          isVisible.value = true
-          observer.disconnect()
+          isVisible.value = true;
+          observer.disconnect();
         }
       },
       {
-        threshold: 0.2
-      }
-    )
-    observer.observe(el)
-  }
-}
+        threshold: 0.2,
+      },
+    );
+    observer.observe(el);
+  },
+};
 
 // Animation directive (same as other components)
 const vMotion = {
@@ -201,9 +209,16 @@ const vMotion = {
 }
 
 @keyframes blobFloat {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(20px, -20px) scale(1.1); }
-  66% { transform: translate(-20px, 20px) scale(0.9); }
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(20px, -20px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
 }
 
 /* Floating decorative elements */
@@ -232,13 +247,23 @@ const vMotion = {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 @keyframes floatReverse {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(15px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
 }
 
 /* Availability dot pulse */
@@ -247,8 +272,15 @@ const vMotion = {
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.2); opacity: 0.8; }
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
 }
 
 /* Reduced motion preferences */

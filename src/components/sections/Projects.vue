@@ -19,7 +19,7 @@
         <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">Projects</h2>
         <div class="w-20 h-1 bg-accent-primary mx-auto mb-6"></div>
         <p class="max-w-2xl mx-auto text-text-secondary text-lg">
-          Selected projects showcasing my design approach and problem-solving skills
+          Showcasing my design approach and problem-solving skills
         </p>
       </div>
 
@@ -183,7 +183,7 @@
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
             >
               <a
-                href="https://bankist-interactive.netlify.app/"
+                href="https://jordi-weather-app.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary hover:text-white text-white transition-colors duration-300"

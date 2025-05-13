@@ -11,7 +11,9 @@
         <!-- Social Media Icons -->
         <div class="flex space-x-4 mt-2">
           <a
-            href="#"
+            href="https://www.linkedin.com/in/jordidev-mx"
+            target="_blank"
+            rel="noopener noreferrer"
             class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
             aria-label="LinkedIn"
           >
@@ -23,7 +25,9 @@
             </svg>
           </a>
           <a
-            href="#"
+            href="https://github.com/MysticKarax"
+            target="_blank"
+            rel="noopener noreferrer"
             class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
             aria-label="GitHub"
           >
