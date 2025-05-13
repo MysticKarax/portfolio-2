@@ -661,6 +661,12 @@
               </div>
             </div>
           </div>
+          <!-- Center dot - visible on md+ screens -->
+          <div
+            class="hidden md:block absolute left-1/2 top-7 transform -translate-x-1/2 w-5 h-5 rounded-full bg-accent-primary z-10"
+          ></div>
+          <!-- Right column (even items) - visible on md+ screens -->
+          <div class="hidden md:block"></div>
         </div>
         <!-- Role 5: Call Centers -->
         <div class="timeline-item md:grid md:grid-cols-2 relative">
