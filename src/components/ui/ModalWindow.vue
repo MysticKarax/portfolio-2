@@ -16,18 +16,25 @@
 
     <!-- Modal Content -->
     <div
-      class="relative w-full max-w-md rounded-lg border border-accent-tertiary/10 bg-background-alt dark:bg-background/90 p-6 shadow-xl animate-fade-up"
+      class="relative w-full max-w-2xl max-h-[90vh] rounded-lg border border-accent-tertiary/10 bg-background-alt dark:bg-background/90 p-6 shadow-xl animate-fade-up overflow-y-auto"
       :class="{ 'dark:shadow-accent-primary/5': true }"
     >
       <div class="flex flex-col items-center justify-center">
         <!-- Modal Content -->
         <div class="text-center mb-6">
-          <h3 class="text-xl font-semibold text-text-primary mb-4">
+          <h3 class="text-xl font-semibold text-accent-primary mb-4">
             {{ title }}
           </h3>
           <p class="text-text-secondary">
             {{ message }}
           </p>
+
+          <!-- Video Player -->
+          <div v-if="videoSrc" class="mt-4 mb-6 w-full">
+            <div class="video-container">
+              <video :src="videoSrc" class="w-full rounded-md" controls preload="metadata"></video>
+            </div>
+          </div>
         </div>
 
         <!-- Action Button -->
@@ -49,20 +56,24 @@ import { ref, watch, onMounted, onUnmounted, nextTick } from 'vue';
 const props = defineProps({
   modelValue: {
     type: Boolean,
-    default: false
+    default: false,
   },
   title: {
     type: String,
-    default: 'Notification'
+    default: 'Notification',
   },
   message: {
     type: String,
-    default: 'Project Not Available. Try Again Later'
+    default: "Since this project is still in progress, here's a demo video about it",
+  },
+  videoSrc: {
+    type: String,
+    default: '',
   },
   buttonText: {
     type: String,
-    default: 'Accept'
-  }
+    default: 'Accept',
+  },
 });
 
 const emit = defineEmits(['update:modelValue', 'close']);
@@ -77,19 +88,23 @@ const close = () => {
 };
 
 // Handle focus management
-watch(() => props.modelValue, async (newValue) => {
-  if (newValue) {
-    // Store the previously focused element
-    previouslyFocusedElement.value = document.activeElement;
-    
-    // Focus the accept button after the modal is shown
-    await nextTick();
-    acceptButtonRef.value?.focus();
-  } else {
-    // Return focus to the previously focused element
-    previouslyFocusedElement.value?.focus();
-  }
-}, { immediate: true });
+watch(
+  () => props.modelValue,
+  async (newValue) => {
+    if (newValue) {
+      // Store the previously focused element
+      previouslyFocusedElement.value = document.activeElement;
+
+      // Focus the accept button after the modal is shown
+      await nextTick();
+      acceptButtonRef.value?.focus();
+    } else {
+      // Return focus to the previously focused element
+      previouslyFocusedElement.value?.focus();
+    }
+  },
+  { immediate: true },
+);
 
 // Handle ESC key press globally
 const handleEscKey = (event) => {
@@ -112,6 +127,18 @@ onUnmounted(() => {
   animation: fadeIn 0.3s ease-out forwards;
 }
 
+.video-container {
+  max-height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container video {
+  max-height: 60vh;
+  object-fit: contain;
+  width: 100%;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -121,4 +148,3 @@ onUnmounted(() => {
   }
 }
 </style>
-

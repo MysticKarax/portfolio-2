@@ -25,7 +25,7 @@
 
       <!-- Projects grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-        <!-- Project 1 -->
+        <!-- Project 1: PLC Company -->
         <div
           class="project-card group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 animate-on-scroll"
           data-animation="fade-up"
@@ -40,7 +40,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="/project-imgs/plcco-fe.png"
+              src="/projects-imgs/plcco-fe.png"
               alt="PLCO Frontend"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
@@ -59,7 +59,7 @@
               class="absolute inset-0 bg-background/80 dark:bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6"
             >
               <button
-                @click="isModalOpen = true"
+                @click="plcModalOpen = true"
                 class="px-4 py-2 text-sm rounded-full bg-accent-primary hover:bg-accent-secondary hover:text-white text-white transition-colors duration-300"
               >
                 Go To Project
@@ -92,7 +92,7 @@
           </div>
         </div>
 
-        <!-- Project 2 -->
+        <!-- Project 2: Bankist - Digital Bank Frontend -->
         <div
           class="project-card group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 animate-on-scroll"
           data-animation="fade-up"
@@ -101,7 +101,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="/project-imgs/bankist.png"
+              src="/projects-imgs/bankist.png"
               alt="💳 Bankist - Digital Bank Frontend"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
@@ -155,7 +155,7 @@
           </div>
         </div>
 
-        <!-- Project 3 -->
+        <!-- Project 3: Weather Dashboard -->
         <div
           class="project-card group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 animate-on-scroll"
           data-animation="fade-up"
@@ -164,7 +164,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="/project-imgs/weather-app.png"
+              src="/projects-imgs/weather-app.png"
               alt="Weather Dashboard"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
@@ -214,7 +214,7 @@
           </div>
         </div>
 
-        <!-- Project 4 -->
+        <!-- Project 4:  VoltNest - EV Charging Platform -->
         <div
           class="project-card group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 md:hidden lg:block animate-on-scroll"
           data-animation="fade-up"
@@ -223,7 +223,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="/project-imgs/travel-destinations.png"
+              src="/projects-imgs/travel-destinations.png"
               alt="Travel Destinations SPA - Vue 3 & Vue Router"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
@@ -266,7 +266,7 @@
           </div>
         </div>
 
-        <!-- Project 5 -->
+        <!-- Project 5: Destinations SPA - Vue 3 & Vue Router -->
         <div
           class="project-card group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 md:hidden lg:block animate-on-scroll"
           data-animation="fade-up"
@@ -281,7 +281,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="/project-imgs/voltnest.jpg"
+              src="/projects-imgs/voltnest.jpg"
               alt="AR Shopping Experience"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
@@ -338,7 +338,7 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="/project-imgs/silver-wolf-dice-game.png"
+              src="/projects-imgs/silver-wolf-dice-game.png"
               alt="Travel Booking Platform"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
@@ -396,10 +396,20 @@
 
   <ModalWindow
     v-model="isModalOpen"
-    title="Project Not Available"
-    message="Try Again Later"
-    buttonText="Accept"
+    title="VoltNest - EV Charging Platform"
+    message="Since this project is still in progress, here's a demo video about it"
+    video-src="/projects-videos/voltnest.mp4"
+    button-text="Close"
     @close="isModalOpen = false"
+  />
+
+  <ModalWindow
+    v-model="plcModalOpen"
+    title="PLC Company - Industrial Automation"
+    message="Demonstration of the PLC Company industrial automation platform"
+    video-src="/projects-videos/plcco-demo.mp4"
+    button-text="Close"
+    @close="plcModalOpen = false"
   />
 </template>
 
@@ -411,6 +421,7 @@ import ModalWindow from '@/components/ui/ModalWindow.vue';
 // Loading state management
 const loadingImages = ref({});
 const isModalOpen = ref(false);
+const plcModalOpen = ref(false);
 
 // Initialize loading states
 onMounted(() => {
