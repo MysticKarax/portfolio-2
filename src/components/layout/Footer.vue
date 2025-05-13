@@ -94,20 +94,6 @@
         <p class="text-accent-tertiary text-sm mb-4 md:mb-0">
           &copy; Jordan Garcia {{ currentYear }}
         </p>
-        <div class="flex space-x-4 text-sm">
-          <a
-            href="#"
-            class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
-          >
-            Privacy Policy
-          </a>
-          <a
-            href="#"
-            class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
-          >
-            Terms of Service
-          </a>
-        </div>
       </div>
     </div>
 
