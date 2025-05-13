@@ -107,11 +107,14 @@
               connected to our loved ones. My focus is on creating clean, functional, and
               human-centered digital experiences.
             </p>
-            <p class="text-text-secondary">
+            <p class="text-text-secondary mb-4">
               I began coding while studying Computer Engineering at the University of Guadalajara,
               and have since developed tools for businesses ranging from industrial automation to
-              digital banking. I see programming not just as a skill, but as a way to understand how
-              systems — and maybe even the universe — truly work.
+              digital banking.
+            </p>
+            <p class="text-text-secondary">
+              I see programming not just as a skill, but as a way to understand how systems — and
+              maybe even the universe — truly work.
             </p>
           </div>
 
