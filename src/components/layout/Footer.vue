@@ -92,8 +92,7 @@
     <div class="border-t border-accent-tertiary/20 mt-8 pt-8 pb-4">
       <div class="flex flex-col md:flex-row justify-between items-center">
         <p class="text-accent-tertiary text-sm mb-4 md:mb-0">
-          &copy; {{ currentYear }} Created by Warp AI Agent, refined by Jordan Garcia. All Rights
-          Reserved
+          &copy; Jordan Garcia {{ currentYear }}
         </p>
         <div class="flex space-x-4 text-sm">
           <a
