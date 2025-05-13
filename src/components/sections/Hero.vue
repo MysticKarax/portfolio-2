@@ -42,9 +42,8 @@
             data-animation="fade-up"
             data-delay="800"
           >
-            I'm drawn to web development because it reveals how systems shape our everyday
-            experience. For me, programming is more than code—it's a tool to simplify life, improve
-            connection, and explore the deeper logic of how things work.
+            Programming is more than just code; it's a tool to simplify life, improve connection,
+            and explore the deeper logic of how things work.
           </p>
 
           <!-- CTA section -->

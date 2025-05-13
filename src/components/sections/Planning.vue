@@ -1,6 +1,6 @@
 <template>
   <section
-    id="process"
+    id="planning"
     class="py-16 md:py-24 relative overflow-hidden"
     v-intersection-observer
     :class="{ 'section-visible': isVisible }"
@@ -25,14 +25,14 @@
         :initial="{ opacity: 0, y: 20 }"
         :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
       >
-        <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">Process</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">Planning</h2>
         <div class="w-20 h-1 bg-accent-primary mx-auto mb-6"></div>
         <p class="max-w-2xl mx-auto text-text-secondary text-lg">
           My methodical approach ensures every project meets and exceeds expectations
         </p>
       </div>
 
-      <!-- Process steps - Desktop (hidden on mobile) -->
+      <!-- Planning steps - Desktop (hidden on mobile) -->
       <div class="hidden md:block">
         <div class="relative">
           <!-- Connection line -->
@@ -41,9 +41,9 @@
             :class="{ 'animate-line': isVisible }"
           ></div>
 
-          <!-- Process steps -->
+          <!-- Planning steps -->
           <div class="grid grid-cols-6 gap-4">
-            <!-- Step 1: Pre-Process -->
+            <!-- Step 1: Pre-Planning -->
             <div
               class="relative"
               v-motion
@@ -298,7 +298,7 @@
         </div>
       </div>
 
-      <!-- Process steps - Mobile (visible only on mobile) -->
+      <!-- Planning steps - Mobile (visible only on mobile) -->
       <div class="md:hidden">
         <div class="relative pl-10">
           <!-- Vertical connection line -->
@@ -533,7 +533,7 @@
         </div>
       </div>
 
-      <!-- Process details with cards -->
+      <!-- Planning details with cards -->
       <div
         class="mt-20 max-w-4xl mx-auto"
         v-motion
@@ -543,7 +543,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Card 1: My Approach -->
           <div
-            class="bg-background-alt/40 dark:bg-background/70 p-6 rounded-xl border border-accent-tertiary/10 shadow-lg process-card"
+            class="bg-background-alt/40 dark:bg-background/70 p-6 rounded-xl border border-accent-tertiary/10 shadow-lg planning-card"
           >
             <div class="text-accent-primary mb-4 icon-pulse">
               <svg
@@ -576,7 +576,7 @@
 
           <!-- Card 2: Collaboration -->
           <div
-            class="bg-background-alt/40 dark:bg-background/70 p-6 rounded-xl border border-accent-tertiary/10 shadow-lg process-card"
+            class="bg-background-alt/40 dark:bg-background/70 p-6 rounded-xl border border-accent-tertiary/10 shadow-lg planning-card"
           >
             <div class="text-accent-primary mb-4 icon-pulse">
               <svg
@@ -707,12 +707,12 @@ const directives = {
   }
 }
 
-/* Process step styles */
-.process-step-desktop {
+/* Planning step styles */
+.planning-step-desktop {
   transition: all 0.3s ease;
 }
 
-.process-step-mobile {
+.planning-step-mobile {
   position: relative;
   transition: all 0.3s ease;
 }
@@ -879,18 +879,18 @@ const directives = {
 }
 
 /* Card hover effects */
-.process-card {
+.planning-card {
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   position: relative;
 }
 
-.process-card:hover {
+.planning-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
   border-color: rgba(var(--accent-primary-rgb), 0.3);
 }
 
-.process-card::after {
+.planning-card::after {
   content: '';
   position: absolute;
   top: 0;
@@ -904,13 +904,13 @@ const directives = {
   z-index: -1;
 }
 
-.process-card:hover::after {
+.planning-card:hover::after {
   opacity: 1;
 }
 
 /* Connection line animations */
 @media (min-width: 768px) {
-  .process-step:hover .step-connector {
+  .planning-step:hover .step-connector {
     background-color: var(--accent-primary);
     transition: background-color 0.3s ease;
   }
@@ -918,7 +918,7 @@ const directives = {
 
 /* Improve readability on mobile */
 @media (max-width: 767px) {
-  .process-step-mobile p {
+  .planning-step-mobile p {
     font-size: 0.875rem;
   }
 }
@@ -934,7 +934,7 @@ const directives = {
   .animate-blob,
   .animate-blob-delayed,
   .icon-pulse:hover svg,
-  .process-card:hover {
+  .planning-card:hover {
     animation: none !important;
     transition: opacity 0.1s linear !important;
     transform: none !important;

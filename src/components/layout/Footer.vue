@@ -49,24 +49,6 @@
           >
             {{ navItem.label }}
           </a>
-          <a
-            href="#skillset"
-            class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
-          >
-            My Skillset
-          </a>
-          <a
-            href="#projects"
-            class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
-          >
-            Recent Projects
-          </a>
-          <a
-            href="#case-studies"
-            class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
-          >
-            Case Studies
-          </a>
         </nav>
       </div>
 
@@ -163,8 +145,12 @@ const currentYear = computed(() => new Date().getFullYear());
 // Nav items (matching header)
 const navItems = [
   { key: 'home', path: '#home', label: 'Home' },
+  { key: 'projects', path: '#projects', label: 'Projects' },
+  { key: 'skillset', path: '#skillset', label: 'Skillset' },
   { key: 'career', path: '#career', label: 'Career' },
+  { key: 'planning', path: '#planning', label: 'Planning' },
   { key: 'about', path: '#about', label: 'About' },
+  { key: 'contact', path: '#contact', label: 'Contact' },
 ];
 </script>
 

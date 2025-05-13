@@ -32,8 +32,8 @@
       <div class="text-center mb-16 animate-on-scroll" data-animation="fade-up" data-delay="0">
         <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">About Me</h2>
         <div class="w-20 h-1 bg-accent-primary mx-auto mb-6"></div>
-        <p class="text-xl text-accent-primary font-medium max-w-2xl mx-auto">
-          Designing with passion for Problem Solving
+        <p class="text-xl text-text-primary font-medium max-w-2xl mx-auto">
+          Developing software with passion for Problem Solving
         </p>
       </div>
 
@@ -101,23 +101,25 @@
         >
           <!-- Personal introduction -->
           <div class="mb-8">
-            <h3 class="text-2xl font-semibold text-text-primary mb-4">Personal Journey</h3>
+            <h3 class="text-2xl font-semibold text-accent-primary mb-4">Personal Journey</h3>
             <p class="text-text-secondary mb-4">
-              As a product designer, I focus on creating intuitive and impactful digital
-              experiences. My approach combines aesthetic sensibility with user-centered
-              functionality.
+              I'm driven by the desire to build technology that makes life easier, faster, and more
+              connected to our loved ones. My focus is on creating clean, functional, and
+              human-centered digital experiences.
             </p>
             <p class="text-text-secondary">
-              I began my design career after studying Interaction Design, and have since worked with
-              clients ranging from startups to Fortune 500 companies. My approach combines creative
-              problem-solving with data-driven insights to create designs that are both beautiful
-              and functional.
+              I began coding while studying Computer Engineering at the University of Guadalajara,
+              and have since developed tools for businesses ranging from industrial automation to
+              digital banking. I see programming not just as a skill, but as a way to understand how
+              systems — and maybe even the universe — truly work.
             </p>
           </div>
 
           <!-- Design philosophy -->
           <div class="mb-8">
-            <h3 class="text-2xl font-semibold text-text-primary mb-4">Design Philosophy</h3>
+            <h3 class="text-xl font-semibold text-accent-primary mb-4">
+              Software Development Philosophy
+            </h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <!-- Value 1 -->
               <div
@@ -142,11 +144,11 @@
                       />
                     </svg>
                   </div>
-                  <h4 class="font-medium text-text-primary">User-Centric</h4>
+                  <h4 class="font-medium text-text-primary">Human-Centered</h4>
                 </div>
                 <p class="text-text-secondary text-sm">
-                  Always putting the user first, designing experiences that solve real problems in
-                  intuitive ways.
+                  Building with empathy, aiming to enhance real lives and relationships through
+                  thoughtful digital experiences that foster connection and trust
                 </p>
               </div>
 
@@ -173,11 +175,11 @@
                       />
                     </svg>
                   </div>
-                  <h4 class="font-medium text-text-primary">Creative Problem-Solving</h4>
+                  <h4 class="font-medium text-text-primary">Purpose-Driven</h4>
                 </div>
                 <p class="text-text-secondary text-sm">
-                  Finding innovative solutions to complex problems through creative thinking and
-                  design principles.
+                  Guiding every decision with a clear purpose, ensuring that every line of code and
+                  every feature serves a greater good — one project at a time
                 </p>
               </div>
 
@@ -204,11 +206,11 @@
                       />
                     </svg>
                   </div>
-                  <h4 class="font-medium text-text-primary">Attention to Detail</h4>
+                  <h4 class="font-medium text-text-primary">Simplicity & Clarity</h4>
                 </div>
                 <p class="text-text-secondary text-sm">
-                  Carefully considering every aspect of the design, ensuring quality and
-                  craftsmanship in every pixel.
+                  Striving for simplicity and clarity in every design, ensuring that the user can
+                  understand and interact with the system with ease.
                 </p>
               </div>
 
@@ -235,11 +237,11 @@
                       />
                     </svg>
                   </div>
-                  <h4 class="font-medium text-text-primary">Collaborative</h4>
+                  <h4 class="font-medium text-text-primary">Curiosity-First</h4>
                 </div>
                 <p class="text-text-secondary text-sm">
-                  Working closely with stakeholders, developers, and other designers to create
-                  cohesive and effective solutions.
+                  Driven by the desire to understand how everything works — from the smallest
+                  function to the vast systems behind our universe.
                 </p>
               </div>
             </div>
