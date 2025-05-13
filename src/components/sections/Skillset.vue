@@ -38,12 +38,6 @@
           data-animation="fade-up"
           data-delay="100"
         >
-          <!-- Example Label -->
-          <div
-            class="absolute top-2 right-2 z-20 bg-accent-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-md transform rotate-3 animate-pulse"
-          >
-            Example
-          </div>
           <!-- Icon -->
           <div class="skill-icon-wrapper mb-6">
             <div
@@ -94,12 +88,6 @@
           data-animation="fade-up"
           data-delay="300"
         >
-          <!-- Example Label -->
-          <div
-            class="absolute top-2 right-2 z-20 bg-accent-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-md transform rotate-3 animate-pulse"
-          >
-            Example
-          </div>
           <!-- Icon -->
           <div class="skill-icon-wrapper mb-6">
             <div
@@ -150,12 +138,6 @@
           data-animation="fade-up"
           data-delay="500"
         >
-          <!-- Example Label -->
-          <div
-            class="absolute top-2 right-2 z-20 bg-accent-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-md transform rotate-3 animate-pulse"
-          >
-            Example
-          </div>
           <!-- Icon -->
           <div class="skill-icon-wrapper mb-6">
             <div

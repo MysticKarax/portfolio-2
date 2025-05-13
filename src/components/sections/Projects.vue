@@ -41,7 +41,7 @@
           <div class="relative h-56 overflow-hidden">
             <img
               src="/projects-imgs/plcco-fe.webp"
-              alt="PLCO Frontend"
+              alt="🏭 PLCCO Frontend"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
               @load="imageLoaded(1)"
@@ -165,7 +165,7 @@
           <div class="relative h-56 overflow-hidden">
             <img
               src="/projects-imgs/weather-app.webp"
-              alt="Weather Dashboard"
+              alt="🌤️ Weather Dashboard"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
               @load="imageLoaded(3)"
@@ -214,7 +214,7 @@
           </div>
         </div>
 
-        <!-- Project 4:  VoltNest - EV Charging Platform -->
+        <!-- Project 4: Travel Destinations SPA -->
         <div
           class="project-card group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 md:hidden lg:block animate-on-scroll"
           data-animation="fade-up"
@@ -224,7 +224,7 @@
           <div class="relative h-56 overflow-hidden">
             <img
               src="/projects-imgs/travel-destinations.webp"
-              alt="Travel Destinations SPA - Vue 3 & Vue Router"
+              alt="✈️ Travel Destinations SPA - Vue 3 & Vue Router"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
               @load="imageLoaded(4)"
@@ -266,7 +266,7 @@
           </div>
         </div>
 
-        <!-- Project 5: Destinations SPA - Vue 3 & Vue Router -->
+        <!-- Project 5: VoltNest - EV Charging Platform -->
         <div
           class="project-card group relative overflow-hidden rounded-xl shadow-lg bg-background-alt dark:bg-background/70 border border-accent-tertiary/10 transition-all duration-300 hover:shadow-xl hover:shadow-accent-primary/10 hover:border-accent-primary/20 md:hidden lg:block animate-on-scroll"
           data-animation="fade-up"
@@ -281,8 +281,8 @@
           <!-- Project Image -->
           <div class="relative h-56 overflow-hidden">
             <img
-              src="/projects-imgs/voltnest.webp"
-              alt="AR Shopping Experience"
+              src="/projects-imgs/voltnest.jpg"
+              alt="🔌 VoltNest - EV Charging Platform"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
               @load="imageLoaded(5)"
@@ -339,7 +339,7 @@
           <div class="relative h-56 overflow-hidden">
             <img
               src="/projects-imgs/silver-wolf-dice-game.webp"
-              alt="Travel Booking Platform"
+              alt="🎲 Pig Game - Dice Duel Edition"
               class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
               @load="imageLoaded(6)"
@@ -371,7 +371,7 @@
             <h3
               class="text-lg font-semibold text-text-primary mb-2 group-hover:text-accent-primary transition-colors duration-300"
             >
-              Pig Game - Dice Duel Edition
+              🎲 Pig Game - Dice Duel Edition
             </h3>
             <p class="text-text-secondary text-sm mb-4">
               A two-player interactive dice game built with a clean UI and anime-inspired visuals.

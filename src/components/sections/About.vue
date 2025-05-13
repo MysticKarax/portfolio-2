@@ -275,43 +275,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Testimonial section -->
-      <div class="max-w-3xl mx-auto animate-on-scroll" data-animation="fade-up" data-delay="500">
-        <div
-          class="bg-background-alt/40 dark:bg-background/70 p-8 md:p-10 rounded-xl border border-accent-tertiary/10 shadow-lg relative"
-        >
-          <!-- Example Label -->
-          <div
-            class="absolute top-2 right-2 z-20 bg-accent-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-md transform rotate-3 animate-pulse"
-          >
-            Example
-          </div>
-          <!-- Quote marks -->
-          <div class="absolute -top-5 -left-5 text-accent-primary/10 text-8xl font-serif">"</div>
-          <div class="absolute -bottom-16 -right-5 text-accent-primary/10 text-8xl font-serif">
-            "
-          </div>
-
-          <!-- Quote content -->
-          <div class="relative">
-            <p class="text-lg md:text-xl text-text-primary italic mb-6">
-              Jordi's approach to design is both methodical and creative. His work consistently
-              exceeds expectations, and his ability to translate complex requirements into elegant
-              solutions is remarkable.
-            </p>
-            <div class="flex items-center">
-              <div class="w-12 h-12 rounded-full bg-accent-primary/10 overflow-hidden mr-4">
-                <img src="/claire-mitchell.jpg" alt="Client" class="w-full h-full object-cover" />
-              </div>
-              <div>
-                <h4 class="text-text-primary font-medium">Claire Mitchell</h4>
-                <p class="text-accent-primary text-sm">Product Manager, Tech Company Y</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 </template>

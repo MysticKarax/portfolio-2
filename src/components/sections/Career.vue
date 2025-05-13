@@ -28,12 +28,6 @@
           data-animation="fade-up"
           data-delay="100"
         >
-          <!-- Example Label -->
-          <div
-            class="absolute top-2 right-2 z-20 bg-accent-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-md transform rotate-3 animate-pulse"
-          >
-            Example
-          </div>
           <!-- Icon -->
           <div class="skill-icon-wrapper mb-6">
             <div
@@ -54,7 +48,7 @@
           <p
             class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300"
           >
-            Professional Experience
+            In Tech Industry Experience
           </p>
 
           <!-- Additional details on hover -->
@@ -64,15 +58,15 @@
             <ul class="space-y-2">
               <li class="flex items-start">
                 <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
-                <span>Full-stack Development</span>
+                <span>Technical Support</span>
               </li>
               <li class="flex items-start">
                 <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
-                <span>UI/UX Design</span>
+                <span>Systems Administration</span>
               </li>
               <li class="flex items-start">
                 <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
-                <span>Project Management</span>
+                <span>Problem Solving</span>
               </li>
             </ul>
           </div>
@@ -84,12 +78,6 @@
           data-animation="fade-up"
           data-delay="200"
         >
-          <!-- Example Label -->
-          <div
-            class="absolute top-2 right-2 z-20 bg-accent-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-md transform rotate-3 animate-pulse"
-          >
-            Example
-          </div>
           <!-- Icon -->
           <div class="skill-icon-wrapper mb-6">
             <div
@@ -103,14 +91,14 @@
           <h3
             class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300"
           >
-            <span class="counter" data-target="40">40</span>+ Clients
+            <span class="counter" data-target="140">140</span>+ Commits
           </h3>
 
           <!-- Description -->
           <p
             class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300"
           >
-            Worldwide
+            Internship Work
           </p>
 
           <!-- Additional details on hover -->
@@ -120,15 +108,15 @@
             <ul class="space-y-2">
               <li class="flex items-start">
                 <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
-                <span>Global Companies</span>
+                <span>Web Development</span>
               </li>
               <li class="flex items-start">
                 <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
-                <span>Start-ups</span>
+                <span>Iterative Improvements</span>
               </li>
               <li class="flex items-start">
                 <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
-                <span>Tech Enterprises</span>
+                <span>Technical Documentation</span>
               </li>
             </ul>
           </div>
@@ -140,12 +128,6 @@
           data-animation="fade-up"
           data-delay="300"
         >
-          <!-- Example Label -->
-          <div
-            class="absolute top-2 right-2 z-20 bg-accent-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-md transform rotate-3 animate-pulse"
-          >
-            Example
-          </div>
           <!-- Icon -->
           <div class="skill-icon-wrapper mb-6">
             <div
@@ -159,14 +141,14 @@
           <h3
             class="text-xl md:text-2xl font-semibold mb-4 text-text-primary group-hover:text-accent-primary transition-colors duration-300"
           >
-            <span class="counter" data-target="100">100</span>+ Projects
+            <span class="counter" data-target="35">35</span>+ Pull Requests
           </h3>
 
           <!-- Description -->
           <p
             class="text-accent-tertiary group-hover:text-text-secondary transition-colors duration-300"
           >
-            Successfully Completed
+            Successful Contributions
           </p>
 
           <!-- Additional details on hover -->
@@ -176,15 +158,15 @@
             <ul class="space-y-2">
               <li class="flex items-start">
                 <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
-                <span>Web Applications</span>
+                <span>Optimizing UI</span>
               </li>
               <li class="flex items-start">
                 <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
-                <span>Mobile Apps</span>
+                <span>Optimizing Performance</span>
               </li>
               <li class="flex items-start">
                 <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5" />
-                <span>Design Systems</span>
+                <span>GitHub Agile Workflow</span>
               </li>
             </ul>
           </div>
@@ -248,15 +230,15 @@
                   <div class="flex items-start">
                     <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
                     <p class="text-text-secondary">
-                      Delivered 139+ commits and 35+ pull requests, focusing on error handling,
-                      TypeScript refinements, and API integrations
+                      Improved code maintainability by refactoring Vue.js components and removing
+                      technical debt
                     </p>
                   </div>
                   <div class="flex items-start">
                     <CheckIcon class="h-5 w-5 text-accent-primary mr-2 mt-0.5 flex-shrink-0" />
                     <p class="text-text-secondary">
-                      Improved code maintainability by refactoring Vue.js components and removing
-                      technical debt (e.g., console logs)
+                      Collaborated cross-functionally to resolve build errors and ensure seamless
+                      deployments
                     </p>
                   </div>
                   <div class="flex items-start">
