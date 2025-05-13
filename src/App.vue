@@ -19,14 +19,11 @@
         <!-- Career Section -->
         <Career key="career" />
 
-        <!-- Process Section -->
-        <Process key="process" />
+        <!-- Planning Section -->
+        <Planning key="planning" />
 
         <!-- About Me Section -->
         <About key="about" />
-
-        <!-- Case Studies Section -->
-        <!-- <CaseStudies key="case-studies" /> -->
 
         <!-- Contact Section -->
         <Contact key="contact" />
@@ -43,7 +40,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted } from 'vue';
 
 // Layout components
 import Header from './components/layout/Header.vue';
@@ -52,47 +49,14 @@ import Footer from './components/layout/Footer.vue';
 // Section components
 import Hero from './components/sections/Hero.vue';
 import Skillset from './components/sections/Skillset.vue';
-import Process from './components/sections/Planning.vue';
+import Planning from './components/sections/Planning.vue';
 import Projects from './components/sections/Projects.vue';
 import Career from './components/sections/Career.vue';
 import About from './components/sections/About.vue';
-import CaseStudies from './components/sections/CaseStudies.vue';
 import Contact from './components/sections/Contact.vue';
-
-// Dark mode functionality
-const isDarkMode = ref(false);
-
-const toggleDarkMode = () => {
-  isDarkMode.value = !isDarkMode.value;
-
-  if (isDarkMode.value) {
-    document.documentElement.classList.add('dark');
-    localStorage.setItem('darkMode', 'true');
-  } else {
-    document.documentElement.classList.remove('dark');
-    localStorage.setItem('darkMode', 'false');
-  }
-};
 
 // Check for saved dark mode preference or system preference
 onMounted(() => {
-  // Check localStorage
-  const savedDarkMode = localStorage.getItem('darkMode');
-
-  if (savedDarkMode === 'true') {
-    isDarkMode.value = true;
-    document.documentElement.classList.add('dark');
-  } else if (savedDarkMode === 'false') {
-    isDarkMode.value = false;
-    document.documentElement.classList.remove('dark');
-  } else {
-    // Check system preference
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      isDarkMode.value = true;
-      document.documentElement.classList.add('dark');
-    }
-  }
-
   // Add scroll event listener to update active section in header
   window.addEventListener('scroll', handleScroll, { passive: true });
 

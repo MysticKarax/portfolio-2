@@ -303,7 +303,7 @@
         <div class="relative pl-10">
           <!-- Vertical connection line -->
           <div
-            class="absolute top-0 bottom-0 left-4 w-1 bg-accent-tertiary/20 vertical-connection-line"
+            class="absolute top-0 bottom-0 left-[24px] w-1 bg-accent-tertiary/60 vertical-connection-line"
             :class="{ 'animate-vertical-line': isVisible }"
           ></div>
 
@@ -778,8 +778,9 @@ const directives = {
 }
 
 .vertical-connection-line {
-  position: relative;
   overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 3px var(--accent-tertiary);
 }
 
 .animate-vertical-line::after {
@@ -790,8 +791,19 @@ const directives = {
   height: 0;
   width: 100%;
   background-color: var(--accent-primary);
-  animation: drawVerticalLine 1.8s ease-out forwards;
+  z-index: 2;
+  box-shadow: 0 0 4px var(--accent-primary);
+  animation: lineGrow 1.5s ease forwards;
   animation-delay: 0.5s;
+}
+
+@keyframes lineGrow {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
 }
 
 @keyframes drawVerticalLine {
