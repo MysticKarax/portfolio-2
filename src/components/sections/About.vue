@@ -121,13 +121,13 @@
               Software Development Philosophy
             </h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <!-- Value 1 -->
+              <!-- Value 1: Human-Centered -->
               <div
-                class="bg-background-alt/40 dark:bg-background/70 p-5 rounded-lg border border-accent-tertiary/10"
+                class="bg-background-alt/40 dark:bg-background/70 p-5 rounded-lg border border-accent-tertiary/10 group transition-all duration-300 hover:shadow-xl hover:border-accent-primary/50"
               >
                 <div class="flex items-center gap-3 mb-2">
                   <div
-                    class="w-10 h-10 rounded-full bg-accent-primary/10 flex items-center justify-center text-accent-primary"
+                    class="w-10 h-10 rounded-full bg-accent-primary/10 flex items-center justify-center text-accent-primary transition-all duration-300 group-hover:bg-accent-primary group-hover:text-white"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -140,56 +140,25 @@
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
-                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
                       />
                     </svg>
                   </div>
-                  <h4 class="font-medium text-text-primary">Human-Centered</h4>
+                  <h4 class="font-medium text-text-primary transition-colors duration-300 group-hover:text-accent-primary">Human-Centered</h4>
                 </div>
-                <p class="text-text-secondary text-sm">
+                <p class="text-text-secondary text-sm transition-colors duration-300 group-hover:text-text-primary">
                   Building with empathy, aiming to enhance real lives and relationships through
                   thoughtful digital experiences that foster connection and trust
                 </p>
               </div>
 
-              <!-- Value 2 -->
+              <!-- Value 2: Purpose-Driven -->
               <div
-                class="bg-background-alt/40 dark:bg-background/70 p-5 rounded-lg border border-accent-tertiary/10"
+                class="bg-background-alt/40 dark:bg-background/70 p-5 rounded-lg border border-accent-tertiary/10 group transition-all duration-300 hover:shadow-xl hover:border-accent-primary/50"
               >
                 <div class="flex items-center gap-3 mb-2">
                   <div
-                    class="w-10 h-10 rounded-full bg-accent-primary/10 flex items-center justify-center text-accent-primary"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                      />
-                    </svg>
-                  </div>
-                  <h4 class="font-medium text-text-primary">Purpose-Driven</h4>
-                </div>
-                <p class="text-text-secondary text-sm">
-                  Guiding every decision with a clear purpose, ensuring that every line of code and
-                  every feature serves a greater good — one project at a time
-                </p>
-              </div>
-
-              <!-- Value 3 -->
-              <div
-                class="bg-background-alt/40 dark:bg-background/70 p-5 rounded-lg border border-accent-tertiary/10"
-              >
-                <div class="flex items-center gap-3 mb-2">
-                  <div
-                    class="w-10 h-10 rounded-full bg-accent-primary/10 flex items-center justify-center text-accent-primary"
+                    class="w-10 h-10 rounded-full bg-accent-primary/10 flex items-center justify-center text-accent-primary transition-all duration-300 group-hover:bg-accent-primary group-hover:text-white"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -206,21 +175,21 @@
                       />
                     </svg>
                   </div>
-                  <h4 class="font-medium text-text-primary">Simplicity & Clarity</h4>
+                  <h4 class="font-medium text-text-primary transition-colors duration-300 group-hover:text-accent-primary">Purpose-Driven</h4>
                 </div>
-                <p class="text-text-secondary text-sm">
-                  Striving for simplicity and clarity in every design, ensuring that the user can
-                  understand and interact with the system with ease.
+                <p class="text-text-secondary text-sm transition-colors duration-300 group-hover:text-text-primary">
+                  Guiding every decision with a clear purpose, ensuring that every line of code and
+                  every feature serves a greater good — one project at a time
                 </p>
               </div>
 
-              <!-- Value 4 -->
+              <!-- Value 3: Simplicity & Clarity! -->
               <div
-                class="bg-background-alt/40 dark:bg-background/70 p-5 rounded-lg border border-accent-tertiary/10"
+                class="bg-background-alt/40 dark:bg-background/70 p-5 rounded-lg border border-accent-tertiary/10 group transition-all duration-300 hover:shadow-xl hover:border-accent-primary/50"
               >
                 <div class="flex items-center gap-3 mb-2">
                   <div
-                    class="w-10 h-10 rounded-full bg-accent-primary/10 flex items-center justify-center text-accent-primary"
+                    class="w-10 h-10 rounded-full bg-accent-primary/10 flex items-center justify-center text-accent-primary transition-all duration-300 group-hover:bg-accent-primary group-hover:text-white"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -233,13 +202,44 @@
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
-                        d="M21 3l-6 6m0 0V4m0 5h5M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z"
+                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
                       />
                     </svg>
                   </div>
-                  <h4 class="font-medium text-text-primary">Curiosity-First</h4>
+                  <h4 class="font-medium text-text-primary transition-colors duration-300 group-hover:text-accent-primary">Simplicity & Clarity</h4>
                 </div>
-                <p class="text-text-secondary text-sm">
+                <p class="text-text-secondary text-sm transition-colors duration-300 group-hover:text-text-primary">
+                  Striving for simplicity and clarity in every design, ensuring that the user can
+                  understand and interact with the system with ease.
+                </p>
+              </div>
+
+              <!-- Value 4: Curiosity-First -->
+              <div
+                class="bg-background-alt/40 dark:bg-background/70 p-5 rounded-lg border border-accent-tertiary/10 group transition-all duration-300 hover:shadow-xl hover:border-accent-primary/50"
+              >
+                <div class="flex items-center gap-3 mb-2">
+                  <div
+                    class="w-10 h-10 rounded-full bg-accent-primary/10 flex items-center justify-center text-accent-primary transition-all duration-300 group-hover:bg-accent-primary group-hover:text-white"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z M12 14l-6-3.5 6-3.5 6 3.5-6 3.5z"
+                      />
+                    </svg>
+                  </div>
+                  <h4 class="font-medium text-text-primary transition-colors duration-300 group-hover:text-accent-primary">Curiosity-First</h4>
+                </div>
+                <p class="text-text-secondary text-sm transition-colors duration-300 group-hover:text-text-primary">
                   Driven by the desire to understand how everything works — from the smallest
                   function to the vast systems behind our universe.
                 </p>
@@ -254,6 +254,12 @@
         <div
           class="bg-background-alt/40 dark:bg-background/70 p-8 md:p-10 rounded-xl border border-accent-tertiary/10 shadow-lg relative"
         >
+          <!-- Example Label -->
+          <div
+            class="absolute top-2 right-2 z-20 bg-accent-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-md transform rotate-3 animate-pulse"
+          >
+            Example
+          </div>
           <!-- Quote marks -->
           <div class="absolute -top-5 -left-5 text-accent-primary/10 text-8xl font-serif">"</div>
           <div class="absolute -bottom-16 -right-5 text-accent-primary/10 text-8xl font-serif">

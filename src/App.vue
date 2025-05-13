@@ -19,9 +19,6 @@
         <!-- Career Section -->
         <Career key="career" />
 
-        <!-- Planning Section -->
-        <Planning key="planning" />
-
         <!-- About Me Section -->
         <About key="about" />
 
@@ -49,7 +46,6 @@ import Footer from './components/layout/Footer.vue';
 // Section components
 import Hero from './components/sections/Hero.vue';
 import Skillset from './components/sections/Skillset.vue';
-import Planning from './components/sections/Planning.vue';
 import Projects from './components/sections/Projects.vue';
 import Career from './components/sections/Career.vue';
 import About from './components/sections/About.vue';

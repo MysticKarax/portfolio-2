@@ -148,7 +148,6 @@ const navItems = [
   { key: 'projects', path: '#projects', label: 'Projects' },
   { key: 'skillset', path: '#skillset', label: 'Skillset' },
   { key: 'career', path: '#career', label: 'Career' },
-  { key: 'planning', path: '#planning', label: 'Planning' },
   { key: 'about', path: '#about', label: 'About' },
   { key: 'contact', path: '#contact', label: 'Contact' },
 ];
