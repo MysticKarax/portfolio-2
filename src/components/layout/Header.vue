@@ -71,7 +71,7 @@
             </a>
 
             <a
-              href="mailto:jordidev@proton.me"
+              href="mailto:jordan.empresa@outlook.com"
               class="text-accent-tertiary hover:text-accent-primary transition-colors duration-200"
               aria-label="Email"
               target="_blank"
