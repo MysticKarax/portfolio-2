@@ -5,7 +5,7 @@
       <!-- Logo and About column -->
       <div class="flex flex-col">
         <div class="flex items-center mb-4">
-          <img src="/logo.svg" alt="Jordi Logo" class="h-10 w-auto" />
+          <img src="/logo.png" alt="Jordi Logo" class="h-10 w-auto" />
         </div>
 
         <!-- Social Media Icons -->
